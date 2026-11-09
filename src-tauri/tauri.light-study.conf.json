@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Totem Studio",
+  "version": "0.1.0",
+  "identifier": "dev.horizon.totem.lightstudy",
+  "build": {
+    "beforeDevCommand": "npm run light-study:dev",
+    "devUrl": "http://127.0.0.1:1428",
+    "beforeBuildCommand": "npm run light-study:bundle",
+    "frontendDist": "../dist-light-study"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Totem Studio",
+        "url": "light-study/index.html",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 720,
+        "minHeight": 520,
+        "center": true,
+        "backgroundColor": "#09041c"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: asset: http://asset.localhost; media-src 'self' asset: http://asset.localhost; connect-src 'self' ipc: http://ipc.localhost blob:; object-src 'none'; base-uri 'self'",
+      "assetProtocol": {
+        "enable": true,
+        "scope": []
+      }
+    }
+  },
+  "bundle": {
+    "active": false
+  }
+}

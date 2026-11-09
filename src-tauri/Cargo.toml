@@ -1,0 +1,60 @@
+[package]
+name = "totem"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.89"
+description = "Totem console and game library"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["protocol-asset"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.23"
+sha2 = "0.10"
+reqwest = { version = "0.13", default-features = false, features = ["blocking", "json", "form", "rustls"] }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+zip = { version = "4", default-features = false, features = ["deflate"] }
+sevenz-rust2 = { version = "0.24", default-features = false, features = ["util"] }
+
+[target.'cfg(windows)'.dependencies]
+tokio = { version = "1", features = ["sync"] }
+winreg = "0.56"
+webview2-com = "0.39"
+windows = { version = "0.62", features = [
+    "Graphics_Capture",
+    "Graphics_DirectX_Direct3D11",
+    "Win32_Graphics_Direct3D",
+    "Win32_Graphics_Direct3D11",
+    "Win32_Graphics_Dwm",
+    "Win32_Graphics_Dxgi_Common",
+    "Win32_Graphics_Dxgi",
+    "Win32_Graphics_Gdi",
+    "Win32_Media_Audio_Endpoints",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_Performance",
+    "Win32_System_WinRT_Direct3D11",
+    "Win32_System_WinRT_Graphics_Capture",
+    "Win32_UI_WindowsAndMessaging",
+] }
+windows-core = "0.62"
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_Input_XboxController",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[target.'cfg(windows)'.dev-dependencies]
+windows-sys = { version = "0.61", features = ["Win32_System_Threading"] }
+
+[profile.dev]
+debug = 0
+
+[profile.dev.package."*"]
+debug = false
+
+[profile.dev.package.sha2]
+opt-level = 3

@@ -1,0 +1,42 @@
+.chooser-bottom-nav {
+  position:absolute;
+  z-index:4;
+  left:max(5%, env(safe-area-inset-left, 0px));
+  right:max(5%, env(safe-area-inset-right, 0px));
+  bottom:8px;
+  display:flex;
+  overflow-x:auto;
+  align-items:center;
+  box-sizing:border-box;
+  min-height:44px;
+  padding:3px 8px;
+  border-radius:12px;
+  background:#110825a8;
+  font:500 13px system-ui, sans-serif;
+  letter-spacing:normal;
+}
+.chooser-bottom-nav button {
+  flex:none;
+  display:flex;
+  align-items:center;
+  gap:5px;
+  /* A label ends a group. Unlabeled glyphs sit next to the following button. */
+  margin-inline:0 12px;
+  padding-inline-start:0;
+  border:0;
+  background:transparent;
+  color:#fff;
+  font:inherit;
+  min-height:38px;
+  cursor:pointer;
+}
+.chooser-bottom-nav .bottom-icon-only { margin:0; padding:0; gap:0; }
+.chooser-bottom-nav .bottom-label:not([hidden]) { display:grid; }
+.chooser-bottom-nav .bottom-label > span { grid-area:1 / 1; }
+.chooser-bottom-nav .bottom-label-sizer { visibility:hidden; }
+.chooser-bottom-nav button[hidden] { display:none; }
+.chooser-bottom-nav .bottom-end:not(.bottom-end:not([hidden]) ~ .bottom-end) { margin-inline-start:auto; }
+.chooser-bottom-nav img { width:32px; height:36px; object-fit:contain; }
+.chooser-bottom-nav .bottom-bumper img { width:auto; height:34px; }
+.chooser-bottom-nav img.bottom-keycap { width:40px; height:30px; }
+.chooser-bottom-nav :focus-visible { outline:2px solid #5aeaff; outline-offset:-2px; }

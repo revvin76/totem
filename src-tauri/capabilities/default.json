@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Core access for the standalone carousel window",
+  "windows": ["main"],
+  "permissions": ["core:default", "core:window:allow-set-fullscreen", "core:window:allow-close"]
+}

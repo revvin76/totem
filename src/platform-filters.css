@@ -1,0 +1,49 @@
+.platform-filters {
+  width:min(800px,calc(100vw - 36px)); max-width:none; max-height:calc(100dvh - 32px);
+  padding:18px 20px; overflow:auto; color:#fbf5ff;
+  background:linear-gradient(150deg,#220a3e,#10091e 66%);
+  border:1px solid #ed91ff; border-radius:18px;
+  box-shadow:0 0 22px #d900f5b3,inset 0 0 22px #b700ed40;
+  font:500 15px "Segoe UI",system-ui,sans-serif;
+  text-align:left;
+}
+.platform-filters::backdrop { background:#080411a6; backdrop-filter:blur(3px); }
+.pf-header,.pf-footer { display:flex; align-items:center; gap:12px; }
+.platform-filters .pf-header { height:auto; justify-content:flex-start; border-bottom:1px solid #b371df56; padding:0 3px 12px; }
+.platform-filters .pf-header h2 { margin:0; font-size:24px; font-weight:700; }
+.pf-icon { width:25px; height:25px; fill:none; stroke:#eee2ff; stroke-width:2; stroke-linejoin:round; filter:drop-shadow(0 0 5px #bf7aff); }
+.pf-position { margin-left:auto; color:#e5d3f8; font-variant-numeric:tabular-nums; }
+.pf-groups { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; padding-top:12px; }
+.pf-group { min-width:0; margin:0; padding:6px; border:1px solid #a065d28c; border-radius:13px; background:#160c29; }
+.pf-group.pf-active { border-color:#ef9aff; box-shadow:0 0 12px #dd4cff; }
+.pf-group legend { padding:0 6px; color:#fbf4ff; font-weight:700; }
+.pf-options { display:grid; gap:2px; max-height:min(300px,40dvh); overflow:auto; }
+.pf-option { display:flex; align-items:center; gap:7px; min-height:29px; padding:4px 5px; border:1px solid transparent; border-radius:8px; cursor:pointer; }
+.pf-option input { margin:0; accent-color:#bd42fc; flex:none; }
+.pf-option span { min-width:0; overflow-wrap:anywhere; }
+.pf-option:has(input:checked) { border-color:#db7eff; background:#7025a6; }
+.pf-option:has(input:focus-visible) { outline:2px solid #fff; outline-offset:-3px; }
+.pf-option:hover { background:#57277b; }
+.pf-status { min-height:1.3em; margin:10px 0 8px; color:#d9bfe7; font-size:12px; }
+.pf-footer { flex-wrap:wrap; border-top:1px solid #b371df56; padding-top:10px; }
+.pf-command,.pf-chip {
+  display:inline-flex; align-items:center; gap:5px; min-height:32px; padding:3px 9px;
+  border:1px solid #af6eda; border-radius:10px; background:#2b1446; color:inherit; font:inherit; cursor:pointer;
+}
+.pf-command img { width:27px; height:26px; object-fit:contain; }
+.pf-command[data-action="select"] { margin-left:auto; }
+.pf-command:focus-visible,.pf-chip:focus-visible { outline:2px solid #fff; outline-offset:2px; }
+.platform-filter-chips {
+  position:fixed; top:64px; left:50%; transform:translateX(-50%); z-index:5;
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:7px;
+  max-width:calc(100vw - 28px); padding:5px 12px; color:#fbf2ff;
+  border:1px solid #ed91ff; border-radius:22px; background:#210b37ed; box-shadow:0 0 13px #b700ed8c;
+  font:500 13px "Segoe UI",system-ui,sans-serif;
+}
+.platform-filter-chips[hidden] { display:none; }
+.platform-filter-chips .pf-icon { width:20px; height:20px; }
+.pf-chip { min-height:26px; border-radius:16px; }
+@media (max-width:660px) {
+  .pf-groups { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .pf-options { max-height:24dvh; }
+}

@@ -1,0 +1,39 @@
+#folder-settings { width: min(1200px, 95vw); max-width: none; height: 92svh; max-height: none; padding: 0; color: #edf4fc; background: #0b1422; border: 1px solid #5d708a; border-radius: 12px; text-align: left; }
+#folder-settings::backdrop { background: #020711ed; }
+#folder-settings[open] { display: flex; flex-direction: column; overflow: hidden; }
+.folder-header, .folder-footer { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 28px; }
+.folder-header, .folder-footer { flex: 0 0 auto; }
+.folder-header { border-bottom: 1px solid #4e61764d; }
+.folder-header h2 { margin: 0; font-size: 24px; font-weight: 400; }
+.folder-body { overflow-y: auto; flex: 1; min-height: 0; padding: 22px 28px; }
+.folder-body p { color: #c1cede; line-height: 1.6; font-size: 13px; }
+#folder-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; margin: 24px 0; }
+#folder-fields label { display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: #d9e4f4; }
+#folder-fields input, #folder-collection-search { color: #edf4fc; background: #111f32; border: 1px solid #667c98; border-radius: 4px; padding: 11px; width: 100%; }
+.folder-path-status { color: #b4c8de; font-size: 11px; }
+#folder-migration-status, #folder-storage { overflow-wrap: anywhere; }
+.folder-body h3 { margin: 28px 0 12px; font-size: 17px; font-weight: 500; }
+#folder-collection-search { margin: 8px 0 16px; }
+#folder-collection-list details { padding: 12px 0; border-bottom: 1px solid #61738a40; }
+#folder-collection-list summary { cursor: pointer; font-size: 13px; padding: 5px 0; }
+#folder-collection-list p { margin: 8px 0 8px 16px; overflow-wrap: anywhere; }
+.folder-game-path { font-family: Consolas, monospace; }
+.igdb-connection { margin: 26px 0; padding: 18px; border: 1px solid #536d89; border-radius: 6px; }
+.igdb-connection h3 { margin-top: 0; }
+.igdb-connection-fields { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.igdb-connection-fields label { display: flex; flex-direction: column; gap: 8px; color: #d9e4f4; font-size: 13px; }
+.igdb-connection-fields input { padding: 10px; border: 1px solid #667c98; border-radius: 4px; background: #111f32; color: #edf4fc; }
+.metadata-secret-label { display: flex; flex-direction: column; gap: 8px; color: #d9e4f4; font-size: 13px; }
+.metadata-secret-label input { padding: 10px; border: 1px solid #667c98; border-radius: 4px; background: #111f32; color: #edf4fc; }
+.igdb-connection-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.igdb-connection-actions button { border: 1px solid #667c98; border-radius: 4px; }
+.metadata-options { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 18px 0 0; padding: 12px 14px; border: 1px solid #536d89; }
+.metadata-options legend { padding: 0 6px; color: #d9e4f4; font-size: 13px; }
+.metadata-options label { display: inline-flex; align-items: center; gap: 8px; min-height: 32px; color: #d9e4f4; font-size: 13px; }
+.metadata-options input { width: 18px; height: 18px; accent-color: #77d9ff; }
+.metadata-platforms { margin: 26px 0; }
+#metadata-platform-options { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.folder-footer { border-top: 1px solid #4e61764d; }
+.folder-footer p { flex: 1; margin: 0; color: #c7d7e9; font-size: 12px; }
+.folder-footer .select-button { padding: 12px 20px; white-space: nowrap; }
+@media (max-width: 700px) { #folder-fields { grid-template-columns: 1fr; } .folder-header, .folder-footer { padding: 16px; gap: 10px; } .folder-body { padding: 16px; } .folder-footer { flex-wrap: wrap; } .folder-footer p { flex-basis: 100%; } }

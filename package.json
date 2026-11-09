@@ -1,0 +1,28 @@
+{
+  "name": "totem",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1427 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 1427 --strictPort",
+    "desktop": "node tools/make-icon.mjs && node tools/copy-desktop-models.mjs debug && tauri dev",
+    "desktop:build": "node tools/make-icon.mjs && node tools/copy-desktop-models.mjs release && tauri build --no-bundle",
+    "studio:dev": "npm run light-study:dev",
+    "light-study:dev": "vite --config vite.light-study.config.js --host 127.0.0.1 --port 1428 --strictPort",
+    "light-study:bundle": "vite build --config vite.light-study.config.js",
+    "test": "node --test tests/alphabet-jump.test.js tests/animation-membership.test.js tests/box-art.test.js tests/collection.test.js tests/device-layout.test.js tests/emulator-settings.test.js tests/error-log.test.js tests/folder-settings-data.test.js tests/framing.test.js tests/game-framing.test.js tests/game-information.test.js tests/game-library.test.js tests/gameplay-backdrop.test.js tests/gpu-timer.test.js tests/igdb-artwork.test.js tests/layout-selection.test.js tests/library-client.test.js tests/loading-profile.test.js tests/model-residency.test.js tests/object-gizmo.test.js tests/orbit.test.js tests/platform-aliases.test.js tests/platform-editor.test.js tests/platform-placeholder.test.js tests/settings-navigation.test.js tests/shared-scene-runtime.test.js tests/startup-intro-audio.test.js tests/studio-config.test.js tests/studio-environment.test.js tests/studio-pages.test.js tests/system-picker.test.js tests/thumbnail-settings.test.js tests/tiko-voice.test.js tests/title-artwork.test.js tests/totem-led-display.test.js tests/totem-personality.test.js tests/totem-visor-programs.test.js tests/universal-emulator-exit-ui.test.js",
+    "studio:desktop": "node tools/make-icon.mjs && node tools/copy-desktop-models.mjs debug && tauri dev --config src-tauri/tauri.light-study.conf.json",
+    "test:legacy": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "vite": "^7.0.0"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0"
+}

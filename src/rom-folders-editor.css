@@ -1,0 +1,23 @@
+.rom-folders-editor {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: 0;
+  border: 1px solid #7184a6;
+  border-radius: 4px;
+}
+
+.rom-folders-editor > div {
+  display: grid;
+  gap: 6px;
+  margin-block: 8px;
+}
+
+.rom-folders-editor > div > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
+.rom-folders-editor p {
+  margin-block-end: 8px;
+}

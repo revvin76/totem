@@ -1,0 +1,3741 @@
+[
+  {
+    "id": "gameboy",
+    "name": "Game Boy",
+    "maker": "Nintendo",
+    "year": "1989",
+    "era": "Handheld originals",
+    "tagline": "A whole world. In your hands.",
+    "color": "#c8d68b",
+    "short": "GB",
+    "kind": "handheld",
+    "model": {
+      "profile": "bespoke"
+    },
+    "coverage": "CAD-derived Game Boy model; visual review pending",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/gameboy.glb",
+      "name": "gameboy.glb",
+      "bytes": 16820144,
+      "sha256": "1b60ff314d52d2a4a8fefba5d79bfac8706c19980d137e33c5a8260e279ca076",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/gameboy",
+      "author": "tiansongyu",
+      "kind": "cad",
+      "license": "MIT — Copyright (c) 2026 tiansongyu; see models/licenses/open-console-cad-MIT.txt and third-party notices",
+      "quality": "Detailed CAD-derived Game Boy geometry with physical materials and modelled labels; no photographic textures. Assembled view and pose baked; visual acceptance pending."
+    }
+  },
+  {
+    "id": "nes",
+    "name": "Nintendo Entertainment System",
+    "maker": "Nintendo",
+    "year": "1983",
+    "era": "8-bit pioneers",
+    "tagline": "Where a generation pressed start.",
+    "color": "#f87568",
+    "short": "NES",
+    "kind": "console",
+    "model": {
+      "profile": "bespoke"
+    },
+    "coverage": "Detailed Sketchfab model; console-only extraction, visual review pending",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/nes.glb",
+      "name": "nes.glb",
+      "bytes": 1418760,
+      "sha256": "c61e7c9a699b905b7ab5e74761881e66998656b72bff9d460bbceb11532c492d",
+      "source": "https://sketchfab.com/3d-models/nintendo-entertainment-system-c2332d623b364132bd780720eb74bddf",
+      "author": "greenestbanana",
+      "kind": "sketchfab",
+      "sourceFile": "nintendo_entertainment_system.glb",
+      "sourceSha256": "3daa6eba979f30ae08756d2890f3c2ae54f683405305165822a2c7c393c02a2a",
+      "license": "CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "quality": "Detailed textured NES model. The controller, power lead and presentation plane were removed; the original console assembly and materials are retained. Visual review pending."
+    }
+  },
+  {
+    "id": "megadrive",
+    "name": "Mega Drive",
+    "maker": "Sega",
+    "year": "1988",
+    "era": "16-bit legends",
+    "tagline": "A little attitude. A lot of speed.",
+    "color": "#78adff",
+    "short": "MD",
+    "kind": "console",
+    "model": {
+      "profile": "bespoke"
+    },
+    "coverage": "User-provided 3D model; visual review pending",
+    "upgradePriority": true,
+    "bundledModel": {
+      "kind": "cad",
+      "path": "assets/models/megadrive.glb",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/megadrive",
+      "creator": "tiansongyu",
+      "license": "MIT — see public/models/licenses/open-console-cad-MIT.txt",
+      "sha256": "51f0d5b71548b95ed028ebeb6e9c883513fbacbae230fda6c87d254a08d56d6e",
+      "bytes": 9118860
+    }
+  },
+  {
+    "id": "playstation",
+    "name": "PlayStation",
+    "maker": "Sony",
+    "year": "1994",
+    "era": "The disc generation",
+    "tagline": "New dimensions. Unforgettable worlds.",
+    "color": "#77d9ff",
+    "short": "PS",
+    "kind": "console",
+    "model": {
+      "profile": "bespoke"
+    },
+    "coverage": "Detailed procedural PoC",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/playstation-1.glb",
+      "name": "playstation-1.glb",
+      "bytes": 5292908,
+      "sha256": "9d39e8fee07ba6ffb88980c9fc1d8cd396cc92acf7573ef2dbd31594f40cae57",
+      "source": "https://sketchfab.com/3d-models/ps1-5-ad7c9a000cdb42c998994a6959693f24",
+      "author": "rhcreations",
+      "license": "CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": "ps1_-_5.glb",
+      "sourceSha256": "77994da2acfcf6a3fe15c3226adf43f99395e5b4f8948f0097aa15bb79c29898",
+      "userProvided": true,
+      "quality": "Console-only split from the supplied PS1–PS5 model (PS1_2); original geometry, materials, embedded textures and source transforms retained. Controllers are separate files in assets/models. Visual review pending.",
+      "kind": "user-provided"
+    }
+  },
+  {
+    "id": "gamecube",
+    "name": "GameCube",
+    "maker": "Nintendo",
+    "year": "2001",
+    "era": "Small cube. Big adventures.",
+    "tagline": "An unmistakable shape of play.",
+    "color": "#b7a0ff",
+    "short": "GCN",
+    "kind": "console",
+    "model": {
+      "profile": "bespoke"
+    },
+    "coverage": "User-provided 3D model; visual review pending",
+    "upgradePriority": true
+  },
+  {
+    "id": "xbox",
+    "name": "Xbox",
+    "maker": "Microsoft",
+    "year": "2001",
+    "era": "A new challenger",
+    "tagline": "Welcome to the next level.",
+    "color": "#b7ee74",
+    "short": "XBOX",
+    "kind": "console",
+    "model": {
+      "profile": "bespoke"
+    },
+    "coverage": "Detailed procedural PoC",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/xbox.glb",
+      "name": "untitled.blend_xbox_original.glb",
+      "bytes": 398860,
+      "sha256": "972ee9a23678cac0353c132f7d79b5aa52db2e53ec4f4250b22442cdd5714a3f",
+      "source": "https://sketchfab.com/3d-models/untitledblend-xbox-original-1b3ba47a4df34c2d8559b059e75788d2",
+      "author": "Dikiy_Rofl (https://sketchfab.com/Dikiy_Rofl)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "quality": "User-selected source GLB, copied without changing geometry, materials or embedded textures; visual acceptance pending.",
+      "sourceFile": "untitled.blend_xbox_original.glb",
+      "sourceSha256": "972ee9a23678cac0353c132f7d79b5aa52db2e53ec4f4250b22442cdd5714a3f",
+      "userProvided": true,
+      "showcaseRotation": [
+        0,
+        -90,
+        0
+      ]
+    }
+  },
+  {
+    "id": "wii",
+    "name": "Wii",
+    "maker": "Nintendo",
+    "year": "2006",
+    "era": "Play a different way",
+    "tagline": "A new movement in gaming.",
+    "color": "#96e8ee",
+    "short": "Wii",
+    "kind": "console",
+    "model": {
+      "profile": "bespoke"
+    },
+    "coverage": "Detailed procedural PoC",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/wii.glb",
+      "name": "wii.glb",
+      "bytes": 22029980,
+      "sha256": "c6772fa4d8decedf9710026adfcd1a46a855b59653789c0544b1f32427427072",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/wii",
+      "sourceSha256": "71ff358edf15baa48f079678d4c874f362ece90ccd2a80c7341bb7683f6c6956",
+      "author": "tiansongyu",
+      "kind": "cad",
+      "license": "MIT — Copyright (c) 2026 tiansongyu; see models/licenses/open-console-cad-MIT.txt and third-party notices",
+      "quality": "Detailed CAD-derived geometry with physical materials and modelled labels; no photographic textures. Assembled view and hinge pose baked, separate controllers/accessories/stands removed, Y-up showcase basis applied to consoles; compatible meshes joined without simplification. Photorealistic finish and accuracy acceptance remain pending."
+    }
+  },
+  {
+    "id": "arcade",
+    "name": "Arcade cabinet",
+    "maker": "Arcade",
+    "kind": "arcade",
+    "year": "1971",
+    "era": "The arcade collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#ffb866",
+    "short": "Arcade cabinet",
+    "model": {
+      "profile": "arcade",
+      "color": "#182737",
+      "width": 1.9,
+      "height": 3.3,
+      "depth": 1.5
+    },
+    "coverage": "Imported Pac-Man arcade cabinet model",
+    "upgradePriority": false
+  },
+  {
+    "id": "famicomdisk",
+    "name": "Famicom Disk System",
+    "maker": "Nintendo",
+    "kind": "console",
+    "year": "1986",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Famicom Disk System",
+    "model": {
+      "profile": "cartridge",
+      "color": "#b23841",
+      "width": 2.6,
+      "height": 0.8,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "snes",
+    "name": "Super Nintendo (SNES)",
+    "maker": "Nintendo",
+    "kind": "console",
+    "year": "1990",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Super Nintendo (SNES)",
+    "model": {
+      "profile": "cartridge",
+      "color": "#b5b2c1",
+      "width": 2.8,
+      "height": 0.7,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/snes.glb",
+      "name": "snes.glb",
+      "bytes": 8197608,
+      "sha256": "12c6db3c815d5b437f9feb4fd51d297456d98a3b3e5ad6979d3d901c20f2cba0",
+      "source": "https://sketchfab.com/3d-models/snes-mini-3-version-7b9f2cc05dec470787a4b6275a07b5f9",
+      "author": "Totorang",
+      "license": "CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": "snes_mini_3_version.glb",
+      "sourceSha256": "3eae12219dd8b08702e9525e0f0f7b6cdac686474b91a9023111a4692f5da7fa",
+      "userProvided": true,
+      "kind": "user-provided",
+      "quality": "Cleaner opposite-end console only, extracted from source node Object094 at X = -9.14, Z = -41.16. The damaged/deformed Object003 extraction is preserved separately as assets/models/snes-damaged.glb. Original geometry, materials, embedded textures and transforms are retained. Controller is stored separately as assets/models/snes-controller.glb."
+    }
+  },
+  {
+    "id": "n64",
+    "name": "Nintendo 64",
+    "maker": "Nintendo",
+    "kind": "console",
+    "year": "1996",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Nintendo 64",
+    "model": {
+      "profile": "cartridge",
+      "color": "#30343a",
+      "width": 2.8,
+      "height": 0.62,
+      "depth": 2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/n64.glb",
+      "name": "n64.glb",
+      "bytes": 8012844,
+      "sha256": "b4efd6040f813172e1119646ab7087d7da367d1209a8bd2b608d43693e1fa9fe",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/n64",
+      "sourceSha256": "c926de6d892053ef7324be445594de67fb3b6c316ad80a1c2ef44aa99a273372",
+      "author": "tiansongyu",
+      "kind": "cad",
+      "license": "MIT — Copyright (c) 2026 tiansongyu; see models/licenses/open-console-cad-MIT.txt and third-party notices",
+      "quality": "Detailed CAD-derived geometry with physical materials and modelled labels; no photographic textures. Assembled view and hinge pose baked, separate controllers/accessories/stands removed, Y-up showcase basis applied to consoles; compatible meshes joined without simplification. Photorealistic finish and accuracy acceptance remain pending."
+    }
+  },
+  {
+    "id": "n64dd",
+    "name": "Nintendo 64 + 64DD",
+    "maker": "Nintendo",
+    "kind": "console",
+    "year": "1999",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Nintendo 64 + 64DD",
+    "model": {
+      "profile": "cartridge",
+      "color": "#343943",
+      "width": 2.8,
+      "height": 1.05,
+      "depth": 2.1
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "virtualboy",
+    "name": "Virtual Boy",
+    "maker": "Nintendo",
+    "kind": "console",
+    "year": "1995",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Virtual Boy",
+    "model": {
+      "profile": "visor",
+      "color": "#b6303a",
+      "width": 2.5,
+      "height": 1.2,
+      "depth": 1.3
+    },
+    "coverage": "Detailed Sketchfab model; visual review pending",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/virtualboy.glb",
+      "name": "virtualboy.glb",
+      "bytes": 651548,
+      "sha256": "c9b2f123ba58bec786792a7bacd16e4fa8acb797a41268ee770090a4d7bed1b0",
+      "source": "https://sketchfab.com/3d-models/nintendo-virtual-boy-2b51fbada4af4893b7cde7e3f6436e96",
+      "author": "killava49",
+      "kind": "sketchfab",
+      "sourceFile": "nintendo_virtual_boy.glb",
+      "sourceSha256": "c9b2f123ba58bec786792a7bacd16e4fa8acb797a41268ee770090a4d7bed1b0",
+      "license": "CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "quality": "Detailed Virtual Boy model. Original geometry, materials and transforms are retained. Visual review pending."
+    }
+  },
+  {
+    "id": "wiiu",
+    "name": "Wii U",
+    "maker": "Nintendo",
+    "kind": "console",
+    "year": "2012",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Wii U",
+    "model": {
+      "profile": "disc",
+      "color": "#242932",
+      "width": 2.8,
+      "height": 0.5,
+      "depth": 2.1
+    },
+    "coverage": "User-provided 3D model; visual review pending",
+    "upgradePriority": true,
+    "bundledModel": {
+      "kind": "cad",
+      "path": "assets/models/wiiu.glb",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/wiiu",
+      "creator": "tiansongyu",
+      "license": "MIT — see public/models/licenses/open-console-cad-MIT.txt",
+      "sha256": "a7a7688de6205b8cb0c45be6ce7e54b628e58a5b3871879d99fa24dd4dd25ce5",
+      "bytes": 20611400
+    }
+  },
+  {
+    "id": "gbcolor",
+    "name": "Game Boy Color",
+    "maker": "Nintendo",
+    "kind": "handheld",
+    "year": "1998",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Game Boy Color",
+    "model": {
+      "profile": "vertical",
+      "color": "#68519a",
+      "width": 1.4,
+      "height": 2.4,
+      "depth": 0.42
+    },
+    "coverage": "User-provided 3D model; visual review pending",
+    "upgradePriority": true
+  },
+  {
+    "id": "gba",
+    "name": "Game Boy Advance",
+    "maker": "Nintendo",
+    "kind": "handheld",
+    "year": "2001",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Game Boy Advance",
+    "model": {
+      "profile": "horizontal",
+      "color": "#6656a2",
+      "width": 2.7,
+      "height": 1.35,
+      "depth": 0.4
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "kind": "cad",
+      "path": "assets/models/gba.glb",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/gba",
+      "creator": "tiansongyu",
+      "license": "MIT — see public/models/licenses/open-console-cad-MIT.txt",
+      "sha256": "69ad49f1e356d69f25275eb7708db051b1b6e5fa08e910085005789d86616a0d",
+      "bytes": 3021492
+    }
+  },
+  {
+    "id": "pokemonmini",
+    "name": "Pokémon mini",
+    "maker": "Nintendo",
+    "kind": "handheld",
+    "year": "2001",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Pokémon mini",
+    "model": {
+      "profile": "vertical",
+      "color": "#a3b777",
+      "width": 1.1,
+      "height": 1.8,
+      "depth": 0.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ndslite",
+    "name": "Nintendo DS",
+    "maker": "Nintendo",
+    "kind": "handheld",
+    "year": "2004",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Nintendo DS Lite",
+    "model": {
+      "profile": "dual",
+      "color": "#e4e5e3",
+      "width": 2.2,
+      "height": 1.05,
+      "depth": 0.25
+    },
+    "coverage": "User-provided 3D model; visual review pending",
+    "upgradePriority": true,
+    "bundledModel": {
+      "kind": "cad",
+      "path": "assets/models/ndslite.glb",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/nds",
+      "creator": "tiansongyu",
+      "license": "MIT — see public/models/licenses/open-console-cad-MIT.txt",
+      "sha256": "ec8c5d95fc7b14fea96bc6ded0ae6acea2337946fda4daa5e135867fad5fe0db",
+      "bytes": 6389884
+    }
+  },
+  {
+    "id": "3ds",
+    "name": "Nintendo 3DS",
+    "maker": "Nintendo",
+    "kind": "handheld",
+    "year": "2011",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Nintendo 3DS",
+    "model": {
+      "profile": "dual",
+      "color": "#328e9b",
+      "width": 2.3,
+      "height": 1.12,
+      "depth": 0.28
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "modelAnimations": {
+      "version": 1,
+      "meshSplitsVersion": 2,
+      "groups": [
+        {
+          "id": "3ds-lid",
+          "name": "3DS lid",
+          "meshes": [
+            "BackCover[0]#lid",
+            "LowerCaseSeam[2]#lid",
+            "LidBezel[3]#lid",
+            "DPadMark0[7]#lid",
+            "ButtonMarkX[8]#lid",
+            "RearRib0[13]#lid",
+            "Mainboard[14]#lid",
+            "CameraFlex[15]#lid"
+          ],
+          "pivot": [
+            0,
+            0.034,
+            0.012
+          ],
+          "axis": "x",
+          "closedAngle": 160,
+          "openAngle": 0,
+          "enabled": true
+        }
+      ]
+    },
+    "bundledModel": {
+      "path": "assets/models/3ds.glb",
+      "name": "3ds.glb",
+      "bytes": 5532388,
+      "sha256": "d36ee8ed0fe8cf7f28e7eeda18c01548293787899af68f3251d155dcb6ee418c",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/3ds",
+      "sourceSha256": "ce792d943fac2eb661755e8be558534094597ed8fe98bc7b03b7c3e412ef2388",
+      "author": "tiansongyu",
+      "kind": "cad",
+      "license": "MIT — Copyright (c) 2026 tiansongyu; see models/licenses/open-console-cad-MIT.txt and third-party notices",
+      "quality": "Detailed CAD-derived geometry with physical materials and modelled labels; no photographic textures. Assembled view and hinge pose baked, separate controllers/accessories/stands removed, Y-up showcase basis applied to consoles; compatible meshes joined without simplification. Photorealistic finish and accuracy acceptance remain pending."
+    }
+  },
+  {
+    "id": "switch",
+    "name": "Nintendo Switch",
+    "maker": "Nintendo",
+    "kind": "hybrid",
+    "year": "2017",
+    "era": "Hybrid collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#b7a0ff",
+    "short": "Nintendo Switch",
+    "model": {
+      "profile": "tablet",
+      "color": "#333d46",
+      "width": 3.15,
+      "height": 1.4,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/switch.glb",
+      "name": "switch.glb",
+      "bytes": 33974292,
+      "sha256": "03be4d2385a2a6ceed62717495fe73c5b638d82564db4f66a9ccc66a74b3834d",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/switch",
+      "sourceSha256": "226d09dcbe1d4e864cad162e7329a308474c3ee2b2c85b16ad7a1ee83dc57710",
+      "author": "tiansongyu",
+      "kind": "cad",
+      "license": "MIT — Copyright (c) 2026 tiansongyu; see models/licenses/open-console-cad-MIT.txt and third-party notices",
+      "quality": "Detailed CAD-derived geometry with physical materials and modelled labels; no photographic textures. Assembled view and hinge pose baked, separate controllers/accessories/stands removed, Y-up showcase basis applied to consoles; compatible meshes joined without simplification. Photorealistic finish and accuracy acceptance remain pending."
+    }
+  },
+  {
+    "id": "switch2",
+    "name": "Nintendo Switch 2",
+    "maker": "Nintendo",
+    "kind": "hybrid",
+    "year": "2025",
+    "era": "Hybrid collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#b7a0ff",
+    "short": "Nintendo Switch 2",
+    "model": {
+      "profile": "tablet",
+      "color": "#2c3541",
+      "width": 3.3,
+      "height": 1.5,
+      "depth": 0.32
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/switch2.glb",
+      "name": "nintendo_switch_2_realistic_3d_model.glb",
+      "bytes": 14588604,
+      "sha256": "13a3bc2427d4233f66880d18ca7fa5b8d06f77e0c882a7682f315cbe9edd5c6b",
+      "source": "https://sketchfab.com/3d-models/nintendo-switch-2-realistic-3d-model-03e83c4832fc4cdcacb7724937509908",
+      "author": "NAIT Studio (https://sketchfab.com/naitstudio)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "quality": "User-selected source GLB, copied without changing geometry, materials or embedded textures; visual acceptance pending.",
+      "sourceFile": "nintendo_switch_2_realistic_3d_model.glb",
+      "sourceSha256": "13a3bc2427d4233f66880d18ca7fa5b8d06f77e0c882a7682f315cbe9edd5c6b",
+      "userProvided": true,
+      "showcaseRotation": [
+        90,
+        90,
+        0
+      ]
+    }
+  },
+  {
+    "id": "gwmulti",
+    "name": "Game & Watch",
+    "maker": "Nintendo",
+    "kind": "handheld",
+    "year": "1980",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Game & Watch Multi Screen (vertical)",
+    "model": {
+      "profile": "dual",
+      "color": "#987642",
+      "width": 2.3,
+      "height": 1.1,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "modelAnimations": {
+      "version": 1,
+      "meshSplitsVersion": 1,
+      "groups": [
+        {
+          "id": "gamewatch-lid",
+          "name": "Upper Game & Watch half",
+          "meshes": [
+            "ControlBorder-1[0]#lid",
+            "HingePin0[1]#lid",
+            "LowerRearPolarizer[2]#lid",
+            "LowerFrontPolarizer[3]#lid",
+            "LowerDisplayGasket[4]#lid",
+            "LowerStabilizer-1[5]#lid",
+            "LowerContactStrip[6]#lid",
+            "LowerGirder0[7]#lid",
+            "Building0[8]",
+            "ControlPlate-1[9]#lid"
+          ],
+          "pivot": [
+            0,
+            0.034,
+            0.0115
+          ],
+          "axis": "x",
+          "closedAngle": 180,
+          "openAngle": 0,
+          "enabled": true
+        }
+      ]
+    },
+    "bundledModel": {
+      "path": "assets/models/gwmulti.glb",
+      "name": "gwmulti.glb",
+      "bytes": 3650936,
+      "sha256": "a60a682daf02a17d41ba38c656caa2fa2d50db2291f02b3be4898e8f92d3eb9a",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/gamewatch",
+      "sourceSha256": "ccd4cb837fbdcf0e9d19161048851c3202d650dd1f2465864be34bfb8088bf87",
+      "author": "tiansongyu",
+      "kind": "cad",
+      "license": "MIT — Copyright (c) 2026 tiansongyu; see models/licenses/open-console-cad-MIT.txt and third-party notices",
+      "quality": "Detailed CAD-derived geometry with physical materials and modelled labels; no photographic textures. Assembled view and hinge pose baked, separate controllers/accessories/stands removed, Y-up showcase basis applied to consoles; compatible meshes joined without simplification. Photorealistic finish and accuracy acceptance remain pending."
+    }
+  },
+  {
+    "id": "sg1000",
+    "name": "SG-1000",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "1983",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "SG-1000",
+    "model": {
+      "profile": "cartridge",
+      "color": "#d7d2c5",
+      "width": 2.8,
+      "height": 0.55,
+      "depth": 1.7
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "mastersystem",
+    "name": "Master System",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "1985",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Master System",
+    "model": {
+      "profile": "cartridge",
+      "color": "#25282d",
+      "width": 2.9,
+      "height": 0.55,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "segacd",
+    "name": "Sega CD / Mega-CD",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "1991",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Mega-CD Model 1 (UK PAL)",
+    "model": {
+      "profile": "disc",
+      "color": "#242b33",
+      "width": 3,
+      "height": 1,
+      "depth": 2.3
+    },
+    "coverage": "Reference-modelled console with physical media animation",
+    "upgradePriority": false
+  },
+  {
+    "id": "32x",
+    "name": "Mega Drive + 32X",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "1994",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Mega Drive + 32X",
+    "model": {
+      "profile": "cartridge",
+      "color": "#292d36",
+      "width": 2.8,
+      "height": 0.9,
+      "depth": 2
+    },
+    "coverage": "Reference-modelled console with physical media animation",
+    "upgradePriority": false
+  },
+  {
+    "id": "saturn",
+    "name": "Sega Saturn",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "1994",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Sega Saturn (Model 1)",
+    "model": {
+      "profile": "disc",
+      "color": "#2b3039",
+      "width": 2.9,
+      "height": 0.6,
+      "depth": 2.2
+    },
+    "coverage": "User-provided 3D model; visual review pending",
+    "upgradePriority": true,
+    "bundledModel": {
+      "kind": "cad",
+      "path": "assets/models/saturn.glb",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/saturn",
+      "creator": "tiansongyu",
+      "license": "MIT — see public/models/licenses/open-console-cad-MIT.txt",
+      "sha256": "f9ea13e0bc2e647926f149784d992a27c95d0e10edc7e27f8c431b540186aebf",
+      "bytes": 31736792
+    }
+  },
+  {
+    "id": "dreamcast",
+    "name": "Dreamcast",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "1998",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Dreamcast",
+    "model": {
+      "profile": "disc",
+      "color": "#d9d8d0",
+      "width": 2.5,
+      "height": 0.65,
+      "depth": 2.1
+    },
+    "coverage": "User-provided 3D model; visual review pending",
+    "upgradePriority": true
+  },
+  {
+    "id": "pico",
+    "name": "Sega Pico",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "1993",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Sega Pico",
+    "model": {
+      "profile": "clamshell",
+      "color": "#d6af42",
+      "width": 2.8,
+      "height": 1.4,
+      "depth": 0.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "beena",
+    "name": "Advanced Pico Beena",
+    "maker": "Sega",
+    "kind": "console",
+    "year": "2005",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Advanced Pico Beena",
+    "model": {
+      "profile": "clamshell",
+      "color": "#e1ac57",
+      "width": 2.8,
+      "height": 1.5,
+      "depth": 0.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamegear",
+    "name": "Sega Game Gear",
+    "maker": "Sega",
+    "kind": "handheld",
+    "year": "1990",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Sega Game Gear",
+    "model": {
+      "profile": "horizontal",
+      "color": "#272c34",
+      "width": 3,
+      "height": 1.5,
+      "depth": 0.5
+    },
+    "coverage": "Reference-modelled console with physical media animation",
+    "upgradePriority": false
+  },
+  {
+    "id": "vmu",
+    "name": "Dreamcast VMU",
+    "maker": "Sega",
+    "kind": "handheld",
+    "year": "1998",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Dreamcast VMU",
+    "model": {
+      "profile": "vertical",
+      "color": "#d9dedc",
+      "width": 1.1,
+      "height": 1.8,
+      "depth": 0.35
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "atari2600",
+    "name": "Atari 2600",
+    "maker": "Atari",
+    "kind": "console",
+    "year": "1977",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Atari 2600 (six-switch)",
+    "model": {
+      "profile": "cartridge",
+      "color": "#69503a",
+      "width": 3,
+      "height": 0.5,
+      "depth": 1.7
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "atari5200",
+    "name": "Atari 5200",
+    "maker": "Atari",
+    "kind": "console",
+    "year": "1982",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Atari 5200",
+    "model": {
+      "profile": "cartridge",
+      "color": "#272e35",
+      "width": 3.15,
+      "height": 0.65,
+      "depth": 2.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "atari7800",
+    "name": "Atari 7800",
+    "maker": "Atari",
+    "kind": "console",
+    "year": "1986",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Atari 7800",
+    "model": {
+      "profile": "cartridge",
+      "color": "#30363b",
+      "width": 2.7,
+      "height": 0.5,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "xegs",
+    "name": "Atari XEGS",
+    "maker": "Atari",
+    "kind": "console",
+    "year": "1987",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Atari XEGS",
+    "model": {
+      "profile": "keyboard",
+      "color": "#b8b6ad",
+      "width": 2.8,
+      "height": 0.55,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "jaguar",
+    "name": "Atari Jaguar",
+    "maker": "Atari",
+    "kind": "console",
+    "year": "1993",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Atari Jaguar",
+    "model": {
+      "profile": "cartridge",
+      "color": "#2a2c34",
+      "width": 2.7,
+      "height": 0.65,
+      "depth": 1.9
+    },
+    "coverage": "Reference-refined Atari Jaguar model",
+    "upgradePriority": false
+  },
+  {
+    "id": "jaguarcd",
+    "name": "Atari Jaguar CD",
+    "maker": "Atari",
+    "kind": "console",
+    "year": "1995",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Atari Jaguar CD",
+    "model": {
+      "profile": "disc",
+      "color": "#2b3036",
+      "width": 2.7,
+      "height": 1,
+      "depth": 2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "atarivcs",
+    "name": "Atari VCS",
+    "maker": "Atari",
+    "kind": "console",
+    "year": "2020",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Atari VCS",
+    "model": {
+      "profile": "disc",
+      "color": "#705339",
+      "width": 2.7,
+      "height": 0.4,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "lynx",
+    "name": "Atari Lynx",
+    "maker": "Atari",
+    "kind": "handheld",
+    "year": "1989",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Atari Lynx",
+    "model": {
+      "profile": "horizontal",
+      "color": "#333840",
+      "width": 3.3,
+      "height": 1.5,
+      "depth": 0.55
+    },
+    "coverage": "Reference-modelled console with physical media animation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ps2",
+    "name": "PlayStation 2",
+    "maker": "Sony",
+    "kind": "console",
+    "year": "2000",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PlayStation 2",
+    "model": {
+      "profile": "disc",
+      "color": "#222735",
+      "width": 3,
+      "height": 0.65,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/playstation-2.glb",
+      "name": "playstation-2.glb",
+      "bytes": 5936752,
+      "sha256": "a253f297b290157b5eec65aa19e08d3cd3211ea1a938105d9d11b6bb8c3082b6",
+      "source": "https://sketchfab.com/3d-models/ps1-5-ad7c9a000cdb42c998994a6959693f24",
+      "author": "rhcreations",
+      "license": "CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": "ps1_-_5.glb",
+      "sourceSha256": "77994da2acfcf6a3fe15c3226adf43f99395e5b4f8948f0097aa15bb79c29898",
+      "userProvided": true,
+      "quality": "Console-only split from the supplied PS1–PS5 model (PS2_3). Lid, front, rear and underside colour maps were projected from supplied PS2 reference renders. Controllers are separate files in assets/models.",
+      "kind": "user-provided"
+    }
+  },
+  {
+    "id": "ps3",
+    "name": "PlayStation 3",
+    "maker": "Sony",
+    "kind": "console",
+    "year": "2006",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PlayStation 3",
+    "model": {
+      "profile": "disc",
+      "color": "#25282d",
+      "width": 3.2,
+      "height": 0.8,
+      "depth": 2.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/playstation-3.glb",
+      "name": "playstation-3.glb",
+      "bytes": 5292908,
+      "sha256": "812170085a51d2a82b53c547c15e0a519a666cd33b13d28b33f81258d0ec3639",
+      "source": "https://sketchfab.com/3d-models/ps1-5-ad7c9a000cdb42c998994a6959693f24",
+      "author": "rhcreations",
+      "license": "CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": "ps1_-_5.glb",
+      "sourceSha256": "77994da2acfcf6a3fe15c3226adf43f99395e5b4f8948f0097aa15bb79c29898",
+      "userProvided": true,
+      "quality": "Console-only split from the supplied PS1–PS5 model (PS3_4); original geometry, materials, embedded textures and source transforms retained. Controllers are separate files in assets/models. Visual review pending.",
+      "kind": "user-provided"
+    }
+  },
+  {
+    "id": "ps4",
+    "name": "PlayStation 4",
+    "maker": "Sony",
+    "kind": "console",
+    "year": "2013",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PlayStation 4",
+    "model": {
+      "profile": "disc",
+      "color": "#292d35",
+      "width": 3,
+      "height": 0.55,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/playstation-4.glb",
+      "name": "playstation-4.glb",
+      "bytes": 5292908,
+      "sha256": "ddee79b5b6bc5b14c94410e5b433d134fc4c5048c5b8839197024d0ccd12f82b",
+      "source": "https://sketchfab.com/3d-models/ps1-5-ad7c9a000cdb42c998994a6959693f24",
+      "author": "rhcreations",
+      "license": "CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": "ps1_-_5.glb",
+      "sourceSha256": "77994da2acfcf6a3fe15c3226adf43f99395e5b4f8948f0097aa15bb79c29898",
+      "userProvided": true,
+      "quality": "Console-only split from the supplied PS1–PS5 model (PS4_5); original geometry, materials, embedded textures and source transforms retained. Controllers are separate files in assets/models. Visual review pending.",
+      "kind": "user-provided"
+    }
+  },
+  {
+    "id": "ps5",
+    "name": "PlayStation 5",
+    "maker": "Sony",
+    "kind": "console",
+    "year": "2020",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PlayStation 5",
+    "model": {
+      "profile": "tower",
+      "color": "#dedfe4",
+      "width": 1.15,
+      "height": 3.2,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/playstation-5.glb",
+      "name": "playstation-5.glb",
+      "bytes": 5292908,
+      "sha256": "7ff4f6cbf2dc40836bafc90b1b8b7d19712423b797a1f80d7be55a5dbda8cb61",
+      "source": "https://sketchfab.com/3d-models/ps1-5-ad7c9a000cdb42c998994a6959693f24",
+      "author": "rhcreations",
+      "license": "CC-BY-4.0 — https://creativecommons.org/licenses/by/4.0/",
+      "sourceFile": "ps1_-_5.glb",
+      "sourceSha256": "77994da2acfcf6a3fe15c3226adf43f99395e5b4f8948f0097aa15bb79c29898",
+      "userProvided": true,
+      "quality": "Console-only split from the supplied PS1–PS5 model (PS5_8); original geometry, materials, embedded textures and source transforms retained. Controllers are separate files in assets/models. Visual review pending.",
+      "kind": "user-provided"
+    }
+  },
+  {
+    "id": "psp",
+    "name": "PlayStation Portable (PSP)",
+    "maker": "Sony",
+    "kind": "handheld",
+    "year": "2004",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "PSP-1000",
+    "model": {
+      "profile": "horizontal",
+      "color": "#252c36",
+      "width": 3.1,
+      "height": 1.4,
+      "depth": 0.4
+    },
+    "coverage": "Reference-modelled PSP-1000 with physical media animation",
+    "upgradePriority": true
+  },
+  {
+    "id": "vita",
+    "name": "PS Vita",
+    "maker": "Sony",
+    "kind": "handheld",
+    "year": "2011",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "PS Vita",
+    "model": {
+      "profile": "horizontal",
+      "color": "#252b35",
+      "width": 3.15,
+      "height": 1.45,
+      "depth": 0.35
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "psportal",
+    "name": "PlayStation Portal",
+    "maker": "Sony",
+    "kind": "handheld",
+    "year": "2023",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "PlayStation Portal",
+    "model": {
+      "profile": "tablet",
+      "color": "#e1e4e8",
+      "width": 3.3,
+      "height": 1.4,
+      "depth": 0.4
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "xbox360",
+    "name": "Xbox 360",
+    "maker": "Microsoft",
+    "kind": "console",
+    "year": "2005",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Xbox 360",
+    "model": {
+      "profile": "disc",
+      "color": "#d9dcda",
+      "width": 3,
+      "height": 0.7,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/xbox360.glb",
+      "name": "classic_xbox_360_-_white_edition.glb",
+      "bytes": 29065036,
+      "sha256": "f1d630fce4e81ccc3fd7c7a1f2e116ec3ea24330850fa1349bb9088b0c0ed550",
+      "source": "https://sketchfab.com/3d-models/classic-xbox-360-white-edition-a88f93403ba64726a4b68611db420a67",
+      "author": "Anand Stephen (https://sketchfab.com/anandstephen5)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "quality": "User-selected source GLB copied byte-for-byte, retaining all geometry and 4K textures. Display-only opaque-case correction for the export's BLEND material (base texture alpha 191–255); saved-layout fitting applied. Visual acceptance pending.",
+      "sourceFile": "classic_xbox_360_-_white_edition.glb",
+      "sourceSha256": "f1d630fce4e81ccc3fd7c7a1f2e116ec3ea24330850fa1349bb9088b0c0ed550",
+      "userProvided": true,
+      "showcaseScale": 0.65,
+      "showcaseOffsetY": -0.25,
+      "opaqueMaterials": [
+        "initialShadingGroup"
+      ]
+    }
+  },
+  {
+    "id": "xboxone",
+    "name": "Xbox One",
+    "maker": "Microsoft",
+    "kind": "console",
+    "year": "2013",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Xbox One",
+    "model": {
+      "profile": "disc",
+      "color": "#252b33",
+      "width": 3.2,
+      "height": 0.65,
+      "depth": 2.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "xboxseriesx",
+    "name": "Xbox Series",
+    "maker": "Microsoft",
+    "kind": "console",
+    "year": "2020",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Xbox Series X",
+    "model": {
+      "profile": "tower",
+      "color": "#282e33",
+      "width": 1.5,
+      "height": 3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/xboxseriesx.glb",
+      "name": "xboxseriesx.glb",
+      "bytes": 5890436,
+      "sha256": "084a3b7cf3a9325b69a6b923fb523ad91218ed7fda9196d070426df289095e48",
+      "source": "https://github.com/tiansongyu/open-console-cad/tree/3d5e7828b5a5b7630f5606fb0c28df7e79beb326/devices/seriesx",
+      "sourceSha256": "47899966ec74ed90b55d00aaa9d5d83d589be56d935779d9643e3229e7f04b87",
+      "author": "tiansongyu",
+      "kind": "cad",
+      "license": "MIT — Copyright (c) 2026 tiansongyu; see models/licenses/open-console-cad-MIT.txt and third-party notices",
+      "quality": "Detailed CAD-derived geometry with physical materials and modelled labels; no photographic textures. Assembled view and hinge pose baked, separate controllers/accessories/stands removed, Y-up showcase basis applied to consoles; compatible meshes joined without simplification. Photorealistic finish and accuracy acceptance remain pending.",
+      "showcaseScale": 0.65,
+      "showcaseOffsetY": -0.25
+    }
+  },
+  {
+    "id": "pcengine",
+    "name": "PC Engine / TurboGrafx-16",
+    "maker": "NEC",
+    "kind": "console",
+    "year": "1987",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PC Engine",
+    "model": {
+      "profile": "cartridge",
+      "color": "#d4d3c5",
+      "width": 2,
+      "height": 0.45,
+      "depth": 1.55
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "supergrafx",
+    "name": "SuperGrafx",
+    "maker": "NEC",
+    "kind": "console",
+    "year": "1989",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "SuperGrafx",
+    "model": {
+      "profile": "cartridge",
+      "color": "#656c72",
+      "width": 2.7,
+      "height": 0.65,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pcecd",
+    "name": "PC Engine CD / TurboGrafx-CD",
+    "maker": "NEC",
+    "kind": "console",
+    "year": "1988",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PC Engine CD-ROM²",
+    "model": {
+      "profile": "disc",
+      "color": "#d0d0c6",
+      "width": 2.8,
+      "height": 0.65,
+      "depth": 2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pcfx",
+    "name": "PC-FX",
+    "maker": "NEC",
+    "kind": "console",
+    "year": "1994",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PC-FX",
+    "model": {
+      "profile": "tower",
+      "color": "#d5d5cf",
+      "width": 1.5,
+      "height": 2.6,
+      "depth": 2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "neogeo",
+    "name": "Neo Geo AES",
+    "maker": "SNK",
+    "kind": "console",
+    "year": "1990",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Neo Geo AES",
+    "model": {
+      "profile": "cartridge",
+      "color": "#282c33",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "neogeocd",
+    "name": "Neo Geo CD",
+    "maker": "SNK",
+    "kind": "console",
+    "year": "1994",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Neo Geo CD",
+    "model": {
+      "profile": "disc",
+      "color": "#30343c",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ngp",
+    "name": "Neo Geo Pocket",
+    "maker": "SNK",
+    "kind": "handheld",
+    "year": "1998",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Neo Geo Pocket",
+    "model": {
+      "profile": "horizontal",
+      "color": "#484d55",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ngpc",
+    "name": "Neo Geo Pocket Color",
+    "maker": "SNK",
+    "kind": "handheld",
+    "year": "1999",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Neo Geo Pocket Color",
+    "model": {
+      "profile": "horizontal",
+      "color": "#446075",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "odyssey",
+    "name": "Odyssey",
+    "maker": "Magnavox",
+    "kind": "console",
+    "year": "1972",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Odyssey",
+    "model": {
+      "profile": "cartridge",
+      "color": "#c9c1a7",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "odyssey2",
+    "name": "Odyssey²",
+    "maker": "Magnavox",
+    "kind": "console",
+    "year": "1978",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Odyssey²",
+    "model": {
+      "profile": "keyboard",
+      "color": "#30353b",
+      "width": 3,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "videopac7400",
+    "name": "Videopac G7400",
+    "maker": "Philips",
+    "kind": "console",
+    "year": "1983",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Videopac G7400",
+    "model": {
+      "profile": "keyboard",
+      "color": "#3b4147",
+      "width": 3,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "channelf",
+    "name": "Channel F",
+    "maker": "Fairchild",
+    "kind": "console",
+    "year": "1976",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Channel F",
+    "model": {
+      "profile": "cartridge",
+      "color": "#8b7449",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "rcastudio2",
+    "name": "Studio II",
+    "maker": "RCA",
+    "kind": "console",
+    "year": "1977",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Studio II",
+    "model": {
+      "profile": "cartridge",
+      "color": "#d0cbb7",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "astrocade",
+    "name": "Astrocade",
+    "maker": "Bally",
+    "kind": "console",
+    "year": "1978",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Astrocade",
+    "model": {
+      "profile": "cartridge",
+      "color": "#695741",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "apfmp1000",
+    "name": "MP1000",
+    "maker": "APF",
+    "kind": "console",
+    "year": "1978",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "MP1000",
+    "model": {
+      "profile": "cartridge",
+      "color": "#494439",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "intellivision",
+    "name": "Intellivision",
+    "maker": "Mattel",
+    "kind": "console",
+    "year": "1979",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Intellivision",
+    "model": {
+      "profile": "cartridge",
+      "color": "#796443",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "hyperscan",
+    "name": "HyperScan",
+    "maker": "Mattel",
+    "kind": "console",
+    "year": "2006",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "HyperScan",
+    "model": {
+      "profile": "disc",
+      "color": "#353d49",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "colecovision",
+    "name": "ColecoVision",
+    "maker": "Coleco",
+    "kind": "console",
+    "year": "1982",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "ColecoVision",
+    "model": {
+      "profile": "cartridge",
+      "color": "#303234",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "interton",
+    "name": "VC 4000",
+    "maker": "Interton",
+    "kind": "console",
+    "year": "1978",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "VC 4000",
+    "model": {
+      "profile": "cartridge",
+      "color": "#524a40",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "apvs1292",
+    "name": "1292 Advanced Programmable Video System",
+    "maker": "Radofin",
+    "kind": "console",
+    "year": "1979",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "1292 Advanced Programmable Video System",
+    "model": {
+      "profile": "cartridge",
+      "color": "#6e6252",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "arcadia",
+    "name": "Arcadia 2001",
+    "maker": "Emerson",
+    "kind": "console",
+    "year": "1982",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Arcadia 2001",
+    "model": {
+      "profile": "cartridge",
+      "color": "#82775e",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "vectrex",
+    "name": "Vectrex",
+    "maker": "GCE",
+    "kind": "console",
+    "year": "1982",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Vectrex",
+    "model": {
+      "profile": "arcade",
+      "color": "#2a303a",
+      "width": 1.9,
+      "height": 3.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "cassettevision",
+    "name": "Cassette Vision",
+    "maker": "Epoch",
+    "kind": "console",
+    "year": "1981",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Cassette Vision",
+    "model": {
+      "profile": "cartridge",
+      "color": "#827857",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "scv",
+    "name": "Super Cassette Vision",
+    "maker": "Epoch",
+    "kind": "console",
+    "year": "1984",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Super Cassette Vision",
+    "model": {
+      "profile": "cartridge",
+      "color": "#ccc9bf",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pv1000",
+    "name": "PV-1000",
+    "maker": "Casio",
+    "kind": "console",
+    "year": "1983",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "PV-1000",
+    "model": {
+      "profile": "keyboard",
+      "color": "#c6c2b5",
+      "width": 3,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "loopy",
+    "name": "Loopy",
+    "maker": "Casio",
+    "kind": "console",
+    "year": "1995",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Loopy",
+    "model": {
+      "profile": "cartridge",
+      "color": "#aaa9ad",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "sv8000",
+    "name": "Super Vision 8000",
+    "maker": "Bandai",
+    "kind": "console",
+    "year": "1979",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Super Vision 8000",
+    "model": {
+      "profile": "cartridge",
+      "color": "#b5af9d",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "playdia",
+    "name": "Playdia",
+    "maker": "Bandai",
+    "kind": "console",
+    "year": "1994",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Playdia",
+    "model": {
+      "profile": "disc",
+      "color": "#426999",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pippin",
+    "name": "Pippin",
+    "maker": "Bandai / Apple",
+    "kind": "console",
+    "year": "1995",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Pippin Atmark",
+    "model": {
+      "profile": "disc",
+      "color": "#d0d0c9",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "cd32",
+    "name": "Amiga CD32",
+    "maker": "Commodore",
+    "kind": "console",
+    "year": "1993",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Amiga CD32",
+    "model": {
+      "profile": "disc",
+      "color": "#3e4249",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "cdtv",
+    "name": "CDTV",
+    "maker": "Commodore",
+    "kind": "console",
+    "year": "1991",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "CDTV",
+    "model": {
+      "profile": "disc",
+      "color": "#30363d",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gx4000",
+    "name": "GX4000",
+    "maker": "Amstrad",
+    "kind": "console",
+    "year": "1990",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "GX4000",
+    "model": {
+      "profile": "cartridge",
+      "color": "#c1c4c3",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "marty",
+    "name": "FM Towns Marty",
+    "maker": "Fujitsu",
+    "kind": "console",
+    "year": "1993",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "FM Towns Marty",
+    "model": {
+      "profile": "disc",
+      "color": "#c2c3be",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "3do",
+    "name": "3DO",
+    "maker": "Panasonic",
+    "kind": "console",
+    "year": "1993",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "3DO FZ-1",
+    "model": {
+      "profile": "disc",
+      "color": "#292e35",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Reference-modelled console with physical media animation",
+    "upgradePriority": false
+  },
+  {
+    "id": "cdi",
+    "name": "CD-i",
+    "maker": "Philips",
+    "kind": "console",
+    "year": "1991",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "CD-i 210",
+    "model": {
+      "profile": "disc",
+      "color": "#343a40",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "laseractive",
+    "name": "LaserActive",
+    "maker": "Pioneer",
+    "kind": "console",
+    "year": "1993",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "LaserActive",
+    "model": {
+      "profile": "disc",
+      "color": "#323840",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "vis",
+    "name": "VIS",
+    "maker": "Memorex / Tandy",
+    "kind": "console",
+    "year": "1992",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "VIS",
+    "model": {
+      "profile": "disc",
+      "color": "#30373f",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "nuon",
+    "name": "NUON N501",
+    "maker": "Samsung",
+    "kind": "console",
+    "year": "2000",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "NUON N501",
+    "model": {
+      "profile": "disc",
+      "color": "#aeb8be",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "tvboy",
+    "name": "Compact Vision TV Boy",
+    "maker": "Gakken",
+    "kind": "console",
+    "year": "1983",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Compact Vision TV Boy",
+    "model": {
+      "profile": "cartridge",
+      "color": "#b69b62",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "myvision",
+    "name": "My Vision",
+    "maker": "Nichibutsu",
+    "kind": "console",
+    "year": "1983",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "My Vision",
+    "model": {
+      "profile": "cartridge",
+      "color": "#d5c8ad",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "champion2711",
+    "name": "Champion 2711",
+    "maker": "Unisonic",
+    "kind": "console",
+    "year": "1978",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Champion 2711",
+    "model": {
+      "profile": "cartridge",
+      "color": "#80765e",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pyutajr",
+    "name": "Pyūta Jr.",
+    "maker": "Tomy",
+    "kind": "console",
+    "year": "1983",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Pyūta Jr.",
+    "model": {
+      "profile": "cartridge",
+      "color": "#c2bca5",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "picno",
+    "name": "Picno",
+    "maker": "Konami",
+    "kind": "console",
+    "year": "1992",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Picno",
+    "model": {
+      "profile": "tablet",
+      "color": "#d3c9b9",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "creativision",
+    "name": "CreatiVision",
+    "maker": "VTech",
+    "kind": "console",
+    "year": "1981",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "CreatiVision",
+    "model": {
+      "profile": "keyboard",
+      "color": "#8b7c60",
+      "width": 3,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "socrates",
+    "name": "Socrates",
+    "maker": "VTech",
+    "kind": "console",
+    "year": "1988",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Socrates",
+    "model": {
+      "profile": "keyboard",
+      "color": "#c5c7c4",
+      "width": 3,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "vsmile",
+    "name": "V.Smile",
+    "maker": "VTech",
+    "kind": "console",
+    "year": "2004",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "V.Smile",
+    "model": {
+      "profile": "cartridge",
+      "color": "#c5873d",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "vflash",
+    "name": "V.Flash",
+    "maker": "VTech",
+    "kind": "console",
+    "year": "2006",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "V.Flash",
+    "model": {
+      "profile": "disc",
+      "color": "#888c95",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "leaptv",
+    "name": "LeapTV",
+    "maker": "LeapFrog",
+    "kind": "console",
+    "year": "2014",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "LeapTV",
+    "model": {
+      "profile": "disc",
+      "color": "#5a9a5b",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamewave",
+    "name": "Game Wave",
+    "maker": "ZAPiT",
+    "kind": "console",
+    "year": "2005",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Game Wave",
+    "model": {
+      "profile": "disc",
+      "color": "#3c4654",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "evosmart",
+    "name": "EVO Smart Console",
+    "maker": "Envizions",
+    "kind": "console",
+    "year": "2009",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "EVO Smart Console",
+    "model": {
+      "profile": "disc",
+      "color": "#333b45",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ouya",
+    "name": "OUYA",
+    "maker": "OUYA",
+    "kind": "console",
+    "year": "2013",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "OUYA",
+    "model": {
+      "profile": "tower",
+      "color": "#a6afb4",
+      "width": 0.85,
+      "height": 2.8,
+      "depth": 1.8
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamestick",
+    "name": "GameStick",
+    "maker": "PlayJam",
+    "kind": "console",
+    "year": "2013",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "GameStick",
+    "model": {
+      "profile": "disc",
+      "color": "#d4dbdf",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "mojo",
+    "name": "M.O.J.O.",
+    "maker": "Mad Catz",
+    "kind": "console",
+    "year": "2013",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "M.O.J.O.",
+    "model": {
+      "profile": "disc",
+      "color": "#303944",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "forgetv",
+    "name": "Forge TV",
+    "maker": "Razer",
+    "kind": "console",
+    "year": "2015",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Forge TV",
+    "model": {
+      "profile": "disc",
+      "color": "#303a3c",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "shieldtv",
+    "name": "Shield TV",
+    "maker": "Nvidia",
+    "kind": "console",
+    "year": "2015",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Shield TV (2015)",
+    "model": {
+      "profile": "disc",
+      "color": "#303b40",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "retron5",
+    "name": "RetroN 5",
+    "maker": "Hyperkin",
+    "kind": "console",
+    "year": "2014",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "RetroN 5",
+    "model": {
+      "profile": "cartridge",
+      "color": "#454c54",
+      "width": 2.7,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "polymega",
+    "name": "Polymega",
+    "maker": "Playmaji",
+    "kind": "console",
+    "year": "2021",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Polymega",
+    "model": {
+      "profile": "disc",
+      "color": "#414a55",
+      "width": 2.8,
+      "height": 0.48,
+      "depth": 2.2
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "microvision",
+    "name": "Microvision",
+    "maker": "Milton Bradley",
+    "kind": "handheld",
+    "year": "1979",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Microvision",
+    "model": {
+      "profile": "vertical",
+      "color": "#8b816b",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "selectagame",
+    "name": "Select-A-Game",
+    "maker": "Entex",
+    "kind": "handheld",
+    "year": "1981",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Select-A-Game",
+    "model": {
+      "profile": "horizontal",
+      "color": "#b1a98c",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "adventurevision",
+    "name": "Adventure Vision",
+    "maker": "Entex",
+    "kind": "handheld",
+    "year": "1982",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Adventure Vision",
+    "model": {
+      "profile": "arcade",
+      "color": "#a99b79",
+      "width": 1.9,
+      "height": 3.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamepocket",
+    "name": "Game Pocket Computer",
+    "maker": "Epoch",
+    "kind": "handheld",
+    "year": "1984",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Game Pocket Computer",
+    "model": {
+      "profile": "horizontal",
+      "color": "#c5c4ab",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamate",
+    "name": "Gamate",
+    "maker": "Bit Corporation",
+    "kind": "handheld",
+    "year": "1990",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Gamate",
+    "model": {
+      "profile": "horizontal",
+      "color": "#919b97",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "supervision",
+    "name": "Supervision",
+    "maker": "Watara",
+    "kind": "handheld",
+    "year": "1992",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Supervision",
+    "model": {
+      "profile": "vertical",
+      "color": "#afb4ad",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "megaduck",
+    "name": "Mega Duck / Cougar Boy",
+    "maker": "Welback",
+    "kind": "handheld",
+    "year": "1993",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Mega Duck / Cougar Boy",
+    "model": {
+      "profile": "vertical",
+      "color": "#c8c2a8",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamemaster",
+    "name": "Game Master",
+    "maker": "Hartung",
+    "kind": "handheld",
+    "year": "1990",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Game Master",
+    "model": {
+      "profile": "vertical",
+      "color": "#c8c0aa",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "wonderswan",
+    "name": "WonderSwan",
+    "maker": "Bandai",
+    "kind": "handheld",
+    "year": "1999",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "WonderSwan",
+    "model": {
+      "profile": "horizontal",
+      "color": "#8a969e",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "wonderswancolor",
+    "name": "WonderSwan Color",
+    "maker": "Bandai",
+    "kind": "handheld",
+    "year": "2000",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "WonderSwan Color",
+    "model": {
+      "profile": "horizontal",
+      "color": "#7b98ad",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamecom",
+    "name": "game.com",
+    "maker": "Tiger",
+    "kind": "handheld",
+    "year": "1997",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "game.com",
+    "model": {
+      "profile": "horizontal",
+      "color": "#afb8b9",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "rzone",
+    "name": "R-Zone Headgear",
+    "maker": "Tiger",
+    "kind": "handheld",
+    "year": "1995",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "R-Zone Headgear",
+    "model": {
+      "profile": "visor",
+      "color": "#9a3339",
+      "width": 2.5,
+      "height": 1.2,
+      "depth": 1.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ngage",
+    "name": "N-Gage",
+    "maker": "Nokia",
+    "kind": "handheld",
+    "year": "2003",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "N-Gage",
+    "model": {
+      "profile": "horizontal",
+      "color": "#88918d",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "zodiac",
+    "name": "Zodiac",
+    "maker": "Tapwave",
+    "kind": "handheld",
+    "year": "2003",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Zodiac",
+    "model": {
+      "profile": "horizontal",
+      "color": "#8c969c",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gizmondo",
+    "name": "Gizmondo",
+    "maker": "Tiger Telematics",
+    "kind": "handheld",
+    "year": "2005",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Gizmondo",
+    "model": {
+      "profile": "horizontal",
+      "color": "#343c46",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gp32",
+    "name": "GP32",
+    "maker": "Game Park",
+    "kind": "handheld",
+    "year": "2001",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GP32",
+    "model": {
+      "profile": "horizontal",
+      "color": "#dfddd2",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gp2x",
+    "name": "GP2X F100",
+    "maker": "GamePark Holdings",
+    "kind": "handheld",
+    "year": "2005",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GP2X F100",
+    "model": {
+      "profile": "horizontal",
+      "color": "#3b454c",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "wiz",
+    "name": "Wiz",
+    "maker": "GamePark Holdings",
+    "kind": "handheld",
+    "year": "2009",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Wiz",
+    "model": {
+      "profile": "horizontal",
+      "color": "#343d45",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "caanoo",
+    "name": "Caanoo",
+    "maker": "GamePark Holdings",
+    "kind": "handheld",
+    "year": "2010",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Caanoo",
+    "model": {
+      "profile": "horizontal",
+      "color": "#3b4650",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "cybiko",
+    "name": "Cybiko",
+    "maker": "Cybiko",
+    "kind": "handheld",
+    "year": "1999",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Cybiko",
+    "model": {
+      "profile": "keyboard",
+      "color": "#b8bfbc",
+      "width": 3,
+      "height": 0.55,
+      "depth": 1.9
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "leapster",
+    "name": "Leapster",
+    "maker": "LeapFrog",
+    "kind": "handheld",
+    "year": "2003",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Leapster",
+    "model": {
+      "profile": "horizontal",
+      "color": "#719560",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "leapsterexplorer",
+    "name": "Leapster Explorer",
+    "maker": "LeapFrog",
+    "kind": "handheld",
+    "year": "2010",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Leapster Explorer",
+    "model": {
+      "profile": "horizontal",
+      "color": "#719d60",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "shieldportable",
+    "name": "Shield Portable",
+    "maker": "Nvidia",
+    "kind": "handheld",
+    "year": "2013",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Shield Portable",
+    "model": {
+      "profile": "clamshell",
+      "color": "#414b50",
+      "width": 2.1,
+      "height": 1.15,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "shieldtablet",
+    "name": "Shield Tablet",
+    "maker": "Nvidia",
+    "kind": "handheld",
+    "year": "2014",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Shield Tablet",
+    "model": {
+      "profile": "tablet",
+      "color": "#303a45",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "analoguepocket",
+    "name": "Pocket",
+    "maker": "Analogue",
+    "kind": "handheld",
+    "year": "2021",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Pocket",
+    "model": {
+      "profile": "vertical",
+      "color": "#e0ded5",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "evercade",
+    "name": "Evercade",
+    "maker": "Blaze",
+    "kind": "handheld",
+    "year": "2020",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Evercade",
+    "model": {
+      "profile": "horizontal",
+      "color": "#d7d1c7",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "superpocket",
+    "name": "Super Pocket",
+    "maker": "Hyper Mega Tech",
+    "kind": "handheld",
+    "year": "2023",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Super Pocket",
+    "model": {
+      "profile": "vertical",
+      "color": "#436c92",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "steamdeck",
+    "name": "Steam Deck",
+    "maker": "Valve",
+    "kind": "handheld",
+    "year": "2022",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Steam Deck LCD",
+    "model": {
+      "profile": "tablet",
+      "color": "#303841",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "rogally",
+    "name": "ROG Ally",
+    "maker": "ASUS",
+    "kind": "handheld",
+    "year": "2023",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "ROG Ally",
+    "model": {
+      "profile": "tablet",
+      "color": "#d8dcdd",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "legiongo",
+    "name": "Legion Go",
+    "maker": "Lenovo",
+    "kind": "handheld",
+    "year": "2023",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Legion Go",
+    "model": {
+      "profile": "tablet",
+      "color": "#343d46",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "msiclaw",
+    "name": "MSI Claw",
+    "maker": "MSI",
+    "kind": "handheld",
+    "year": "2024",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Claw A1M",
+    "model": {
+      "profile": "tablet",
+      "color": "#303a44",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gpdxd",
+    "name": "GPD XD",
+    "maker": "GPD",
+    "kind": "handheld",
+    "year": "2015",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GPD XD",
+    "model": {
+      "profile": "clamshell",
+      "color": "#343d48",
+      "width": 2.1,
+      "height": 1.15,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gpdwin",
+    "name": "GPD Win",
+    "maker": "GPD",
+    "kind": "handheld",
+    "year": "2016",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GPD Win",
+    "model": {
+      "profile": "clamshell",
+      "color": "#343d48",
+      "width": 2.2600000000000002,
+      "height": 1.15,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ayaneo2021",
+    "name": "AYANEO",
+    "maker": "AYANEO",
+    "kind": "handheld",
+    "year": "2021",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "AYANEO 2021",
+    "model": {
+      "profile": "tablet",
+      "color": "#d5d9dc",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "ayaneopockets",
+    "name": "AYANEO Pocket",
+    "maker": "AYANEO",
+    "kind": "handheld",
+    "year": "2023",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "AYANEO Pocket S",
+    "model": {
+      "profile": "tablet",
+      "color": "#d5d9dc",
+      "width": 3.16,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "onexplayer",
+    "name": "OneXPlayer",
+    "maker": "One-Netbook",
+    "kind": "handheld",
+    "year": "2021",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "OneXPlayer",
+    "model": {
+      "profile": "tablet",
+      "color": "#333e49",
+      "width": 3,
+      "height": 1.7,
+      "depth": 0.27
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "odin",
+    "name": "Odin",
+    "maker": "AYN",
+    "kind": "handheld",
+    "year": "2022",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Odin",
+    "model": {
+      "profile": "horizontal",
+      "color": "#3e4851",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "aynloki",
+    "name": "Loki",
+    "maker": "AYN",
+    "kind": "handheld",
+    "year": "2022",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Loki",
+    "model": {
+      "profile": "horizontal",
+      "color": "#3e4851",
+      "width": 3.08,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "retroid2",
+    "name": "Retroid Pocket",
+    "maker": "Retroid",
+    "kind": "handheld",
+    "year": "2020",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Pocket 2",
+    "model": {
+      "profile": "horizontal",
+      "color": "#858d9a",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "miyoomini",
+    "name": "Miyoo Mini",
+    "maker": "Miyoo",
+    "kind": "handheld",
+    "year": "2022",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Miyoo Mini",
+    "model": {
+      "profile": "vertical",
+      "color": "#c3beb0",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "trimuismart",
+    "name": "Trimui Smart",
+    "maker": "Trimui",
+    "kind": "handheld",
+    "year": "2021",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Trimui Smart",
+    "model": {
+      "profile": "horizontal",
+      "color": "#bdc0b9",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "rg35xx",
+    "name": "RG35XX",
+    "maker": "Anbernic",
+    "kind": "handheld",
+    "year": "2022",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "RG35XX",
+    "model": {
+      "profile": "vertical",
+      "color": "#b9b5a8",
+      "width": 1.6300000000000001,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "openpandora",
+    "name": "OpenPandora",
+    "maker": "OpenPandora",
+    "kind": "handheld",
+    "year": "2010",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "OpenPandora",
+    "model": {
+      "profile": "clamshell",
+      "color": "#333b41",
+      "width": 2.1,
+      "height": 1.15,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pyra",
+    "name": "Pyra",
+    "maker": "DragonBox",
+    "kind": "handheld",
+    "year": "2021",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Pyra",
+    "model": {
+      "profile": "clamshell",
+      "color": "#343c44",
+      "width": 2.1,
+      "height": 1.15,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "odroidgoa",
+    "name": "ODROID-GO Advance",
+    "maker": "Hardkernel",
+    "kind": "handheld",
+    "year": "2020",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "ODROID-GO Advance",
+    "model": {
+      "profile": "horizontal",
+      "color": "#687985",
+      "width": 3,
+      "height": 1.4,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gameshell",
+    "name": "GameShell",
+    "maker": "ClockworkPi",
+    "kind": "handheld",
+    "year": "2018",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GameShell",
+    "model": {
+      "profile": "vertical",
+      "color": "#c8c6bb",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "arduboy",
+    "name": "Arduboy",
+    "maker": "Arduboy",
+    "kind": "handheld",
+    "year": "2016",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Arduboy",
+    "model": {
+      "profile": "vertical",
+      "color": "#b8c2c8",
+      "width": 1.55,
+      "height": 2.65,
+      "depth": 0.42
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "playdate",
+    "name": "Playdate",
+    "maker": "Panic",
+    "kind": "handheld",
+    "year": "2022",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Playdate",
+    "model": {
+      "profile": "vertical",
+      "color": "#d8b73e",
+      "width": 1.8,
+      "height": 2,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "superacan",
+    "name": "Super A’Can",
+    "maker": "Funtech",
+    "kind": "console",
+    "year": "1995",
+    "era": "Home console collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#77d9ff",
+    "short": "Super A’Can",
+    "model": {
+      "profile": "cartridge",
+      "color": "#7c8995",
+      "width": 2.6,
+      "height": 0.55,
+      "depth": 1.7
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gameking",
+    "name": "GameKing",
+    "maker": "TimeTop",
+    "kind": "handheld",
+    "year": "2003",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GameKing",
+    "model": {
+      "profile": "horizontal",
+      "color": "#7c8995",
+      "width": 2.7,
+      "height": 1.35,
+      "depth": 0.4
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "dingooa320",
+    "name": "A320",
+    "maker": "Dingoo",
+    "kind": "handheld",
+    "year": "2009",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "A320",
+    "model": {
+      "profile": "horizontal",
+      "color": "#7c8995",
+      "width": 2.7,
+      "height": 1.35,
+      "depth": 0.4
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gcwzero",
+    "name": "GCW Zero",
+    "maker": "GCW",
+    "kind": "handheld",
+    "year": "2013",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GCW Zero",
+    "model": {
+      "profile": "horizontal",
+      "color": "#7c8995",
+      "width": 2.7,
+      "height": 1.35,
+      "depth": 0.4
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "gamegadget",
+    "name": "GameGadget",
+    "maker": "Blaze",
+    "kind": "handheld",
+    "year": "2012",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "GameGadget",
+    "model": {
+      "profile": "horizontal",
+      "color": "#7c8995",
+      "width": 2.7,
+      "height": 1.35,
+      "depth": 0.4
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "funkeys",
+    "name": "FunKey S",
+    "maker": "FunKey",
+    "kind": "handheld",
+    "year": "2020",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "FunKey S",
+    "model": {
+      "profile": "clamshell",
+      "color": "#7c8995",
+      "width": 1.6,
+      "height": 1.2,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pokitto",
+    "name": "Pokitto",
+    "maker": "Pokitto",
+    "kind": "handheld",
+    "year": "2017",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Pokitto",
+    "model": {
+      "profile": "vertical",
+      "color": "#7c8995",
+      "width": 1.4,
+      "height": 2.4,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "thumby",
+    "name": "Thumby",
+    "maker": "TinyCircuits",
+    "kind": "handheld",
+    "year": "2021",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "Thumby",
+    "model": {
+      "profile": "vertical",
+      "color": "#7c8995",
+      "width": 1.4,
+      "height": 2.4,
+      "depth": 0.3
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "pocketgo",
+    "name": "PocketGo",
+    "maker": "BittBoy",
+    "kind": "handheld",
+    "year": "2019",
+    "era": "Handheld collection",
+    "tagline": "Choose a system. Explore its library.",
+    "color": "#c8d68b",
+    "short": "PocketGo",
+    "model": {
+      "profile": "horizontal",
+      "color": "#7c8995",
+      "width": 2.7,
+      "height": 1.35,
+      "depth": 0.4
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": false
+  },
+  {
+    "id": "amiga500",
+    "name": "Commodore Amiga 500",
+    "maker": "Commodore",
+    "year": "1987",
+    "era": "HOME COMPUTER COLLECTION",
+    "tagline": "Choose a platform. Explore its library.",
+    "color": "#9eb8d2",
+    "short": "Commodore Amiga 500",
+    "kind": "computer",
+    "model": {
+      "profile": "keyboard",
+      "color": "#b3b4ab",
+      "width": 3,
+      "height": 0.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "cpc464",
+    "name": "Amstrad CPC 464",
+    "maker": "Amstrad",
+    "year": "1984",
+    "era": "HOME COMPUTER COLLECTION",
+    "tagline": "Choose a platform. Explore its library.",
+    "color": "#9eb8d2",
+    "short": "Amstrad CPC 464",
+    "kind": "computer",
+    "model": {
+      "profile": "keyboard",
+      "color": "#b3b4ab",
+      "width": 3,
+      "height": 0.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "c64",
+    "name": "Commodore 64",
+    "maker": "Commodore",
+    "year": "1982",
+    "era": "HOME COMPUTER COLLECTION",
+    "tagline": "Choose a platform. Explore its library.",
+    "color": "#9eb8d2",
+    "short": "Commodore 64",
+    "kind": "computer",
+    "model": {
+      "profile": "keyboard",
+      "color": "#b3b4ab",
+      "width": 3,
+      "height": 0.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "vic20",
+    "name": "Commodore VIC-20",
+    "maker": "Commodore",
+    "year": "1980",
+    "era": "HOME COMPUTER COLLECTION",
+    "tagline": "Choose a platform. Explore its library.",
+    "color": "#9eb8d2",
+    "short": "Commodore VIC-20",
+    "kind": "computer",
+    "model": {
+      "profile": "keyboard",
+      "color": "#b3b4ab",
+      "width": 3,
+      "height": 0.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "windows",
+    "name": "GamesForWindows",
+    "maker": "Microsoft",
+    "year": "1985",
+    "era": "HOME COMPUTER COLLECTION",
+    "tagline": "Choose a platform. Explore its library.",
+    "color": "#9eb8d2",
+    "short": "GamesForWindows",
+    "kind": "computer",
+    "model": {
+      "profile": "desktop",
+      "color": "#b3b4ab",
+      "width": 3,
+      "height": 0.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true
+  },
+  {
+    "id": "spectrum",
+    "name": "ZX Spectrum",
+    "maker": "Sinclair",
+    "year": "1982",
+    "era": "HOME COMPUTER COLLECTION",
+    "tagline": "Choose a platform. Explore its library.",
+    "color": "#9eb8d2",
+    "short": "ZX Spectrum",
+    "kind": "computer",
+    "model": {
+      "profile": "keyboard",
+      "color": "#b3b4ab",
+      "width": 3,
+      "height": 0.3,
+      "depth": 1.5
+    },
+    "coverage": "Family-level procedural approximation",
+    "upgradePriority": true,
+    "bundledModel": {
+      "path": "assets/models/spectrum.glb",
+      "name": "zx_spectrum_48k.glb",
+      "bytes": 10650860,
+      "sha256": "8a72338aa5c30947acd594bb4160dbeda01389640fb86d174cc85075954b5992",
+      "source": "https://sketchfab.com/3d-models/zx-spectrum-48k-a657d72420c44e0b8402179e6d061182",
+      "author": "MaaB (https://sketchfab.com/MaaB)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "quality": "User-selected source GLB copied byte-for-byte; visual fidelity acceptance pending.",
+      "sourceFile": "zx_spectrum_48k.glb",
+      "sourceSha256": "8a72338aa5c30947acd594bb4160dbeda01389640fb86d174cc85075954b5992",
+      "userProvided": true
+    }
+  }
+]

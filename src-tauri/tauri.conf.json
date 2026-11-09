@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Totem",
+  "version": "0.1.0",
+  "identifier": "dev.horizon.carousel.poc",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1427",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Totem · Console Carousel",
+        "create": false,
+        "fullscreen": true,
+        "width": 1440,
+        "height": 900,
+        "minWidth": 640,
+        "minHeight": 720,
+        "center": true,
+        "backgroundColor": "#080d14"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: asset: http://asset.localhost; media-src 'self' data: blob: asset: http://asset.localhost; connect-src 'self' ipc: http://ipc.localhost data: blob:; object-src 'none'; base-uri 'self'",
+      "assetProtocol": { "enable": true, "scope": [] }
+    }
+  },
+  "bundle": { "active": false, "icon": ["icons/icon.ico"] }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "revision": "public-default",
+  "paths": {
+    "root": "D:\\Totem",
+    "platforms": "D:\\Totem\\Roms",
+    "collections": "D:\\Totem\\library\\collections",
+    "playlists": "D:\\Totem\\user-data\\playlists",
+    "models": "D:\\Totem\\assets\\models",
+    "artworkCache": "D:\\Totem\\cache\\artwork",
+    "legacy": "D:\\Totem\\legacy\\coinops\\collections",
+    "manifest": "D:\\Totem\\config\\collections.json"
+  },
+  "migration": {
+    "state": "not-required"
+  },
+  "counts": {
+    "collections": 0,
+    "platformFamilies": 0,
+    "favorites": 0,
+    "lastPlayed": 0
+  }
+}

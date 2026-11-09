@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#080d14" />
+    <title>Totem · Console Carousel</title>
+    <link rel="stylesheet" href="/src/startup-intro.css" />
+  </head>
+  <body>
+    <div id="startup-splash" data-startup-phase="loading" aria-label="Totem startup">
+      <p id="startup-opening-status" role="status">Preparing Totem…</p>
+      <img
+        id="startup-legacy-art"
+        hidden
+        alt="Totem — Loading your library"
+      />
+      <svg
+        class="startup-splash-progress"
+        viewBox="0 0 1672 939"
+        preserveAspectRatio="xMidYMid slice"
+        role="progressbar"
+        aria-label="Loading your library"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuetext="Loading"
+      >
+        <defs>
+          <linearGradient id="startup-splash-progress-gradient">
+            <stop stop-color="#20e8ff" />
+            <stop offset="0.52" stop-color="#d126ff" />
+            <stop offset="1" stop-color="#ffe338" />
+          </linearGradient>
+          <clipPath id="startup-splash-progress-clip">
+            <rect x="580" y="860" width="512" height="20" rx="10" />
+          </clipPath>
+        </defs>
+        <rect x="580" y="860" width="512" height="20" rx="10" fill="#10132e" />
+        <g clip-path="url(#startup-splash-progress-clip)">
+          <rect
+            class="startup-splash-progress-fill"
+            x="580"
+            y="860"
+            width="252"
+            height="20"
+            rx="10"
+            fill="url(#startup-splash-progress-gradient)"
+          />
+        </g>
+      </svg>
+      <img id="startup-poster" hidden alt="" aria-hidden="true" />
+      <video id="startup-video-intro" class="startup-video" preload="auto" muted playsinline aria-hidden="true" disablepictureinpicture></video>
+      <video id="startup-video-hold" class="startup-video" preload="auto" muted playsinline aria-hidden="true" disablepictureinpicture></video>
+      <video id="startup-video-exit" class="startup-video" preload="auto" muted playsinline aria-hidden="true" disablepictureinpicture></video>
+      <button type="button" id="startup-skip" hidden>Skip intro · Esc / B</button>
+      <button type="button" id="startup-audio" aria-pressed="false" hidden>Mute intro</button>
+      <div id="startup-feedback" hidden>
+        <p id="startup-status" role="status"></p>
+        <button type="button" id="startup-retry" hidden>Retry startup</button>
+      </div>
+    </div>
+    <div id="app" inert>
+      <header>
+        <div class="brand">
+          <span class="brand-logo" style="width:auto;font-weight:800;letter-spacing:.18em" hidden>TOTEM</span>
+        </div>
+        <div class="step">
+          <span data-platform-text="step-label" data-text-label="Step label">CHOOSE YOUR SYSTEM</span>
+        </div>
+        <div class="header-actions">
+          <div id="totem-debug" hidden>
+            <details>
+              <summary>Totem debug</summary>
+              <div class="totem-debug-actions" aria-label="Totem debug behaviours"></div>
+            </details>
+            <span role="status"></span>
+          </div>
+          <button id="navigation-toggle" class="quiet" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navigation-menu">
+            <img id="navigation-input-hint" alt="" hidden />
+          </button>
+          <nav id="navigation-menu" aria-label="Main navigation" hidden>
+          <button id="folder-settings-toggle" class="quiet">Settings</button>
+          <button id="action-mappings-toggle" class="quiet">Action mappings</button>
+          <button id="mapping-toggle" class="quiet">Button mapping</button>
+          <button id="editor-toggle" class="quiet">Platform editor</button>
+          <button
+            id="systems-toggle"
+            class="quiet"
+            aria-expanded="false"
+            aria-controls="system-picker"
+          >
+            Systems</button
+          ><button
+            id="settings-toggle"
+            class="quiet"
+            aria-expanded="false"
+            aria-controls="settings"
+          >
+            Layout studio
+          </button>
+          <button id="fullscreen-toggle" class="quiet" hidden>Toggle fullscreen</button>
+          <button id="exit-totem" class="quiet" hidden>Exit Totem</button>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="hero" aria-label="Selected system">
+          <img id="platform-logo" hidden alt="" />
+          <h1 id="title" data-platform-text="title" data-text-label="Platform title"></h1>
+          <p id="tagline" data-platform-text="tagline" data-text-label="Tagline"></p>
+          <div class="metadata" id="metadata" hidden>
+            <dl class="platform-facts">
+              <div class="platform-games" data-metric-icon="games"><dt data-platform-text="games-label" data-text-label="Games label">Games</dt><dd id="game-count" data-platform-text="game-count" data-text-label="Game count">—</dd></div>
+              <div data-metric-icon="maker"><dt data-platform-text="maker-label" data-text-label="Manufacturer label">Manufacturer</dt><dd id="maker" data-platform-text="maker" data-text-label="Manufacturer name"></dd></div>
+              <div data-metric-icon="released"><dt data-platform-text="released-label" data-text-label="Released label">Release Year</dt><dd id="year" data-platform-text="year" data-text-label="Release year"></dd></div>
+              <div data-metric-icon="category"><dt data-platform-text="category-label" data-text-label="Category label">Category</dt><dd id="platform-category" data-platform-text="category" data-text-label="Platform category"></dd></div>
+            </dl>
+            <section id="platform-emulators" aria-labelledby="platform-emulators-heading">
+              <div class="platform-emulators-heading" data-metric-icon="emulators" data-default-metric-icon="games">
+                <h2 id="platform-emulators-heading"><span data-platform-text="emulators-label" data-text-label="Emulators label">Emulators</span> <span id="platform-emulator-count">(0)</span></h2>
+              </div>
+              <ul id="platform-emulator-list" aria-labelledby="platform-emulators-heading"></ul>
+              <p id="platform-emulators-empty" hidden>No associated emulators</p>
+            </section>
+          </div>
+          <p id="model-load-status" role="status"></p>
+        </section>
+        <div
+          id="scene"
+          tabindex="-1"
+          role="region"
+          aria-label="Interactive 3D console carousel. Drag to rotate, or use the previous and next buttons."
+        >
+          <div id="loading" role="status">Preparing the collection…</div>
+        </div>
+        <div class="scene-navigation">
+          <button id="previous" class="arrow" aria-label="Previous console">
+            ‹</button
+          ><button id="next" class="arrow" aria-label="Next console">›</button>
+        </div>
+        <div class="selection-caption">
+          <button id="select" class="select-button">
+            <span data-platform-text="select-label" data-text-label="Select system label">Select system</span> <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <div id="system-rail-controls">
+          <div id="hardware-start"></div>
+          <div id="system-types" role="group" aria-label="Filter systems by hardware type">
+            <button type="button" data-kind="all" aria-pressed="true"><span data-platform-text="filter-all" data-text-label="All Types filter label">All Types</span></button>
+            <button type="button" data-kind="console" aria-pressed="false"><span data-platform-text="filter-console" data-text-label="Consoles filter label">Consoles</span></button>
+            <button type="button" data-kind="handheld" aria-pressed="false"><span data-platform-text="filter-handheld" data-text-label="Handhelds filter label">Handhelds</span></button>
+            <button type="button" data-kind="hybrid" aria-pressed="false"><span data-platform-text="filter-hybrid" data-text-label="Hybrids filter label">Hybrids</span></button>
+            <button type="button" data-kind="arcade" aria-pressed="false"><span data-platform-text="filter-arcade" data-text-label="Arcade filter label">Arcade</span></button>
+            <button type="button" data-kind="computer" aria-pressed="false"><span data-platform-text="filter-computer" data-text-label="Computers filter label">Computers</span></button>
+          </div>
+          <div id="hardware-end"></div>
+        </div>
+        <nav id="systems" aria-label="Choose a console">
+          <div id="systems-track"></div>
+        </nav>
+        <aside id="system-picker" hidden aria-label="System checklist">
+          <div class="panel-heading">
+            <h2>Choose your systems</h2>
+            <button
+              id="systems-close"
+              class="quiet"
+              aria-label="Close system checklist"
+            >
+              ✕
+            </button>
+          </div>
+          <p>
+            One representative per console or handheld family, plus an arcade
+            cabinet. Every listed system has a procedural 3D representation;
+            many are family-level approximations.
+          </p>
+          <label for="system-search">Search systems or manufacturers</label>
+          <input
+            id="system-search"
+            type="search"
+            placeholder="e.g. Nintendo, Lynx, arcade"
+          />
+          <label for="system-kind">Hardware type</label>
+          <select id="system-kind">
+            <option value="all">All types</option>
+            <option value="console">Consoles</option>
+            <option value="handheld">Handhelds</option>
+            <option value="hybrid">Hybrids</option>
+            <option value="arcade">Arcade</option>
+            <option value="computer">Computers</option>
+          </select>
+          <div class="system-bulk">
+            <button id="systems-all">Enable all systems</button
+            ><button id="systems-none">Disable all systems</button
+            ><button id="systems-demo">Demo set</button>
+          </div>
+          <p id="system-count" role="status"></p>
+          <p id="collection-status" role="status"></p>
+          <div id="system-checklist"></div>
+        </aside>
+        <aside id="settings" hidden aria-label="Scene controls">
+          <div class="panel-heading">
+            <h2>Layout studio</h2>
+            <button
+              id="settings-close"
+              class="quiet"
+              aria-label="Close scene controls"
+            >
+              ✕
+            </button>
+          </div>
+          <p>
+            Orbit controls position every inactive device. Active and inactive
+            resting poses blend smoothly as each device moves into or out of
+            selection. Each device can also have separate active and inactive
+            offsets.
+          </p>
+          <div class="control-groups" role="group" aria-label="Control group">
+            <button
+              data-control-group="orbit"
+              aria-pressed="true"
+              aria-controls="orbit-controls"
+            >
+              Orbit
+            </button>
+            <button
+              data-control-group="consoles"
+              aria-pressed="false"
+              aria-controls="consoles-controls"
+            >
+              Active rest
+            </button>
+            <button
+              data-control-group="inactive"
+              aria-pressed="false"
+              aria-controls="inactive-controls"
+            >
+              Inactive rest
+            </button>
+            <button
+              data-control-group="device"
+              aria-pressed="false"
+              aria-controls="device-controls"
+            >
+              Selected device
+            </button>
+          </div>
+          <section
+            id="orbit-controls"
+            aria-label="Orbit layout controls"
+          ></section>
+          <section
+            id="consoles-controls"
+            aria-label="Active resting position controls"
+            hidden
+          ></section>
+          <section
+            id="inactive-controls"
+            aria-label="Inactive resting position controls"
+            hidden
+          ></section>
+          <section
+            id="device-controls"
+            aria-label="Selected device layout controls"
+            hidden
+          >
+            <p id="device-name" role="status"></p>
+            <div class="control-groups device-pose-groups" role="group" aria-label="Selected device pose">
+              <button type="button" data-device-pose="active" aria-pressed="true" aria-controls="device-active-control-fields">Active offsets</button>
+              <button type="button" data-device-pose="inactive" aria-pressed="false" aria-controls="device-inactive-control-fields">Inactive offsets</button>
+            </div>
+            <div id="device-active-control-fields" aria-label="Selected device active offsets"></div>
+            <div id="device-inactive-control-fields" aria-label="Selected device inactive offsets" hidden></div>
+            <label id="device-open-active-row" class="check" hidden>
+              <input type="checkbox" id="device-open-active" /> Animate moving parts while active
+            </label>
+          </section>
+          <p class="control-hint">
+            Pan follows the screen axes. Orbit zoom changes spacing; device zoom
+            changes hardware size. Device tilt overrides the upright pose.
+          </p>
+          <label class="check"
+            ><input type="checkbox" id="trajectory" /> Show orbit path</label
+          >
+          <label class="check"
+            ><input type="checkbox" id="autoplay" /> Auto rotate</label
+          >
+          <label class="check"
+            ><input type="checkbox" id="reduced-motion" /> Reduce motion</label
+          >
+          <button id="reset" class="reset">Reset scene</button>
+          <p id="draft-status" role="status">
+            Layout edits save as a draft. Use Save as Default to keep this
+            layout for future launches and Reset scene.
+          </p>
+          <div class="snapshot-actions">
+            <button id="save-default" class="select-button">
+              Save as Default
+            </button>
+            <button id="save-snapshot" class="select-button">
+              Save snapshot
+            </button>
+            <button id="load-snapshot" class="reset">Load snapshot</button>
+          </div>
+          <input
+            id="snapshot-file"
+            type="file"
+            accept=".json,application/json"
+            hidden
+          />
+          <p id="snapshot-status" role="status">
+            Save snapshot backs up or transfers this layout. Save as Default
+            sets the startup layout for this Windows user.
+          </p>
+        </aside>
+      </main>
+      <footer id="platform-footer">
+        <span class="sr-only" id="controller">CONTROLLER READY</span>
+        <span class="sr-only" id="runtime">INTERACTIVE 3D · PROOF OF CONCEPT</span>
+      </footer>
+      <div
+        class="sr-only"
+        id="announcement"
+        role="status"
+        aria-live="polite"
+      ></div>
+      <dialog id="platform-editor" aria-labelledby="editor-heading">
+        <div class="editor-header">
+          <div>
+            <p class="eyebrow">YOUR HARDWARE LIBRARY</p>
+            <h2 id="editor-heading">Platform editor</h2>
+          </div>
+          <button id="editor-close" aria-label="Close platform editor">
+            Close ✕
+          </button>
+        </div>
+        <div class="editor-layout">
+          <aside class="editor-sidebar" aria-label="Platform catalogue">
+            <button id="editor-new">+ Add platform</button>
+            <label for="editor-search">Search devices or manufacturers</label
+            ><input
+              id="editor-search"
+              type="search"
+              placeholder="e.g. Nintendo, Amiga"
+            />
+            <label class="check"
+              ><input id="editor-priority" type="checkbox" /> Requested upgrades
+              only</label
+            >
+            <p id="editor-list-count" role="status"></p>
+            <nav id="editor-list" aria-label="Edit a platform"></nav>
+          </aside>
+          <form id="platform-form" class="editor-detail">
+            <nav class="editor-tabs" role="tablist" aria-label="Platform editor sections">
+              <button type="button" role="tab" id="editor-tab-main" aria-controls="editor-panel-main" aria-selected="true" data-editor-tab="main">Main</button>
+              <button type="button" role="tab" id="editor-tab-sources" aria-controls="editor-panel-sources" aria-selected="false" data-editor-tab="sources" tabindex="-1">Games &amp; Sources</button>
+              <button type="button" role="tab" id="editor-tab-launch" aria-controls="editor-panel-launch" aria-selected="false" data-editor-tab="launch" tabindex="-1">Launch</button>
+              <button type="button" role="tab" id="editor-tab-logo" aria-controls="editor-panel-logo" aria-selected="false" data-editor-tab="logo" tabindex="-1">Logo</button>
+              <button type="button" role="tab" id="editor-tab-console" aria-controls="editor-panel-console" aria-selected="false" data-editor-tab="console" tabindex="-1">Console</button>
+              <button type="button" role="tab" id="editor-tab-box-art" aria-controls="editor-panel-box-art" aria-selected="false" data-editor-tab="box-art" tabindex="-1">Box Art</button>
+            </nav>
+            <section id="editor-panel-sources" role="tabpanel" aria-labelledby="editor-tab-sources" data-editor-panel="sources" hidden></section>
+            <section id="editor-panel-launch" role="tabpanel" aria-labelledby="editor-tab-launch" data-editor-panel="launch" hidden></section>
+            <fieldset id="editor-fields">
+              <section id="editor-panel-main" class="editor-tab-panel" role="tabpanel" aria-labelledby="editor-tab-main" data-editor-panel="main">
+                <p id="editor-platform-summary"></p>
+                <button id="editor-rail-visibility" type="button" hidden>Show on carousel</button>
+                <p id="editor-device-id"></p>
+                <p id="editor-quality"></p>
+                <label
+                  >Platform / category name<input
+                    name="name"
+                    required
+                    maxlength="100"
+                /></label>
+                <label
+                  >Manufacturer<input name="maker" required maxlength="100"
+                /></label>
+                <div class="editor-row">
+                  <label
+                    >Hardware type<select name="kind">
+                      <option value="console">Console</option>
+                      <option value="handheld">Handheld</option>
+                      <option value="hybrid">Hybrid</option>
+                      <option value="arcade">Arcade</option>
+                      <option value="computer">Computer</option>
+                    </select></label
+                  ><label
+                    >Accent colour<input name="color" type="color"
+                  /></label>
+                </div>
+              </section>
+              <section id="editor-panel-logo" class="editor-tab-panel" role="tabpanel" aria-labelledby="editor-tab-logo" data-editor-panel="logo" hidden>
+                <div class="editor-asset">
+                  <h3>Logo</h3>
+                  <img
+                    id="editor-logo-preview"
+                    alt="Selected platform logo"
+                    hidden
+                  />
+                  <p id="editor-logo-description"></p>
+                  <label
+                    >Choose logo · PNG, JPEG or WebP · up to 8 MB<input
+                      id="editor-logo-input"
+                      type="file"
+                      accept="image/png,image/jpeg,image/webp" /></label
+                  ><button id="editor-remove-logo" type="button">
+                    Remove logo
+                  </button>
+                </div>
+              </section>
+              <section id="editor-panel-console" class="editor-tab-panel" role="tabpanel" aria-labelledby="editor-tab-console" data-editor-panel="console" hidden>
+                <div class="editor-model">
+                  <div class="editor-model-preview-pane">
+                    <h3>3D representation</h3>
+                    <div id="editor-preview"></div>
+                    <div class="editor-preview-actions">
+                      <button id="editor-zoom-in" type="button" aria-label="Zoom preview in">+</button>
+                      <button id="editor-zoom-out" type="button" aria-label="Zoom preview out">−</button>
+                      <button id="editor-turn-left" type="button" aria-label="Rotate preview left">↶</button>
+                      <button id="editor-reset-preview" type="button">Reset preview</button>
+                      <button id="editor-turn-right" type="button" aria-label="Rotate preview right">↷</button>
+                    </div>
+                    <p id="editor-model-status" role="status"></p>
+                    <p id="editor-file-description"></p>
+                  </div>
+                  <div class="editor-model-controls">
+                    <section class="editor-library-presentation" aria-label="Game library presentation">
+                      <h3>Game library presentation</h3>
+                      <p>Choose where game clips play and adjust each model separately. Save platform to apply the layout.</p>
+                      <label>Video display<select id="editor-library-display"><option value="tv">TV</option><option value="built-in">Built-in screen</option></select></label>
+                      <label id="editor-library-screen-row" hidden>Screen mesh<select id="editor-library-screen"><option value="">Choose a screen mesh</option></select></label>
+                      <button id="editor-library-highlight" type="button" aria-pressed="false" hidden>Highlight video surface</button>
+                      <label>Controller models<select id="editor-library-controllers"><option value="">Default</option><option value="show">Show</option><option value="hide">Hide</option></select></label>
+                      <label>Game box and media models<select id="editor-library-media"><option value="">Default</option><option value="show">Show</option><option value="hide">Hide</option></select></label>
+                      <label>Model to adjust<select id="editor-library-object"><option value="device">Console</option></select></label>
+                      <div class="editor-library-pose">
+                        <label>Scale<input id="editor-library-zoom" type="number" min="0.1" max="2" step="any" required></label>
+                        <label>Position X<input id="editor-library-x" type="number" min="-10" max="10" step="any" required></label>
+                        <label>Position Y<input id="editor-library-y" type="number" min="-10" max="10" step="any" required></label>
+                        <label>Position Z<input id="editor-library-z" type="number" min="-10" max="10" step="any" required></label>
+                        <label>Pitch °<input id="editor-library-pitch" type="number" min="-180" max="180" step="any" required></label>
+                        <label>Yaw °<input id="editor-library-yaw" type="number" min="-180" max="180" step="any" required></label>
+                        <label>Roll °<input id="editor-library-roll" type="number" min="-180" max="180" step="any" required></label>
+                      </div>
+                      <button id="editor-library-reset-pose" type="button">Reset selected model pose</button>
+                    </section>
+                    <section class="editor-animation" aria-label="Model animation">
+                      <div class="editor-animation-toggle">
+                        <strong>Animation preview</strong>
+                        <button id="editor-animation-closed" type="button" aria-pressed="true">Closed</button>
+                        <button id="editor-animation-open" type="button" aria-pressed="false">Open</button>
+                      </div>
+                      <label>Transition delay ms<input id="editor-animation-delay" type="number" min="0" max="5000" step="10" value="100"></label>
+                      <label>Animation group<select id="editor-animation-group"><option value="">Select a group</option></select></label>
+                      <div class="editor-animation-fields">
+                        <label>Group name<input id="editor-animation-name" maxlength="80" placeholder="Hinge"></label>
+                        <label>Axis<select id="editor-animation-axis"><option value="x">X</option><option value="y">Y</option><option value="z">Z</option></select></label>
+                        <label>Closed angle °<input id="editor-animation-closed-angle" type="number" min="-360" max="360" step="1"></label>
+                        <label>Open angle °<input id="editor-animation-open-angle" type="number" min="-360" max="360" step="1"></label>
+                        <label>Pivot X<input id="editor-animation-pivot-x" type="number" step="any"></label>
+                        <label>Pivot Y<input id="editor-animation-pivot-y" type="number" step="any"></label>
+                        <label>Pivot Z<input id="editor-animation-pivot-z" type="number" step="any"></label>
+                      </div>
+                      <label class="editor-animation-enabled"><input id="editor-animation-enabled" type="checkbox"> Animate this group</label>
+                      <div class="editor-animation-actions">
+                        <button id="editor-animation-add" type="button">Add group from selection</button>
+                        <button id="editor-animation-add-to-group" type="button">Add selected to group</button>
+                        <button id="editor-animation-remove-from-group" type="button">Remove selected from group</button>
+                        <button id="editor-animation-assign" type="button">Replace group with selection</button>
+                        <button id="editor-animation-highlight" type="button" aria-pressed="false">Highlight piece</button>
+                        <button id="editor-animation-isolate" type="button" aria-pressed="false">Isolate selected</button>
+                        <button id="editor-animation-remove" type="button">Delete group</button>
+                      </div>
+                      <p>Select meshes with Ctrl/Cmd-click or Shift-click. Group membership is tagged separately; use Add or Remove on a row, or the selected-mesh actions. Isolate hides every mesh except the selection. Pivot coordinates use the imported model’s units.</p>
+                      <div id="editor-animation-meshes" class="editor-animation-meshes" role="list" aria-label="Model meshes"></div>
+                    </section>
+                    <label>Choose 3D model · GLB 2.0 · up to 128 MB<input id="editor-model-input" type="file" accept=".glb,model/gltf-binary" /></label>
+                    <label>Model source URL<input name="assetSource" type="url" maxlength="2000" placeholder="https://…" /></label>
+                    <label>Model creator / credit<input name="assetAuthor" maxlength="200" /></label>
+                    <label>Licence / attribution notes<textarea name="assetLicense" rows="3" maxlength="2000" placeholder="Record the licence and required credit for the file you import."></textarea></label>
+                    <p class="editor-help">Focus the preview and use arrows to pan or Shift + arrows to rotate. Use + / − to zoom. Embed all textures in the GLB. Export without Draco, Meshopt or KTX compression. Imported models keep their materials and are fitted to the carousel; use Selected device controls to adjust orientation and offsets.</p>
+                    <button id="editor-remove-model" type="button">Use procedural placeholder</button>
+                    <button id="editor-restore-bundled" type="button" hidden>Restore bundled model</button>
+                  </div>
+                </div>
+              </section>
+              <section id="editor-panel-box-art" class="editor-tab-panel" role="tabpanel" aria-labelledby="editor-tab-box-art" data-editor-panel="box-art" hidden>
+              <section id="box-art-section" class="box-art-section" aria-labelledby="box-art-heading">
+                <h3 id="box-art-heading">Box Art</h3>
+                <p class="box-art-legend">One reusable game box or cartridge per platform. Artwork is fitted to front, back and spine surfaces. Cyan = front, amber = back, magenta = spine. Adjust the surfaces to sit just outside the model. Save platform applies this layout to its games.</p>
+                <div class="box-art-layout">
+                  <div>
+                    <div id="box-art-preview"></div>
+                    <button id="box-art-reset-view" type="button">Reset Box Art view</button>
+                    <label><input id="box-art-guides" type="checkbox" checked /> Show artwork placement guides</label>
+                    <label>Test front artwork · preview only<input id="box-art-test-image" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+                    <p id="box-art-preview-status" role="status"></p>
+                    <p id="box-art-materials" class="box-art-legend"></p>
+                  </div>
+                  <div>
+                    <label>Base 3D model<select id="box-art-template"></select></label>
+                    <p id="box-art-model-name"></p>
+                    <label>Import game box / cartridge · GLB · up to 128 MB<input id="box-art-model-input" type="file" accept=".glb,model/gltf-binary" /></label>
+                    <details><summary>Model orientation and original artwork</summary><div id="box-art-model-rotation"></div><label>Neutralise original artwork materials · comma separated<input id="box-art-neutral" maxlength="1600" placeholder="e.g. label, cover" /></label><p class="box-art-legend">Material names appear under the preview. Neutralising removes embedded game art from that material without removing the mesh.</p></details>
+                    <label>Artwork surface<select id="box-art-face"><option value="front">Front · cyan</option><option value="back">Back · amber</option><option value="spine">Spine · magenta</option></select></label>
+                    <label><input id="box-art-enabled" type="checkbox" /> Enable this artwork surface</label>
+                    <div id="box-art-placement"></div>
+                    <button id="box-art-reset" type="button">Restore platform Box Art default</button>
+                  </div>
+                </div>
+                <div class="box-art-credit"><label>Box Art model source URL<input id="box-art-source" type="url" maxlength="2000" /></label><label>Box Art model creator<input id="box-art-author" maxlength="2000" /></label></div>
+                <label>Box Art model licence / credit<textarea id="box-art-license" rows="2" maxlength="2000"></textarea></label>
+                <p id="box-art-status" role="status"></p>
+              </section>
+              </section>
+            </fieldset>
+            <div class="editor-footer">
+              <p id="editor-library-location"></p>
+              <p id="editor-status" role="status" tabindex="-1"></p>
+              <div>
+                <button type="button" id="editor-discard">
+                  Discard changes</button
+                ><button type="button" id="editor-show-carousel">
+                  Show in carousel</button
+                ><button type="submit" id="editor-save">Save platform</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </dialog>
+      <dialog id="mapping-dialog" aria-labelledby="mapping-heading">
+        <div class="mapping-header">
+          <div>
+            <p class="eyebrow">CONTROLLER STUDIO</p>
+            <h2 id="mapping-heading">Button mapping</h2>
+          </div>
+          <button id="mapping-close" aria-label="Close button mapping">
+            Close ×
+          </button>
+        </div>
+        <div class="mapping-body">
+          <div class="mapping-toolbar">
+            <label>Platform<select id="mapping-platform"></select></label>
+            <label
+              >Original controller<select id="mapping-controller"></select
+            ></label>
+            <label>Mapping profile<select id="mapping-profile"></select></label>
+            <label
+              >PC controller<select id="mapping-gamepad">
+                <option value="">Connect your Xbox controller</option>
+              </select></label
+            >
+          </div>
+          <div class="mapping-connection">
+            <span id="mapping-connection-status" role="status"></span>
+            <label
+              ><input type="checkbox" id="mapping-preview-mode" /> On-screen
+              preview</label
+            >
+            <label id="mapping-hold-label" hidden
+              ><input type="checkbox" id="mapping-hold" /> Hold on-screen
+              inputs</label
+            >
+          </div>
+          <p id="mapping-load-error" role="alert" hidden></p>
+          <div class="mapping-instruction">
+            <div>
+              <p id="mapping-mode" class="eyebrow">VIEW MAPPING</p>
+              <h3 id="mapping-prompt">
+                Press an Xbox control to see its counterpart.
+              </h3>
+              <p id="mapping-status" role="status"></p>
+            </div>
+            <div class="mapping-progress">
+              <span id="mapping-count"></span
+              ><progress
+                id="mapping-progress"
+                max="1"
+                value="0"
+                aria-label="Mapping progress"
+                hidden
+              ></progress>
+            </div>
+          </div>
+          <div class="mapping-devices">
+            <section
+              class="mapping-device"
+              aria-labelledby="mapping-legacy-name"
+            >
+              <div class="mapping-device-heading">
+                <span>ORIGINAL CONTROLLER</span>
+                <h3 id="mapping-legacy-name"></h3>
+              </div>
+              <div
+                id="mapping-legacy-scene"
+                class="mapping-scene"
+                role="img"
+                aria-label="Original controller with highlighted mapping surfaces"
+              ></div>
+              <div class="mapping-view-buttons" data-controller-view="legacy">
+                <button data-view="front">Front</button
+                ><button data-view="top">Shoulders</button
+                ><button data-view="rear">Back</button>
+              </div>
+              <p id="mapping-legacy-note"></p>
+            </section>
+            <section class="mapping-device" aria-labelledby="mapping-xbox-name">
+              <div class="mapping-device-heading">
+                <span>YOUR PC CONTROLLER</span>
+                <h3 id="mapping-xbox-name">Xbox Series X|S controller</h3>
+              </div>
+              <div
+                id="mapping-xbox-scene"
+                class="mapping-scene"
+                role="img"
+                aria-label="Xbox controller with highlighted mapping surfaces"
+              ></div>
+              <div class="mapping-view-buttons" data-controller-view="xbox">
+                <button data-view="front">Front</button
+                ><button data-view="top">Shoulders</button
+                ><button data-view="rear">Back</button>
+              </div>
+              <p>
+                Gameplay buttons, triggers and stick directions. Windows may
+                reserve Xbox / Share; skip unavailable inputs.
+              </p>
+            </section>
+          </div>
+          <section
+            id="mapping-preview-controls"
+            hidden
+            aria-label="On-screen Xbox input preview"
+          >
+            <p>
+              Press and hold to preview an input. These controls simulate the
+              on-screen mapping only.
+            </p>
+            <div id="mapping-input-buttons"></div>
+          </section>
+          <div class="mapping-table-wrap">
+            <table>
+              <caption>
+                Current button assignments
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Original control</th>
+                  <th scope="col">Xbox input</th>
+                  <th scope="col">State</th>
+                </tr>
+              </thead>
+              <tbody id="mapping-rows"></tbody>
+            </table>
+          </div>
+          <p class="mapping-scope">
+            Controller representations are illustrative. These profiles are
+            saved for the PoC; applying them to an emulator is a separate
+            integration.
+          </p>
+        </div>
+        <div class="mapping-footer">
+          <label id="mapping-name-label" hidden
+            >Profile name<input
+              id="mapping-name"
+              maxlength="100"
+              autocomplete="off"
+          /></label>
+          <p id="mapping-save-status" role="status">
+            Suggested defaults are available; saved profiles appear above.
+          </p>
+          <div>
+            <button id="mapping-back" hidden>Previous control</button>
+            <button id="mapping-skip" hidden>Skip this control</button
+            ><button id="mapping-discard" hidden>Discard run</button
+            ><button id="mapping-new">Create new mapping</button
+            ><button id="mapping-save" hidden>Save mapping</button>
+          </div>
+        </div>
+      </dialog>
+      <dialog id="folder-settings" aria-labelledby="folder-settings-title">
+        <div class="folder-header">
+          <div class="admin-heading"><div><h2 id="folder-settings-title">Settings</h2><p>Configure platforms, games, emulators and Totem</p></div></div>
+          <button id="folder-close" class="quiet">Close</button>
+        </div>
+        <div class="folder-body">
+          <details id="app-controller-mappings" open>
+            <summary>Launcher input assignments</summary>
+            <div class="controller-settings-content"></div>
+          </details>
+          <p id="folder-summary"></p>
+          <p id="folder-missing-paths"></p>
+          <h3>Error log</h3>
+          <p>Startup, script and 3D model loading failures are recorded here.</p>
+          <p id="error-log-location" role="status">Loading error log location…</p>
+          <p>Games and artwork are grouped by platform. Each platform has a games folder and separate covers, logos, videos and cabinets folders. Favourites and recently played are stored separately as user data.</p>
+          <div id="folder-fields"></div>
+          <h3>Metadata providers</h3>
+          <p>Choose which artwork to request for each platform. Provider credentials stay in the desktop app.</p>
+          <section class="igdb-connection" aria-labelledby="igdb-connection-title">
+            <h3 id="igdb-connection-title">IGDB</h3>
+            <p id="igdb-connection-status" role="status"></p>
+            <p>The shared connection is protected for your Windows user. Credentials stay in the desktop app.</p>
+            <div class="igdb-connection-fields"><label>Client ID<input id="igdb-client-id" autocomplete="off" spellcheck="false" maxlength="256" /></label><label>Client secret<input id="igdb-client-secret" type="password" autocomplete="new-password" maxlength="256" /></label></div>
+            <p>Leave both fields blank to keep the current connection.</p>
+            <div class="igdb-connection-actions"><button id="igdb-import-shared" class="quiet">Import shared connection</button><button id="igdb-save-connection" class="quiet">Save connection</button><button id="igdb-test-connection" class="quiet">Test connection</button></div>
+            <fieldset class="metadata-options"><legend>Search IGDB for</legend>
+              <label><input type="checkbox" data-metadata-provider="igdb" data-metadata-type="cover" checked /> Covers</label><label><input type="checkbox" data-metadata-provider="igdb" data-metadata-type="logo" checked /> Logos</label><label><input type="checkbox" data-metadata-provider="igdb" data-metadata-type="artwork" checked /> Artwork backgrounds</label>
+            </fieldset>
+          </section>
+          <section class="igdb-connection" aria-labelledby="steamgriddb-connection-title">
+            <h3 id="steamgriddb-connection-title">SteamGridDB</h3>
+            <p id="steamgriddb-connection-status" role="status"></p>
+            <p>Use your SteamGridDB API key. The key is protected for your Windows user and is never sent to the browser artwork host.</p>
+            <label class="metadata-secret-label">API key<input id="steamgriddb-api-key" type="password" autocomplete="new-password" spellcheck="false" maxlength="256" /></label>
+            <p>Leave the key blank to keep the saved key.</p>
+            <div class="igdb-connection-actions"><button id="steamgriddb-save-connection" class="quiet">Save API key</button><button id="steamgriddb-test-connection" class="quiet">Test connection</button></div>
+            <fieldset class="metadata-options"><legend>Search SteamGridDB for</legend>
+              <label><input type="checkbox" data-metadata-provider="steamgriddb" data-metadata-type="grid" checked /> Covers</label><label><input type="checkbox" data-metadata-provider="steamgriddb" data-metadata-type="hero" checked /> Heroes / backgrounds</label><label><input type="checkbox" data-metadata-provider="steamgriddb" data-metadata-type="logo" checked /> Logos</label>
+            </fieldset>
+          </section>
+          <fieldset class="metadata-options metadata-platforms"><legend>Allow IGDB lookups for these platforms</legend><div id="metadata-platform-options"></div></fieldset>
+          <p>Type and platform changes take effect after saving.</p>
+          <div class="igdb-connection-actions"><button id="metadata-save-preferences" class="quiet">Save metadata preferences</button></div>
+          <p id="metadata-preferences-status" role="status"></p>
+          <p id="folder-migration-status"></p><p id="folder-storage"></p>
+          <p id="folder-path-help">Changing a path does not move files. Original system artwork, source playlists and CoinOPS configuration are retained under legacy storage. Model staging is reserved for later imports; downloaded game artwork uses the artwork cache.</p>
+          <h3>Imported collections and supported extensions</h3>
+          <label for="folder-collection-search">Search collections</label><input id="folder-collection-search" type="search" autocomplete="off" />
+          <div id="folder-collection-list"></div>
+        </div>
+        <div class="folder-footer"><p id="folder-save-status" role="status"></p><button id="folder-refresh" class="quiet">Reload from disk</button><button id="folder-save" class="select-button">Save folders</button></div>
+      </dialog>
+      <dialog id="game-library" aria-labelledby="game-library-title">
+        <div class="game-header">
+          <button id="game-close" class="quiet">← Back to systems</button>
+          <h2 id="game-library-title">GAME LIBRARY <small>ARTWORK PREVIEW</small></h2>
+          <label>Collection <select id="game-platform"></select></label>
+          <button type="button" id="game-layout-toggle" class="quiet" aria-expanded="false" aria-controls="game-layout-editor">Edit layout</button>
+        </div>
+        <form id="game-layout-editor" hidden aria-label="Game selection layout">
+          <fieldset>
+            <legend>Game selection layout</legend>
+            <label>Adjust <select name="scope">
+              <option value="console">Default console layout</option>
+              <option value="case">Default game case layout</option>
+              <option value="display">Default TV and arcade layout</option>
+              <option value="platform">Platform console offset</option>
+            </select></label>
+            <div class="game-layout-fields"></div>
+            <div class="game-layout-actions">
+              <button type="submit" class="quiet">Save layout</button>
+              <button type="button" class="quiet" data-action="reset">Reset</button>
+              <button type="button" class="quiet" data-action="cancel">Close</button>
+            </div>
+          </fieldset>
+          <output role="status"></output>
+        </form>
+        <button type="button" id="cartridge-layout-toggle" class="quiet" aria-expanded="false" aria-controls="cartridge-layout-editor" hidden>Adjust cartridge</button>
+        <form id="cartridge-layout-editor" hidden aria-label="SNES cartridge layout">
+          <fieldset>
+            <legend>SNES cartridge placement</legend>
+            <label>Adjust <select name="scope">
+              <option value="default">Default game cartridge</option>
+              <option value="game">This game override</option>
+            </select></label>
+            <div class="cartridge-layout-fields"></div>
+            <div class="game-layout-actions">
+              <button type="submit" class="quiet">Save cartridge pose</button>
+              <button type="button" class="quiet" data-action="reset">Reset</button>
+              <button type="button" class="quiet" data-action="cancel">Close</button>
+            </div>
+          </fieldset>
+          <output role="status"></output>
+        </form>
+        <div id="game-stage" role="region" aria-label="Game artwork and gameplay preview. Drag or use previous and next game buttons to browse."></div>
+        <video id="game-video" hidden autoplay loop playsinline crossorigin="anonymous" aria-hidden="true"></video>
+        <iframe id="game-youtube-video" title="Gameplay video" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen hidden></iframe>
+        <div class="game-detail">
+          <p id="game-platform-name" class="eyebrow"></p>
+          <h1 id="game-title" aria-live="polite"></h1>
+          <p id="game-description"></p>
+          <button id="game-description-toggle" class="quiet" hidden>Show more</button>
+          <dl id="game-metadata" class="game-metadata" aria-label="Game metadata"></dl>
+          <p id="game-artwork"></p>
+          <p id="game-igdb-provenance"></p>
+          <details id="game-extra-artwork" hidden><summary>Additional IGDB artwork</summary><img id="game-provider-background" alt="" /></details>
+          <div class="game-actions"><button id="game-inspect" class="quiet" aria-pressed="false">Show back</button><button id="game-video-audio" class="quiet" hidden>Play video with audio</button><button id="game-select" class="select-button">Play game ↗</button></div>
+          <button id="game-lookup-artwork" class="quiet">Find missing artwork · IGDB</button>
+          <div id="game-igdb-results"></div><p id="game-igdb-status" role="status"></p>
+          <p id="game-selected-status" role="status"></p>
+          <button id="game-show-samples" class="quiet">View all artwork samples →</button>
+        </div>
+        <div class="game-arrows"><button id="game-previous" class="arrow" aria-label="Previous game">‹</button><button id="game-next" class="arrow" aria-label="Next game">›</button></div>
+        <div class="game-library-status"><span id="game-position"></span><p id="game-load-status" role="status"></p></div>
+        <nav id="game-cards" aria-label="Choose a game"></nav>
+        <div class="game-hints">↑ ↓ BROWSE &nbsp; · &nbsp; ENTER / A PLAY &nbsp; · &nbsp; ESC / B BACK</div>
+      </dialog>
+    </div>
+    <script type="module" src="/src/launcher-bootstrap.js"></script>
+    <script type="module" src="/src/administration.js"></script>
+  </body>
+</html>

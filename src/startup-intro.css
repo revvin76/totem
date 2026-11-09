@@ -1,0 +1,164 @@
+#startup-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #08051b;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 260ms ease, visibility 260ms ease;
+}
+
+#startup-splash img,
+.startup-video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#startup-opening-status {
+  margin: 0;
+  color: #c5d6e1;
+  font: 500 1rem "Segoe UI", Arial, sans-serif;
+}
+
+#startup-poster {
+  z-index: 1;
+}
+
+#startup-splash #startup-legacy-art,
+#startup-splash .startup-splash-progress,
+#startup-splash.startup-legacy #startup-poster,
+#startup-splash.startup-legacy #startup-opening-status {
+  display: none;
+}
+
+#startup-splash.startup-legacy #startup-legacy-art,
+#startup-splash.startup-legacy .startup-splash-progress {
+  display: block;
+}
+
+#startup-splash[data-startup-phase="error"] {
+  background: radial-gradient(ellipse at 50% 45%, #172536, #080d14 75%);
+}
+
+#startup-splash[data-startup-phase="error"] #startup-legacy-art,
+#startup-splash[data-startup-phase="error"] #startup-poster,
+#startup-splash[data-startup-phase="error"] .startup-splash-progress,
+#startup-splash[data-startup-phase="error"] #startup-opening-status {
+  display: none;
+}
+
+#startup-splash[data-startup-phase="error"] #startup-feedback {
+  position: relative;
+  bottom: auto;
+  overflow-wrap: anywhere;
+}
+
+.startup-video {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.startup-video-active {
+  z-index: 2;
+  opacity: 1;
+}
+
+.startup-splash-progress {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.startup-splash-progress-fill {
+  filter: drop-shadow(0 0 7px #36eaff);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: startup-progress-travel 1.6s ease-in-out infinite;
+}
+
+@keyframes startup-progress-travel {
+  from { transform: translateX(-105%); }
+  to { transform: translateX(205%); }
+}
+
+#startup-feedback {
+  position: absolute;
+  z-index: 3;
+  bottom: 14%;
+  padding: 12px 20px;
+  max-width: min(90vw, 34rem);
+  text-align: center;
+  color: #eafcff;
+  background: #080d20ed;
+  border: 1px solid #7698ad;
+  border-radius: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#startup-status {
+  margin: 0;
+}
+
+#startup-retry {
+  margin-top: 12px;
+}
+
+#startup-skip {
+  position: absolute;
+  z-index: 3;
+  bottom: clamp(18px, 4vh, 48px);
+  right: clamp(18px, 4vw, 64px);
+}
+
+#startup-audio {
+  position: absolute;
+  z-index: 3;
+  bottom: clamp(18px, 4vh, 48px);
+  left: clamp(18px, 4vw, 64px);
+}
+
+#startup-splash button {
+  padding: 0.65rem 1rem;
+  color: #eafcff;
+  background: #080d20ed;
+  border: 1px solid #7698ad;
+  border-radius: 8px;
+  font: 500 1rem "Segoe UI", Arial, sans-serif;
+  cursor: pointer;
+}
+
+#startup-splash button:focus-visible {
+  outline: 2px solid #64e2ff;
+  outline-offset: 3px;
+}
+
+#startup-splash.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .startup-splash-progress-fill {
+    animation: none;
+    transform: translateX(50%);
+  }
+
+  #startup-splash:not(.startup-animated) {
+    transition: none;
+  }
+
+  /* An explicit Totem motion opt-in overrides the launcher-wide motion rule. */
+  #startup-splash.startup-animated {
+    transition: opacity 260ms ease, visibility 260ms ease !important;
+  }
+}

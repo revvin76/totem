@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080419" />
+    <title>Totem Studio · Game Chooser</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="stage" aria-label="Game Chooser">
+      <canvas id="scene"></canvas>
+      <aside class="game-rail" data-ui-element="game-rail" data-ui-label="Game rail" aria-label="Game selection">
+        <div class="category-switcher" data-ui-element="category-switcher" data-ui-label="Category switcher" aria-label="Game category">
+          <span id="active-category" data-ui-element="active-category-label" data-ui-label="Active category label">ALL</span>
+        </div>
+        <div class="rail-list">
+          <button type="button" class="rail-game" data-ui-style="game-button-inactive" data-game="mario-kart" data-title-prefix="MARIO KART" data-title="8 DELUXE" data-genre="racing" data-recent="true"><span class="rail-labels"><span>MARIO KART</span><small>8 DELUXE</small></span></button>
+          <button type="button" class="rail-game" data-ui-style="game-button-inactive" data-game="metroid" data-title-prefix="METROID" data-title="DREAD" data-genre="action"><span class="rail-labels"><span>METROID</span><small>DREAD</small></span></button>
+          <button type="button" class="rail-game" data-ui-style="game-button-inactive" data-game="pokemon" data-title-prefix="POKÉMON" data-title="SCARLET" data-genre="adventure"><span class="rail-labels"><span>POKÉMON</span><small>SCARLET</small></span></button>
+          <button type="button" class="rail-game" data-ui-style="game-button-inactive" data-game="hollow-knight" data-title-prefix="HOLLOW" data-title="KNIGHT" data-genre="action" data-favorite="true"><span class="rail-labels"><span>HOLLOW</span><small>KNIGHT</small></span></button>
+          <button type="button" class="rail-game rail-active" data-ui-style="game-button-active" data-game="mario-odyssey" data-title-prefix="SUPER MARIO" data-title="ODYSSEY" data-genre="adventure" data-recent="true" data-favorite="true" aria-current="page"><span class="rail-labels"><span>SUPER MARIO</span><small>ODYSSEY</small></span></button>
+          <button type="button" class="rail-game" data-ui-style="game-button-inactive" data-game="celeste" data-title-prefix="CELESTE" data-title="MOUNTAIN" data-genre="adventure" data-favorite="true"><span class="rail-labels"><span>CELESTE</span><small>MOUNTAIN</small></span></button>
+          <button type="button" class="rail-game" data-ui-style="game-button-inactive" data-game="zelda" data-title-prefix="THE LEGEND OF" data-title="ZELDA" data-genre="adventure" data-recent="true" data-favorite="true"><span class="rail-labels"><span>THE LEGEND OF</span><small>ZELDA</small></span></button>
+          <button type="button" class="rail-game" data-ui-style="game-button-inactive" data-game="sonic" data-title-prefix="SONIC" data-title="FRONTIERS" data-genre="action" data-recent="true"><span class="rail-labels"><span>SONIC</span><small>FRONTIERS</small></span></button>
+        </div>
+      </aside>
+      <section class="game-menu platform-filters game-filters" id="game-menu" data-ui-element="search-filter-menu" data-ui-label="Search and filter menu" role="dialog" aria-modal="true" aria-labelledby="game-menu-title" hidden>
+        <header class="pf-header">
+          <svg class="pf-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></svg>
+          <h2 id="game-menu-title">Search &amp; filters</h2>
+          <span class="pf-position" id="game-filter-position"></span>
+        </header>
+        <div class="pf-groups" id="game-filter-groups">
+          <fieldset class="pf-group">
+            <legend>Search games</legend>
+            <label class="pf-game-search" for="game-search"><span>Game title</span><input id="game-search" type="search" placeholder="Type a game name" autocomplete="off"></label>
+          </fieldset>
+          <fieldset class="pf-group">
+            <legend>Game category</legend>
+            <div class="pf-options">
+              <label class="pf-option"><input type="radio" name="game-category" value="0" checked><span>All games</span></label>
+              <label class="pf-option"><input type="radio" name="game-category" value="1"><span>Recently played</span></label>
+              <label class="pf-option"><input type="radio" name="game-category" value="2"><span>Favourites</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="pf-group">
+            <legend>Genre</legend>
+            <label class="pf-game-genre" for="genre-filter"><span>Genre filter</span><select id="genre-filter"><option value="all">All genres</option><option value="adventure">Adventure</option><option value="racing">Racing</option><option value="action">Action</option></select></label>
+          </fieldset>
+        </div>
+        <p class="pf-status" id="game-filter-status" role="status"></p>
+        <footer class="pf-footer">
+          <button class="pf-command" type="button" data-game-filter-action="previous-group">Previous group</button>
+          <button class="pf-command" type="button" data-game-filter-action="next-group">Next group</button>
+          <button class="pf-command" type="button" data-game-filter-action="clear">Clear all filters</button>
+          <button class="pf-command" type="button" data-game-filter-action="apply">Apply</button>
+          <button class="pf-command" type="button" data-game-filter-action="cancel">Cancel</button>
+        </footer>
+      </section>
+      <div class="input-feedback" id="input-feedback" role="status" aria-live="polite"></div>
+      <section class="game-card" data-ui-element="featured-game" data-ui-label="Featured game area" aria-label="Featured game">
+        <div class="platform-row" data-ui-element="platform-row" data-ui-label="Platform and back row"><div class="platform" data-ui-element="platform-label" data-ui-label="Platform label">▰ &nbsp; NINTENDO SWITCH™</div><button class="back-control" type="button" data-ui-element="back-control" data-ui-label="Back control" data-controller-action="back" title="Back (B)"><img data-ui-element="back-button-icon" data-ui-label="Back button" alt="B"><span data-ui-element="back-label" data-ui-label="Back label">BACK</span></button></div>
+        <div class="game-title" data-ui-element="game-title" data-ui-label="Title">
+          <div id="featured-title-text" class="game-title-text"><span id="featured-title-prefix">SUPER MARIO</span><strong id="featured-title">ODYSSEY</strong></div>
+          <img id="featured-logo" class="game-title-logo" alt="" hidden>
+        </div>
+        <span id="featured-subtitle" class="game-subtitle" data-ui-element="game-subtitle" data-ui-label="Title subtitle">NINTENDO · 2017</span>
+        <div data-ui-element="game-developer" data-ui-label="Main developer" class="game-developer"></div>
+        <div class="title-rule" data-ui-element="title-rule" data-ui-label="Game tagline">A GLOBE-TROTTING 3D ADVENTURE</div>
+        <button type="button" id="game-info-open" aria-haspopup="dialog" hidden>Game information</button>
+      </section>
+      <section class="game-details" data-ui-element="game-details" data-ui-label="Game details panel" aria-label="Game details">
+        <p class="game-description" data-ui-element="game-description" data-ui-label="Description">Travel through colourful kingdoms with Mario and Cappy. Capture creatures and objects, discover hidden Power Moons, and fuel the Odyssey airship to stop Bowser’s wedding plans.</p>
+        <div class="detail-divider" data-ui-element="details-divider" data-ui-label="Details divider" aria-hidden="true"></div>
+        <div class="metrics">
+          <div class="metric rating" data-ui-element="metric-rating" data-ui-label="Release date">
+            <svg class="metric-icon clock" data-ui-element="rating-icon" data-ui-label="Release date icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v5m10-5v5M3 11h18"/></svg>
+            <div><div class="metric-value" data-ui-element="rating-value" data-ui-label="Release year">2017</div><div class="metric-label" data-ui-element="rating-count" data-ui-label="Release day">27 October</div></div>
+          </div>
+          <div class="metric players" data-ui-element="metric-players" data-ui-label="Player count metric">
+            <svg class="metric-icon people" data-ui-element="players-icon" data-ui-label="Players icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.2-.6a3 3 0 1 0-1.8-5.4 5 5 0 0 1 1.8 5.4ZM2.4 19.7c.4-3.5 3.2-5.6 6.6-5.6s6.2 2.1 6.6 5.6c.1.8-.5 1.3-1.2 1.3H3.6c-.7 0-1.3-.5-1.2-1.3Zm14.1-5.5c2.8.2 4.8 2 5.1 4.9.1.8-.5 1.3-1.2 1.3h-2.9a2.6 2.6 0 0 0 .1-1.1 8 8 0 0 0-1.1-3.5v-1.6Z"/></svg>
+            <div><div class="metric-value" data-ui-element="players-value" data-ui-label="Player count">1–2</div><div class="metric-label" data-ui-element="players-label" data-ui-label="Players caption">Players</div></div>
+          </div>
+          <div class="metric duration" data-ui-element="metric-duration" data-ui-label="Publisher">
+            <svg class="metric-icon clock" data-ui-element="duration-icon" data-ui-label="Publisher icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h2m4 0h2M8 11h2m4 0h2M8 15h2m4 0h2M10 21v-3h4v3"/></svg>
+            <div><div class="metric-value" data-ui-element="duration-value" data-ui-label="Publisher name">Nintendo</div><div class="metric-label" data-ui-element="duration-label" data-ui-label="Publisher caption">Publisher</div></div>
+          </div>
+        </div>
+        <div class="game-tags" data-ui-element="game-tags" data-ui-label="Genre tags"><span data-ui-element="tag-adventure" data-ui-label="Adventure tag">Platforming</span><span data-ui-element="tag-arcade" data-ui-label="Arcade tag">Adventure</span><span data-ui-element="tag-racing" data-ui-label="Racing tag">Sandbox</span></div>
+      </section>
+      <dialog id="game-info" aria-labelledby="game-info-title">
+        <h2 id="game-info-title">Game information</h2>
+        <p role="status"></p>
+        <dl></dl>
+        <form method="dialog"><button autofocus>Close</button></form>
+      </dialog>
+      <button class="scene-open" id="scene-open" type="button" aria-label="Open scene controls" title="Scene controls">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg>
+      </button>
+      <button class="scene-open sidenav-open" id="sidenav-open" type="button" aria-label="Open Sidenav Menu editor" title="Sidenav Menu editor">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16M8 5v14"/><circle cx="6" cy="8" r=".7"/><circle cx="6" cy="12" r=".7"/><circle cx="6" cy="16" r=".7"/></svg>
+      </button>
+      <aside class="scene-controls studio-control-panel sidenav-controls is-closed" id="sidenav-controls" aria-label="Sidenav Menu editor">
+        <header class="controls-header sidenav-header">
+          <div class="controls-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16M8 5v14"/><circle cx="6" cy="8" r=".7"/><circle cx="6" cy="12" r=".7"/><circle cx="6" cy="16" r=".7"/></svg><strong>Sidenav Menu</strong></div>
+          <div class="history-buttons">
+            <button id="ui-undo" type="button" aria-label="Undo menu edit" title="Undo menu edit" disabled>↶</button>
+            <button id="ui-redo" type="button" aria-label="Redo menu edit" title="Redo menu edit" disabled>↷</button>
+            <button id="sidenav-close" type="button" aria-label="Close Sidenav Menu editor" title="Close">×</button>
+          </div>
+        </header>
+        <div class="controls-body sidenav-body">
+          <details class="control-section" name="game-layout-groups" open>
+            <summary>Element / Style</summary>
+            <div class="section-content">
+              <p class="editor-hint">Turn on drag mode. Shift-click elements to select a group, then drag or use arrow keys. Shift + arrows moves 10 pixels. <span class="layout-element-actions">Drag an edge grip to resize the selected element.</span></p>
+              <p class="editor-hint sidenav-scope">SideNav edits apply to every platform on this page.</p>
+              <button class="mode-button ui-edit-toggle" type="button" id="ui-edit-toggle" aria-pressed="false">Select &amp; drag elements</button>
+              <label class="select-row" for="layout-target"><span class="row-label">Selected element or style</span><select id="layout-target"></select></label>
+              <div class="layout-element-actions" id="layout-element-actions">
+                <label class="select-row" for="layout-add-kind"><span class="row-label">Add element</span><select id="layout-add-kind"></select></label>
+                <div class="mode-row">
+                  <button type="button" class="mode-button" id="layout-add">Add element</button>
+                  <button type="button" class="mode-button" id="layout-remove">Remove selected</button>
+                </div>
+              </div>
+              <label class="select-row" id="layout-text-row" for="layout-text" hidden><span class="row-label">Text</span><input id="layout-text" type="text" maxlength="160"></label>
+              <label class="select-row" id="layout-title-preview-row" for="layout-title-preview" hidden><span class="row-label">Title preview</span><select id="layout-title-preview"><option value="text">Text fallback</option><option value="logo">Sample logo</option></select></label>
+              <div id="layout-logo-alignment" hidden>
+                <span class="row-label" id="layout-logo-alignment-label">Logo alignment</span>
+                <div class="mode-row logo-alignment" role="group" aria-labelledby="layout-logo-alignment-label">
+                  <button type="button" class="mode-button" data-logo-align="left" aria-pressed="true">Left</button>
+                  <button type="button" class="mode-button" data-logo-align="center" aria-pressed="false">Centre</button>
+                  <button type="button" class="mode-button" data-logo-align="right" aria-pressed="false">Right</button>
+                </div>
+              </div>
+              <p class="editor-hint" id="layout-selection-count" role="status"></p>
+              <label class="range-row ui-range" for="layout-padding"><span class="row-icon">□</span><span class="row-label">Padding</span><output class="range-value" id="layout-padding-value"></output><input id="layout-padding" type="range" min="0" max="60" step="1"></label>
+              <label class="range-row ui-range" for="layout-margin-x"><span class="row-icon">↔</span><span class="row-label">Margin X</span><output class="range-value" id="layout-margin-x-value"></output><input id="layout-margin-x" type="range" min="-60" max="60" step="1"></label>
+              <label class="range-row ui-range" for="layout-margin-y"><span class="row-icon">↕</span><span class="row-label">Margin Y</span><output class="range-value" id="layout-margin-y-value"></output><input id="layout-margin-y" type="range" min="-60" max="60" step="1"></label>
+              <label class="switch-row"><span class="row-label">Visible</span><input type="checkbox" id="layout-visible" checked></label>
+              <button type="button" class="mode-button ui-reset" id="layout-reset">Reset selected element</button>
+            </div>
+          </details>
+          <details class="control-section" name="game-layout-groups">
+            <summary>Placement</summary>
+            <div class="section-content">
+              <p class="editor-hint" id="layout-rail-fit" hidden>Game buttons fill the SideNav. Use Margin X to inset both sides.</p>
+              <label class="range-row ui-range" for="layout-x"><span class="row-icon axis">↔</span><span class="row-label">Position X</span><output class="range-value" id="layout-x-value"></output><input id="layout-x" type="range" min="-1400" max="1400" step="1"></label>
+              <label class="range-row ui-range" for="layout-y"><span class="row-icon axis">↕</span><span class="row-label">Position Y</span><output class="range-value" id="layout-y-value"></output><input id="layout-y" type="range" min="-900" max="900" step="1"></label>
+              <label class="range-row ui-range" for="layout-width"><span class="row-icon">↔</span><span class="row-label">Width</span><output class="range-value" id="layout-width-value"></output><input id="layout-width" type="range" min="24" max="1800" step="1"></label>
+              <label class="range-row ui-range" for="layout-height"><span class="row-icon">↕</span><span class="row-label">Height</span><output class="range-value" id="layout-height-value"></output><input id="layout-height" type="range" min="20" max="1100" step="1"></label>
+              <label class="range-row ui-range" for="layout-rotation"><span class="row-icon rotate">⟳</span><span class="row-label">Rotation</span><output class="range-value" id="layout-rotation-value"></output><input id="layout-rotation" type="range" min="-180" max="180" step="1"></label>
+            </div>
+          </details>
+          <details class="control-section" name="game-layout-groups">
+            <summary>Appearance</summary>
+            <div class="section-content">
+              <label class="select-row" for="layout-font-family"><span class="row-label">Font family</span><select id="layout-font-family"><option value="Segoe UI">Segoe UI</option><option value="Arial">Arial</option><option value="Inter">Inter</option><option value="Trebuchet MS">Trebuchet MS</option><option value="Georgia">Georgia</option><option value="Verdana">Verdana</option><option value="monospace">Monospace</option><option value="system-ui">System UI</option></select></label>
+              <label class="range-row ui-range" for="layout-font-size"><span class="row-icon">A</span><span class="row-label">Font size</span><output class="range-value" id="layout-font-size-value"></output><input id="layout-font-size" type="range" min="8" max="96" step="1"></label>
+              <label class="select-row" for="layout-font-weight"><span class="row-label">Font weight</span><select id="layout-font-weight"><option value="400">Regular</option><option value="500">Medium</option><option value="600">Semi-bold</option><option value="700">Bold</option><option value="800">Extra-bold</option><option value="900">Black</option></select></label>
+              <label class="select-row" for="layout-text-align"><span class="row-label">Text alignment</span><select id="layout-text-align"><option value="left">Left</option><option value="center">Centre</option><option value="right">Right</option></select></label>
+              <label class="color-row" for="layout-color"><span class="row-label">Text color</span><input id="layout-color" type="color" value="#ffffff"></label>
+              <label class="color-row" for="layout-background"><span class="row-label">Background color</span><input id="layout-background" type="color" value="#100923"></label>
+              <label class="color-row" for="layout-border-color"><span class="row-label">Border color</span><input id="layout-border-color" type="color" value="#9b63d7"></label>
+              <label class="range-row ui-range" for="layout-opacity"><span class="row-icon">◐</span><span class="row-label">Fill opacity</span><output class="range-value" id="layout-opacity-value"></output><input id="layout-opacity" type="range" min="0" max="1" step="0.01"></label>
+              <label class="range-row ui-range" for="layout-radius"><span class="row-icon">◯</span><span class="row-label">Corner radius</span><output class="range-value" id="layout-radius-value"></output><input id="layout-radius" type="range" min="0" max="100" step="1"></label>
+            </div>
+          </details>
+          <details class="control-section thumbnail-section" name="game-layout-groups">
+            <summary><span class="section-icon">▧</span> Rail thumbnails</summary>
+            <div class="section-content">
+              <label class="switch-row" for="thumbnails-enabled"><span class="row-icon">▧</span><span class="row-label">Thumbnails on all buttons</span><input class="toggle-input" id="thumbnails-enabled" type="checkbox"><span class="toggle-ui"></span></label>
+              <label class="select-row" for="thumbnail-type"><span class="row-label">Artwork type · all game buttons</span><select id="thumbnail-type"></select></label>
+              <p class="editor-hint">Applies to active and inactive buttons. Missing artwork shows a blank placeholder.</p>
+            </div>
+          </details>
+        </div>
+        <footer class="controls-footer"><span class="save-dot"></span><span id="ui-save-status">AUTO-SAVED</span></footer>
+      </aside>
+      <aside class="scene-controls studio-control-panel" id="scene-controls" aria-label="Scene controls">
+        <header class="controls-header">
+          <div class="controls-title"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg><strong>Scene Controls</strong></div>
+          <div class="history-buttons">
+            <button id="undo" type="button" aria-label="Undo" title="Undo (Ctrl+Z)" disabled>↶</button>
+            <button id="redo" type="button" aria-label="Redo" title="Redo (Ctrl+Y)" disabled>↷</button>
+            <button id="scene-close" type="button" aria-label="Close scene controls" title="Close">×</button>
+          </div>
+        </header>
+        <div class="controls-body">
+          <details class="control-section" id="depth-of-field-section" name="game-scene-groups" open>
+            <summary>Depth of field</summary>
+            <div class="section-content">
+              <label class="switch-row" for="depth-of-field-enabled"><span class="row-icon" aria-hidden="true">◉</span><span class="row-label">Enable depth of field</span><input id="depth-of-field-enabled" class="toggle-input" type="checkbox" aria-label="Enable depth of field"><span class="toggle-ui"></span></label>
+              <label class="range-row" for="depth-of-field-blur"><span class="row-label">Blur amount</span><output class="range-value" id="depth-of-field-blur-value"></output><input id="depth-of-field-blur" type="range" min="0" max="0.012" step="0.001"></label>
+            </div>
+          </details>
+          <details class="control-section" id="camera-section" name="game-scene-groups">
+            <summary><span class="section-icon">◉</span> Camera</summary>
+            <div class="section-content">
+              <label class="range-row axis-row" for="camera-x"><span class="row-icon axis">↔</span><span class="row-label">Camera X</span><output class="range-value" id="camera-x-value"></output><input id="camera-x" type="range" min="-35" max="35" step="0.5"></label>
+              <label class="range-row axis-row" for="camera-y"><span class="row-icon axis">↕</span><span class="row-label">Camera Y</span><output class="range-value" id="camera-y-value"></output><input id="camera-y" type="range" min="-20" max="35" step="0.5"></label>
+              <label class="range-row axis-row" for="camera-z"><span class="row-icon axis">◇</span><span class="row-label">Camera Z</span><output class="range-value" id="camera-z-value"></output><input id="camera-z" type="range" min="5" max="65" step="0.5"></label>
+              <label class="range-row axis-row" for="camera-tilt"><span class="row-icon rotate">↕</span><span class="row-label">Tilt</span><output class="range-value" id="camera-tilt-value"></output><input id="camera-tilt" type="range" min="-25" max="25" step="1"></label>
+              <label class="range-row axis-row" for="camera-pan-x"><span class="row-icon axis">↔</span><span class="row-label">Pan X</span><output class="range-value" id="camera-pan-x-value"></output><input id="camera-pan-x" type="range" min="-30" max="30" step="0.5"></label>
+              <label class="range-row axis-row" for="camera-pan-y"><span class="row-icon axis">↕</span><span class="row-label">Pan Y</span><output class="range-value" id="camera-pan-y-value"></output><input id="camera-pan-y" type="range" min="-10" max="25" step="0.5"></label>
+              <label class="range-row axis-row" for="camera-zoom"><span class="row-icon">⌕</span><span class="row-label">Zoom</span><output class="range-value" id="camera-zoom-value"></output><input id="camera-zoom" type="range" min="0.6" max="2.2" step="0.01"></label>
+            </div>
+          </details>
+
+
+
+          <details class="control-section" id="lighting-section" name="game-scene-groups">
+            <summary><span class="section-icon">☼</span> Lighting &amp; Reflections</summary>
+            <div class="section-content">
+          <label class="switch-row" for="lights-enabled"><span class="row-icon sun">☼</span><span class="row-label">Lights</span><input class="toggle-input" id="lights-enabled" type="checkbox"><span class="toggle-ui"></span></label>
+
+          <label class="range-row hue-row" for="hue"><span class="row-icon hue-icon">◉</span><span class="row-label">Hue</span><output class="range-value" id="hue-value"></output><input id="hue" type="range" min="0" max="360" step="1"></label>
+          <label class="range-row" for="brightness"><span class="row-icon sun">☼</span><span class="row-label">Brightness</span><output class="range-value" id="brightness-value"></output><input id="brightness" type="range" min="0.3" max="2.4" step="0.05"></label>
+          <label class="range-row" for="light-reflection"><span class="row-icon hue-icon">◉</span><span class="row-label">Light Reflection</span><output class="range-value" id="light-reflection-value"></output><input id="light-reflection" type="range" min="0" max="1" step="0.01"></label>
+          <label class="range-row" for="console-reflection"><span class="row-icon layers">▱</span><span class="row-label">Console Reflection</span><output class="range-value" id="console-reflection-value"></output><input id="console-reflection" type="range" min="0" max="1" step="0.01"></label>
+
+          <div class="control-divider"></div>
+          <label class="range-row axis-row" for="light-x"><span class="row-icon axis">↔</span><span class="row-label">Light X</span><output class="range-value" id="light-x-value"></output><input id="light-x" type="range" min="-12" max="12" step="0.1"></label>
+          <label class="range-row axis-row" for="light-y"><span class="row-icon axis">↕</span><span class="row-label">Light Y</span><output class="range-value" id="light-y-value"></output><input id="light-y" type="range" min="-8" max="8" step="0.1"></label>
+          <label class="range-row axis-row" for="light-z"><span class="row-icon axis">◇</span><span class="row-label">Light Z</span><output class="range-value" id="light-z-value"></output><input id="light-z" type="range" min="-15" max="15" step="0.1"></label>
+
+          <div class="control-divider"></div>
+          <label class="switch-row" for="reflections-enabled"><span class="row-icon droplet">♢</span><span class="row-label">Reflections</span><input class="toggle-input" id="reflections-enabled" type="checkbox"><span class="toggle-ui"></span></label>
+          <label class="switch-row" for="auto-rotate"><span class="row-icon rotate">✥</span><span class="row-label">Auto Rotate</span><input class="toggle-input" id="auto-rotate" type="checkbox"><span class="toggle-ui"></span></label>
+            </div>
+          </details>
+        </div>
+        <footer class="controls-footer"><span class="save-dot"></span><span id="save-status">AUTO-SAVED</span></footer>
+      </aside>
+      <aside class="scene-controls studio-control-panel is-closed" id="object-controls" aria-label="3D Elements">
+        <header class="controls-header">
+          <div class="controls-title"><strong>3D Elements</strong></div>
+          <div class="history-buttons">
+            <button id="object-undo" type="button" aria-label="Undo 3D edit" disabled>↶</button>
+            <button id="object-redo" type="button" aria-label="Redo 3D edit" disabled>↷</button>
+            <button id="object-close" type="button" aria-label="Close 3D Elements">×</button>
+          </div>
+        </header>
+        <div class="controls-body">
+          <details class="control-section" name="game-object-groups" open>
+            <summary>Scene objects</summary>
+            <div class="section-content">
+              <label class="select-row" for="edit-target"><span class="row-label">Selected item</span><select id="edit-target"><option value="">None</option><option value="switch">Handheld</option><option value="game-box">Game Box</option></select></label>
+              <label class="select-row" for="monitor-type"><span class="row-label">Monitor</span><select id="monitor-type"><option value="none">None</option><option value="tv">TV</option><option value="crt">CRT</option><option value="led">LED</option></select></label>
+              <label class="select-row" for="controllers-enabled" id="controllers-row" hidden><span class="row-label">Controllers</span><select id="controllers-enabled"><option value="yes">YES</option><option value="no">NO</option></select></label>
+              <label class="select-row" for="totem-pole-scope"><span class="row-label">Totem pole scope</span><select id="totem-pole-scope"><option value="profile">Current type or platform</option><option value="all">All platforms (default)</option></select></label>
+              <label class="select-row" for="totem-pole-enabled"><span class="row-label">Totem pole</span><select id="totem-pole-enabled"><option value="no">Disabled</option><option value="yes">Enabled</option></select></label>
+            </div>
+          </details>
+          <details class="control-section" name="game-object-groups">
+            <summary>Transform</summary>
+            <div class="section-content">
+              <div class="mode-row" role="group" aria-label="Mouse mode">
+                <button type="button" id="camera-mode" class="mode-button is-active" aria-pressed="true" title="Camera (Q)">Camera</button>
+                <button type="button" id="object-mode" class="mode-button" aria-pressed="false" title="Manipulate the selected item">Move item</button>
+              </div>
+              <div class="mode-row tool-row" role="group" aria-label="Transform tool">
+                <button type="button" class="tool-button is-active" data-transform="translate" aria-label="Move" title="Move (W)">↔</button>
+                <button type="button" class="tool-button" data-transform="rotate" aria-label="Rotate" title="Rotate (E)">⟳</button>
+                <button type="button" class="tool-button" data-transform="scale" aria-label="Scale" title="Scale (R)">⤢</button>
+              </div>
+              <p class="editor-hint">Click an object to select it or empty space to clear the selection. Q camera, W move, E rotate, R scale.</p>
+              <div class="control-divider"></div>
+              <label class="range-row axis-row" for="object-x"><span class="row-icon axis">↔</span><span class="row-label">Position X</span><output class="range-value" id="object-x-value"></output><input id="object-x" type="range" min="-50" max="50" step="0.1"></label>
+              <label class="range-row axis-row" for="object-y"><span class="row-icon axis">↕</span><span class="row-label">Position Y</span><output class="range-value" id="object-y-value"></output><input id="object-y" type="range" min="-50" max="50" step="0.1"></label>
+              <label class="range-row axis-row" for="object-z"><span class="row-icon axis">◇</span><span class="row-label">Position Z</span><output class="range-value" id="object-z-value"></output><input id="object-z" type="range" min="-50" max="50" step="0.1"></label>
+              <label class="range-row axis-row" for="object-rotate-x"><span class="row-icon rotate">⟳</span><span class="row-label">Rotation X</span><output class="range-value" id="object-rotate-x-value"></output><input id="object-rotate-x" type="range" min="-180" max="180" step="1"></label>
+              <label class="range-row axis-row" for="object-rotate-y"><span class="row-icon rotate">⟳</span><span class="row-label">Rotation Y</span><output class="range-value" id="object-rotate-y-value"></output><input id="object-rotate-y" type="range" min="-180" max="180" step="1"></label>
+              <label class="range-row axis-row" for="object-rotate-z"><span class="row-icon rotate">⟳</span><span class="row-label">Rotation Z</span><output class="range-value" id="object-rotate-z-value"></output><input id="object-rotate-z" type="range" min="-180" max="180" step="1"></label>
+              <label class="range-row axis-row" for="object-scale"><span class="row-icon">⤢</span><span class="row-label">Scale</span><output class="range-value" id="object-scale-value"></output><input id="object-scale" type="range" min="0.25" max="2.5" step="0.01"></label>
+            </div>
+          </details>
+        </div>
+        <footer class="controls-footer"><span class="save-dot"></span>AUTO-SAVED</footer>
+      </aside>
+      <video id="gameplay" loop playsinline preload="auto" aria-hidden="true"></video>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

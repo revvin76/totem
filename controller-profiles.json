@@ -1,0 +1,6954 @@
+[
+  {
+    "id": "nes",
+    "name": "Nintendo Entertainment System controller",
+    "shape": "nes",
+    "color": "#b9bbbc",
+    "platforms": [
+      "nes",
+      "fds"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.25,
+          -0.16,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#bb393e",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          0.72,
+          -0.16,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#bb393e",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.15,
+          0.15999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.15,
+          -0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.39,
+          -0.08,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.9099999999999999,
+          -0.08,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -0.3,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -0.3,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      }
+    ]
+  },
+  {
+    "id": "snes",
+    "name": "Super Nintendo controller",
+    "shape": "snes",
+    "color": "#bcbec8",
+    "platforms": [
+      "snes",
+      "snespal",
+      "sfc"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.05,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.05,
+          -0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.29,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.81,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -0.08,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -0.08,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      }
+    ]
+  },
+  {
+    "id": "megadrive",
+    "name": "Mega Drive 3-button controller",
+    "shape": "megadrive",
+    "color": "#252932",
+    "platforms": [
+      "megadrive",
+      "segacd",
+      "32x"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          0.57,
+          -0.05,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.04,
+          0.06,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "c",
+        "label": "C",
+        "position": [
+          1.5099999999999998,
+          0.16999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.05,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.05,
+          -0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.29,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.81,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.15,
+          0.38,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      }
+    ]
+  },
+  {
+    "id": "saturn",
+    "name": "Sega Saturn controller",
+    "shape": "snes",
+    "color": "#4c505a",
+    "platforms": [
+      "saturn"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          0.57,
+          -0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#6b737d",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          0.97,
+          -0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#6b737d",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "c",
+        "label": "C",
+        "position": [
+          1.37,
+          -0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#6b737d",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.57,
+          0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#6b737d",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          0.97,
+          0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#6b737d",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "z",
+        "label": "Z",
+        "position": [
+          1.37,
+          0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#6b737d",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.05,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.05,
+          -0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.29,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.81,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.05,
+          0.05,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      }
+    ]
+  },
+  {
+    "id": "dualshock",
+    "name": "PlayStation DualShock",
+    "shape": "playstation",
+    "color": "#737b8b",
+    "platforms": [
+      "playstation",
+      "ps2",
+      "ps3"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "cross",
+        "label": "Cross",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "circle",
+        "label": "Circle",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "square",
+        "label": "Square",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "triangle",
+        "label": "Triangle",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1,
+          0.56,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1,
+          0.08000000000000002,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.24,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.76,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          0.33,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          0.33,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l1",
+        "label": "L1",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r1",
+        "label": "R1",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "l2",
+        "label": "L2",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "r2",
+        "label": "R2",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -0.65,
+          -0.43,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -0.88,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.42000000000000004,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -0.65,
+          -0.19999999999999998,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -0.65,
+          -0.66,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          0.65,
+          -0.43,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          0.42000000000000004,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          0.88,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          0.65,
+          -0.19999999999999998,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          0.65,
+          -0.66,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      }
+    ]
+  },
+  {
+    "id": "dualshock4",
+    "name": "PlayStation DualShock 4",
+    "shape": "playstation",
+    "color": "#333d4c",
+    "platforms": [
+      "ps4"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "cross",
+        "label": "Cross",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "circle",
+        "label": "Circle",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "square",
+        "label": "Square",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "triangle",
+        "label": "Triangle",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1,
+          0.56,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1,
+          0.08000000000000002,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.24,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.76,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "l1",
+        "label": "L1",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r1",
+        "label": "R1",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "l2",
+        "label": "L2",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "r2",
+        "label": "R2",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -0.65,
+          -0.43,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -0.88,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.42000000000000004,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -0.65,
+          -0.19999999999999998,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -0.65,
+          -0.66,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          0.65,
+          -0.43,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          0.42000000000000004,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          0.88,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          0.65,
+          -0.19999999999999998,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          0.65,
+          -0.66,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "share",
+        "label": "Share",
+        "position": [
+          -0.52,
+          0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "options",
+        "label": "Options",
+        "position": [
+          0.52,
+          0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "touchpad",
+        "label": "Touchpad press",
+        "position": [
+          0,
+          0.56,
+          0.36
+        ],
+        "view": "front",
+        "shape": "touchpad",
+        "color": "#303946",
+        "defaultInput": "b17"
+      },
+      {
+        "id": "ps",
+        "label": "PS",
+        "position": [
+          0,
+          -0.36,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b16"
+      }
+    ]
+  },
+  {
+    "id": "dualsense",
+    "name": "PlayStation DualSense",
+    "shape": "playstation",
+    "color": "#d1d6df",
+    "platforms": [
+      "ps5"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "cross",
+        "label": "Cross",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "circle",
+        "label": "Circle",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "square",
+        "label": "Square",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "triangle",
+        "label": "Triangle",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1,
+          0.56,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1,
+          0.08000000000000002,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.24,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.76,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "l1",
+        "label": "L1",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r1",
+        "label": "R1",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "l2",
+        "label": "L2",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "r2",
+        "label": "R2",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -0.65,
+          -0.43,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -0.88,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.42000000000000004,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -0.65,
+          -0.19999999999999998,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -0.65,
+          -0.66,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          0.65,
+          -0.43,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          0.42000000000000004,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          0.88,
+          -0.43,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          0.65,
+          -0.19999999999999998,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          0.65,
+          -0.66,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "share",
+        "label": "Share",
+        "position": [
+          -0.52,
+          0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "options",
+        "label": "Options",
+        "position": [
+          0.52,
+          0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "touchpad",
+        "label": "Touchpad press",
+        "position": [
+          0,
+          0.56,
+          0.36
+        ],
+        "view": "front",
+        "shape": "touchpad",
+        "color": "#303946",
+        "defaultInput": "b17"
+      },
+      {
+        "id": "ps",
+        "label": "PS",
+        "position": [
+          0,
+          -0.36,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b16"
+      },
+      {
+        "id": "mute",
+        "label": "Microphone mute",
+        "position": [
+          0,
+          -0.6,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b17"
+      }
+    ]
+  },
+  {
+    "id": "n64",
+    "name": "Nintendo 64 controller",
+    "shape": "n64",
+    "color": "#999fac",
+    "platforms": [
+      "n64",
+      "n64dd"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          0.87,
+          -0.22,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#4a90b8",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          0.5,
+          0.08,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#4a9c62",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "cup",
+        "label": "C up",
+        "position": [
+          1.15,
+          0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d3b951",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "cdown",
+        "label": "C down",
+        "position": [
+          1.15,
+          0.19999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d3b951",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "cleft",
+        "label": "C left",
+        "position": [
+          0.9299999999999999,
+          0.42,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d3b951",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "cright",
+        "label": "C right",
+        "position": [
+          1.3699999999999999,
+          0.42,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d3b951",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.02,
+          0.56,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.02,
+          0.08000000000000002,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.26,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.78,
+          0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0,
+          0.45,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#c75d65",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "z",
+        "label": "Z",
+        "position": [
+          0,
+          -0.12,
+          -0.4
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -0.23,
+          -0.35,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          0.23,
+          -0.35,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          0,
+          -0.11999999999999997,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          0,
+          -0.58,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      }
+    ]
+  },
+  {
+    "id": "gamecube",
+    "name": "Nintendo GameCube controller",
+    "shape": "gamecube",
+    "color": "#6552a0",
+    "platforms": [
+      "gamecube"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1,
+          0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#49ab8f",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          0.55,
+          -0.05,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#c94e54",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          1.39,
+          0.48,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          0.85,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -0.55,
+          -0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -0.55,
+          -0.61,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -0.73,
+          -0.43,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.37000000000000005,
+          -0.43,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "start",
+        "label": "Start / Pause",
+        "position": [
+          0,
+          0.3,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "z",
+        "label": "Z",
+        "position": [
+          1.15,
+          0.85,
+          0.36
+        ],
+        "view": "top",
+        "shape": "round",
+        "color": "#726ba5",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.23,
+          0.32,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.77,
+          0.32,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1,
+          0.55,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1,
+          0.09,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "cleft",
+        "label": "C stick left",
+        "position": [
+          0.42000000000000004,
+          -0.5,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "cright",
+        "label": "C stick right",
+        "position": [
+          0.88,
+          -0.5,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "cup",
+        "label": "C stick up",
+        "position": [
+          0.65,
+          -0.27,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "cdown",
+        "label": "C stick down",
+        "position": [
+          0.65,
+          -0.73,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      }
+    ]
+  },
+  {
+    "id": "xbox-series",
+    "name": "Xbox Series X|S controller",
+    "shape": "xbox",
+    "color": "#303743",
+    "platforms": [
+      "xboxone",
+      "xboxseriesx"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -0.55,
+          -0.04999999999999999,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -0.55,
+          -0.45,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -0.75,
+          -0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.35000000000000003,
+          -0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "view",
+        "label": "View",
+        "position": [
+          -0.275,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "menu",
+        "label": "Menu",
+        "position": [
+          0.275,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "lb",
+        "label": "LB",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "rb",
+        "label": "RB",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "lt",
+        "label": "LT",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "rt",
+        "label": "RT",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -1,
+          0.4,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.23,
+          0.4,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.77,
+          0.4,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1,
+          0.63,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1,
+          0.17,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          0.64,
+          -0.42,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          0.41000000000000003,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          0.87,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          0.64,
+          -0.18999999999999997,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          0.64,
+          -0.65,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "guide",
+        "label": "Xbox",
+        "position": [
+          0,
+          0.68,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b16"
+      },
+      {
+        "id": "share",
+        "label": "Share",
+        "position": [
+          0,
+          -0.07,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b17"
+      }
+    ]
+  },
+  {
+    "id": "xbox360",
+    "name": "Xbox 360 controller",
+    "shape": "xbox",
+    "color": "#c0c4c5",
+    "platforms": [
+      "xbox360"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -0.55,
+          -0.04999999999999999,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -0.55,
+          -0.45,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -0.75,
+          -0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.35000000000000003,
+          -0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "view",
+        "label": "View",
+        "position": [
+          -0.275,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "menu",
+        "label": "Menu",
+        "position": [
+          0.275,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "lb",
+        "label": "LB",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "rb",
+        "label": "RB",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "lt",
+        "label": "LT",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "rt",
+        "label": "RT",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -1,
+          0.4,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.23,
+          0.4,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.77,
+          0.4,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1,
+          0.63,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1,
+          0.17,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          0.64,
+          -0.42,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          0.41000000000000003,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          0.87,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          0.64,
+          -0.18999999999999997,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          0.64,
+          -0.65,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "guide",
+        "label": "Xbox",
+        "position": [
+          0,
+          0.68,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b16"
+      }
+    ]
+  },
+  {
+    "id": "xbox-original",
+    "name": "Original Xbox controller",
+    "shape": "xbox",
+    "color": "#252c35",
+    "platforms": [
+      "xbox"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -0.55,
+          -0.04999999999999999,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -0.55,
+          -0.45,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -0.75,
+          -0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.35000000000000003,
+          -0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "lt",
+        "label": "LT",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "rt",
+        "label": "RT",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -1,
+          0.4,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.23,
+          0.4,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.77,
+          0.4,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1,
+          0.63,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1,
+          0.17,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          0.64,
+          -0.42,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          0.41000000000000003,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          0.87,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          0.64,
+          -0.18999999999999997,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          0.64,
+          -0.65,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "back",
+        "label": "Back",
+        "position": [
+          -0.275,
+          0.15,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          0.15,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "black",
+        "label": "Black",
+        "position": [
+          1.15,
+          -0.47,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#1c1f25",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "white",
+        "label": "White",
+        "position": [
+          1.46,
+          -0.32,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#e0e0df",
+        "defaultInput": "b4"
+      }
+    ]
+  },
+  {
+    "id": "dreamcast",
+    "name": "Sega Dreamcast controller",
+    "shape": "dreamcast",
+    "color": "#ccd0d2",
+    "platforms": [
+      "dreamcast"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -0.82,
+          -0.04000000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -0.82,
+          -0.42000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.01,
+          -0.23,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.6299999999999999,
+          -0.23,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0,
+          -0.5,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "lt",
+        "label": "LT",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "rt",
+        "label": "RT",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.23,
+          0.46,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.77,
+          0.46,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1,
+          0.6900000000000001,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1,
+          0.23,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      }
+    ]
+  },
+  {
+    "id": "atari-joystick",
+    "name": "Atari-style joystick",
+    "shape": "joystick",
+    "color": "#282d34",
+    "platforms": [
+      "atari2600",
+      "c64",
+      "vic20",
+      "amiga500",
+      "cpc464",
+      "spectrum"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "fire",
+        "label": "Fire",
+        "position": [
+          -0.93,
+          -0.48,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#cf4548",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "up",
+        "label": "Joystick up",
+        "position": [
+          0.25,
+          0.39,
+          0.36
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "Joystick down",
+        "position": [
+          0.25,
+          -0.15000000000000002,
+          0.36
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "Joystick left",
+        "position": [
+          -0.020000000000000018,
+          0.12,
+          0.36
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "Joystick right",
+        "position": [
+          0.52,
+          0.12,
+          0.36
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "b15"
+      }
+    ]
+  },
+  {
+    "id": "mastersystem",
+    "name": "Master System controller",
+    "shape": "nes",
+    "color": "#363b43",
+    "platforms": [
+      "mastersystem",
+      "sg1000"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "one",
+        "label": "1 / Start",
+        "position": [
+          0.72,
+          -0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "two",
+        "label": "2",
+        "position": [
+          1.27,
+          -0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1,
+          0.18,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1,
+          -0.3,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.24,
+          -0.06,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.76,
+          -0.06,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      }
+    ]
+  },
+  {
+    "id": "gameboy",
+    "name": "Game Boy",
+    "shape": "handheld",
+    "color": "#c7c9c2",
+    "platforms": [
+      "gameboy"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          0.53,
+          -0.38,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#ac4768",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          0.13,
+          -0.55,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#ac4768",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -0.52,
+          -0.16999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -0.52,
+          -0.53,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -0.7,
+          -0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.34,
+          -0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -1.02,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -1.02,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      }
+    ]
+  },
+  {
+    "id": "gbcolor",
+    "name": "Game Boy Color",
+    "shape": "handheld",
+    "color": "#8b64a6",
+    "platforms": [
+      "gbcolor"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          0.53,
+          -0.38,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#ac4768",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          0.13,
+          -0.55,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#ac4768",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -0.52,
+          -0.16999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -0.52,
+          -0.53,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -0.7,
+          -0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.34,
+          -0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -1.02,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -1.02,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      }
+    ]
+  },
+  {
+    "id": "gba",
+    "name": "Game Boy Advance",
+    "shape": "widehandheld",
+    "color": "#7662ab",
+    "platforms": [
+      "gba"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.48,
+          0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.06,
+          -0.07,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.35,
+          0.19,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.35,
+          -0.19,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.54,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -1.1600000000000001,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -0.6,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -0.6,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      }
+    ]
+  },
+  {
+    "id": "ds",
+    "name": "Nintendo DS",
+    "shape": "clamshell",
+    "color": "#b8bec7",
+    "platforms": [
+      "ndslite"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.05,
+          -0.86,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.28,
+          -0.63,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.8200000000000001,
+          -0.63,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.05,
+          -0.4,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.05,
+          -0.44,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.05,
+          -0.8,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.23,
+          -0.62,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.8700000000000001,
+          -0.62,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -1.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -1.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      }
+    ]
+  },
+  {
+    "id": "3ds",
+    "name": "Nintendo 3DS",
+    "shape": "clamshell",
+    "color": "#57a1b3",
+    "platforms": [
+      "3ds"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.05,
+          -0.88,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.28,
+          -0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.8200000000000001,
+          -0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.05,
+          -0.42000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.02,
+          -0.69,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.02,
+          -1.01,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.18,
+          -0.85,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.86,
+          -0.85,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -1.15,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -1.15,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.28,
+          -0.28,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.8200000000000001,
+          -0.28,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1.05,
+          -0.05000000000000002,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1.05,
+          -0.51,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "home",
+        "label": "Home",
+        "position": [
+          0,
+          -0.93,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b16"
+      }
+    ]
+  },
+  {
+    "id": "psp",
+    "name": "PlayStation Portable",
+    "shape": "widehandheld",
+    "color": "#353e4a",
+    "platforms": [
+      "psp"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.36,
+          -0.09,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.58,
+          0.13,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          1.1400000000000001,
+          0.13,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.36,
+          0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.35,
+          0.37,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.35,
+          0.03,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.52,
+          0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -1.1800000000000002,
+          0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.58,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -1.12,
+          -0.42,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1.35,
+          -0.18999999999999997,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1.35,
+          -0.65,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "home",
+        "label": "Home",
+        "position": [
+          -0.8,
+          -0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b16"
+      }
+    ]
+  },
+  {
+    "id": "gamegear",
+    "name": "Sega Game Gear",
+    "shape": "widehandheld",
+    "color": "#333a43",
+    "platforms": [
+      "gamegear"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "one",
+        "label": "1",
+        "position": [
+          1.09,
+          -0.18,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "two",
+        "label": "2",
+        "position": [
+          1.5,
+          0.04,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          1.4,
+          0.53,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.3,
+          0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.3,
+          -0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.5,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -1.1,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      }
+    ]
+  },
+  {
+    "id": "lynx",
+    "name": "Atari Lynx",
+    "shape": "widehandheld",
+    "color": "#454d59",
+    "platforms": [
+      "lynx"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.08,
+          -0.15,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.48,
+          0.07,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "option1",
+        "label": "Option 1",
+        "position": [
+          -0.5,
+          -0.63,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "option2",
+        "label": "Option 2",
+        "position": [
+          0.5,
+          -0.63,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "pause",
+        "label": "Pause",
+        "position": [
+          0,
+          -0.63,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.3,
+          0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.3,
+          -0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.5,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -1.1,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      }
+    ]
+  },
+  {
+    "id": "switch",
+    "name": "Nintendo Switch Joy-Con",
+    "shape": "switch",
+    "color": "#434d58",
+    "platforms": [
+      "switch",
+      "switch2"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.7,
+          0.15999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.9,
+          0.36,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          1.5,
+          0.36,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.7,
+          0.56,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.7,
+          -0.18999999999999997,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.7,
+          -0.51,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.8599999999999999,
+          -0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -1.54,
+          -0.35,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "minus",
+        "label": "Minus",
+        "position": [
+          -0.275,
+          0.67,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "plus",
+        "label": "Plus",
+        "position": [
+          0.275,
+          0.67,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "zl",
+        "label": "ZL",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "zr",
+        "label": "ZR",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -1.7,
+          0.38,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.93,
+          0.38,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -1.47,
+          0.38,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1.7,
+          0.61,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1.7,
+          0.15,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          1.7,
+          -0.38,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          1.47,
+          -0.38,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          1.93,
+          -0.38,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          1.7,
+          -0.15,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          1.7,
+          -0.61,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "home",
+        "label": "Home",
+        "position": [
+          1.35,
+          -0.66,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b16"
+      },
+      {
+        "id": "capture",
+        "label": "Capture",
+        "position": [
+          -1.35,
+          -0.66,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b17"
+      }
+    ]
+  },
+  {
+    "id": "wiiu",
+    "name": "Wii U GamePad",
+    "shape": "widehandheld",
+    "color": "#c7ccce",
+    "platforms": [
+      "wiiu"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.35,
+          -0.19,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.57,
+          0.03,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          1.1300000000000001,
+          0.03,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.35,
+          0.25,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.35,
+          -0.04000000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.35,
+          -0.4,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.53,
+          -0.22,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -1.1700000000000002,
+          -0.22,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -0.66,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -0.66,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "zl",
+        "label": "ZL",
+        "position": [
+          -1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "zr",
+        "label": "ZR",
+        "position": [
+          1.03,
+          0.82,
+          -0.25
+        ],
+        "view": "rear",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "lclick",
+        "label": "L stick click",
+        "position": [
+          -1.35,
+          0.52,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.58,
+          0.52,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -1.12,
+          0.52,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1.35,
+          0.75,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1.35,
+          0.29000000000000004,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      },
+      {
+        "id": "rclick",
+        "label": "R stick click",
+        "position": [
+          1.35,
+          0.52,
+          0.48
+        ],
+        "view": "front",
+        "shape": "stick",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "rleft",
+        "label": "R stick left",
+        "position": [
+          1.12,
+          0.52,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2-"
+      },
+      {
+        "id": "rright",
+        "label": "R stick right",
+        "position": [
+          1.58,
+          0.52,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a2+"
+      },
+      {
+        "id": "rup",
+        "label": "R stick up",
+        "position": [
+          1.35,
+          0.75,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3-"
+      },
+      {
+        "id": "rdown",
+        "label": "R stick down",
+        "position": [
+          1.35,
+          0.29000000000000004,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a3+"
+      },
+      {
+        "id": "home",
+        "label": "Home",
+        "position": [
+          0,
+          -0.67,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b16"
+      }
+    ]
+  },
+  {
+    "id": "wii",
+    "name": "Wii Remote + Nunchuk",
+    "shape": "wii",
+    "color": "#d5d9df",
+    "platforms": [
+      "wii"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          0.55,
+          0.36,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#bfc5d0",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B trigger",
+        "position": [
+          0.55,
+          0.58,
+          -0.35
+        ],
+        "view": "rear",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "one",
+        "label": "1",
+        "position": [
+          0.55,
+          -0.64,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "two",
+        "label": "2",
+        "position": [
+          0.55,
+          -1.04,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "minus",
+        "label": "Minus",
+        "position": [
+          0.18,
+          -0.17,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "plus",
+        "label": "Plus",
+        "position": [
+          0.93,
+          -0.17,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "home",
+        "label": "Home",
+        "position": [
+          0.55,
+          -0.17,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b16"
+      },
+      {
+        "id": "c",
+        "label": "Nunchuk C",
+        "position": [
+          -1.05,
+          0.18,
+          -0.22
+        ],
+        "view": "top",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "z",
+        "label": "Nunchuk Z",
+        "position": [
+          -1.05,
+          0.13,
+          -0.3
+        ],
+        "view": "rear",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          0.55,
+          1.16,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          0.55,
+          0.84,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          0.39,
+          1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          0.7100000000000001,
+          1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "lleft",
+        "label": "L stick left",
+        "position": [
+          -1.28,
+          -0.3,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0-"
+      },
+      {
+        "id": "lright",
+        "label": "L stick right",
+        "position": [
+          -0.8200000000000001,
+          -0.3,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a0+"
+      },
+      {
+        "id": "lup",
+        "label": "L stick up",
+        "position": [
+          -1.05,
+          -0.06999999999999998,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1-"
+      },
+      {
+        "id": "ldown",
+        "label": "L stick down",
+        "position": [
+          -1.05,
+          -0.53,
+          0.5
+        ],
+        "view": "front",
+        "shape": "axis",
+        "color": "#303946",
+        "defaultInput": "a1+"
+      }
+    ]
+  },
+  {
+    "id": "jaguar",
+    "name": "Atari Jaguar controller",
+    "shape": "jaguar",
+    "color": "#383e46",
+    "platforms": [
+      "jaguar",
+      "jaguarcd"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          0.55,
+          0.28,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          0.97,
+          0.41000000000000003,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "c",
+        "label": "C",
+        "position": [
+          1.3900000000000001,
+          0.54,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.1,
+          0.6000000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.1,
+          0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.3,
+          0.4,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.9000000000000001,
+          0.4,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "pause",
+        "label": "Pause",
+        "position": [
+          -0.3,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "option",
+        "label": "Option",
+        "position": [
+          0.25,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "key1",
+        "label": "1",
+        "position": [
+          -0.38,
+          -0.17,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "key2",
+        "label": "2",
+        "position": [
+          0.0,
+          -0.17,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "key3",
+        "label": "3",
+        "position": [
+          0.38,
+          -0.17,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "key4",
+        "label": "4",
+        "position": [
+          -0.38,
+          -0.45999999999999996,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "key5",
+        "label": "5",
+        "position": [
+          0.0,
+          -0.45999999999999996,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "key6",
+        "label": "6",
+        "position": [
+          0.38,
+          -0.45999999999999996,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "key7",
+        "label": "7",
+        "position": [
+          -0.38,
+          -0.75,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "key8",
+        "label": "8",
+        "position": [
+          0.0,
+          -0.75,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "key9",
+        "label": "9",
+        "position": [
+          0.38,
+          -0.75,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "key*",
+        "label": "*",
+        "position": [
+          -0.38,
+          -1.0399999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "key0",
+        "label": "0",
+        "position": [
+          0.0,
+          -1.0399999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "key#",
+        "label": "#",
+        "position": [
+          0.38,
+          -1.0399999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b14"
+      }
+    ]
+  },
+  {
+    "id": "gamewatch",
+    "name": "Game & Watch dual screen",
+    "shape": "clamshell",
+    "color": "#c57949",
+    "platforms": [
+      "gwmulti"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "jump",
+        "label": "Jump",
+        "position": [
+          1.13,
+          -0.68,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "gamea",
+        "label": "Game A",
+        "position": [
+          0.7,
+          -0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "gameb",
+        "label": "Game B",
+        "position": [
+          1.1,
+          -0.2,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "time",
+        "label": "Time",
+        "position": [
+          0.9,
+          0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "alarm",
+        "label": "Alarm",
+        "position": [
+          1.3,
+          0.1,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1,
+          -0.48000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1,
+          -0.8600000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.19,
+          -0.67,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.81,
+          -0.67,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      }
+    ]
+  },
+  {
+    "id": "arcade",
+    "name": "Arcade control panel",
+    "shape": "arcade",
+    "color": "#3b4251",
+    "platforms": [
+      "arcade"
+    ],
+    "note": "Gameplay controls; power and volume switches are outside this mapping.",
+    "controls": [
+      {
+        "id": "button1",
+        "label": "Button 1",
+        "position": [
+          0.4,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#657a9b",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "button2",
+        "label": "Button 2",
+        "position": [
+          0.8300000000000001,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#657a9b",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "button3",
+        "label": "Button 3",
+        "position": [
+          1.26,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#657a9b",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "button4",
+        "label": "Button 4",
+        "position": [
+          0.4,
+          -0.18,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#657a9b",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "button5",
+        "label": "Button 5",
+        "position": [
+          0.8300000000000001,
+          -0.18,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#657a9b",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "button6",
+        "label": "Button 6",
+        "position": [
+          1.26,
+          -0.18,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#657a9b",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1,
+          0.27999999999999997,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1,
+          -0.19999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.24,
+          0.04,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.76,
+          0.04,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "coin",
+        "label": "Insert coin",
+        "position": [
+          -0.3,
+          -0.68,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.25,
+          -0.68,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      }
+    ]
+  },
+  {
+    "id": "keyboard",
+    "name": "Keyboard controls",
+    "shape": "keyboard",
+    "color": "#777f8b",
+    "platforms": [
+      "windows"
+    ],
+    "note": "Keyboard display layout. Xbox inputs may be shared; this does not send keyboard events to an emulator.",
+    "controls": [
+      {
+        "id": "key1",
+        "label": "1",
+        "position": [
+          -2.05,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "key2",
+        "label": "2",
+        "position": [
+          -1.5999999999999999,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "key3",
+        "label": "3",
+        "position": [
+          -1.15,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "key4",
+        "label": "4",
+        "position": [
+          -0.6999999999999997,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "key5",
+        "label": "5",
+        "position": [
+          -0.24999999999999978,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "key6",
+        "label": "6",
+        "position": [
+          0.20000000000000018,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "key7",
+        "label": "7",
+        "position": [
+          0.6500000000000004,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "key8",
+        "label": "8",
+        "position": [
+          1.1,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "key9",
+        "label": "9",
+        "position": [
+          1.5500000000000003,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "key0",
+        "label": "0",
+        "position": [
+          2.0,
+          0.65,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "keyQ",
+        "label": "Q",
+        "position": [
+          -2.05,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "keyW",
+        "label": "W",
+        "position": [
+          -1.5999999999999999,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "keyE",
+        "label": "E",
+        "position": [
+          -1.15,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "keyR",
+        "label": "R",
+        "position": [
+          -0.6999999999999997,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "keyT",
+        "label": "T",
+        "position": [
+          -0.24999999999999978,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "keyY",
+        "label": "Y",
+        "position": [
+          0.20000000000000018,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "keyU",
+        "label": "U",
+        "position": [
+          0.6500000000000004,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b16"
+      },
+      {
+        "id": "keyI",
+        "label": "I",
+        "position": [
+          1.1,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b17"
+      },
+      {
+        "id": "keyO",
+        "label": "O",
+        "position": [
+          1.5500000000000003,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "keyP",
+        "label": "P",
+        "position": [
+          2.0,
+          0.23000000000000004,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "keyA",
+        "label": "A",
+        "position": [
+          -2.05,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "keyS",
+        "label": "S",
+        "position": [
+          -1.5999999999999999,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "keyD",
+        "label": "D",
+        "position": [
+          -1.15,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "keyF",
+        "label": "F",
+        "position": [
+          -0.6999999999999997,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b5"
+      },
+      {
+        "id": "keyG",
+        "label": "G",
+        "position": [
+          -0.24999999999999978,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b6"
+      },
+      {
+        "id": "keyH",
+        "label": "H",
+        "position": [
+          0.20000000000000018,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b7"
+      },
+      {
+        "id": "keyJ",
+        "label": "J",
+        "position": [
+          0.6500000000000004,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "keyK",
+        "label": "K",
+        "position": [
+          1.1,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "keyL",
+        "label": "L",
+        "position": [
+          1.5500000000000003,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b10"
+      },
+      {
+        "id": "keyZ",
+        "label": "Z",
+        "position": [
+          2.0,
+          -0.18999999999999995,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b11"
+      },
+      {
+        "id": "keyX",
+        "label": "X",
+        "position": [
+          -2.05,
+          -0.61,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "keyC",
+        "label": "C",
+        "position": [
+          -1.5999999999999999,
+          -0.61,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "keyV",
+        "label": "V",
+        "position": [
+          -1.15,
+          -0.61,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "keyB",
+        "label": "B",
+        "position": [
+          -0.6999999999999997,
+          -0.61,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "keyN",
+        "label": "N",
+        "position": [
+          -0.24999999999999978,
+          -0.61,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b16"
+      },
+      {
+        "id": "keyM",
+        "label": "M",
+        "position": [
+          0.20000000000000018,
+          -0.61,
+          0.36
+        ],
+        "view": "front",
+        "shape": "key",
+        "color": "#303946",
+        "defaultInput": "b17"
+      },
+      {
+        "id": "space",
+        "label": "Space",
+        "position": [
+          0,
+          -1.05,
+          0.36
+        ],
+        "view": "front",
+        "shape": "touchpad",
+        "color": "#303946",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "enter",
+        "label": "Enter",
+        "position": [
+          1.8,
+          -1.05,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      }
+    ]
+  },
+  {
+    "id": "generic",
+    "name": "Generic gamepad",
+    "shape": "snes",
+    "color": "#66738a",
+    "platforms": [],
+    "note": "Generic fallback, not a faithful model of this platform’s original controller. Choose a known controller layout above.",
+    "controls": [
+      {
+        "id": "a",
+        "label": "A",
+        "position": [
+          1.03,
+          -0.03999999999999998,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#55a76a",
+        "defaultInput": "b0"
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "position": [
+          1.34,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#d56363",
+        "defaultInput": "b1"
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "position": [
+          0.72,
+          0.27,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#599bd4",
+        "defaultInput": "b2"
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "position": [
+          1.03,
+          0.5800000000000001,
+          0.36
+        ],
+        "view": "front",
+        "shape": "round",
+        "color": "#dcbb53",
+        "defaultInput": "b3"
+      },
+      {
+        "id": "up",
+        "label": "D-pad up",
+        "position": [
+          -1.05,
+          0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "up",
+        "color": "#303946",
+        "defaultInput": "b12"
+      },
+      {
+        "id": "down",
+        "label": "D-pad down",
+        "position": [
+          -1.05,
+          -0.24,
+          0.36
+        ],
+        "view": "front",
+        "shape": "down",
+        "color": "#303946",
+        "defaultInput": "b13"
+      },
+      {
+        "id": "left",
+        "label": "D-pad left",
+        "position": [
+          -1.29,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "left",
+        "color": "#303946",
+        "defaultInput": "b14"
+      },
+      {
+        "id": "right",
+        "label": "D-pad right",
+        "position": [
+          -0.81,
+          0,
+          0.36
+        ],
+        "view": "front",
+        "shape": "right",
+        "color": "#303946",
+        "defaultInput": "b15"
+      },
+      {
+        "id": "select",
+        "label": "Select",
+        "position": [
+          -0.275,
+          -0.08,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b8"
+      },
+      {
+        "id": "start",
+        "label": "Start",
+        "position": [
+          0.275,
+          -0.08,
+          0.36
+        ],
+        "view": "front",
+        "shape": "pill",
+        "color": "#303946",
+        "defaultInput": "b9"
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "position": [
+          -1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b4"
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "position": [
+          1.03,
+          0.82,
+          0
+        ],
+        "view": "top",
+        "shape": "shoulder",
+        "color": "#303946",
+        "defaultInput": "b5"
+      }
+    ]
+  }
+]

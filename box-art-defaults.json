@@ -1,0 +1,1312 @@
+{
+  "schemaVersion": 1,
+  "templates": {
+    "dvd-black": {
+      "name": "Black DVD case",
+      "size": [
+        2.36,
+        3.3,
+        0.26
+      ],
+      "color": "#111318",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.138
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.138
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.188,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.234,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/dvd-black.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms.",
+      "source": "https://sketchfab.com/3d-models/xbox-360-game-box-fd9100a5ae304dc58a3fb6820d036f87"
+    },
+    "dvd-white": {
+      "name": "White DVD case",
+      "size": [
+        2.36,
+        3.3,
+        0.26
+      ],
+      "color": "#f2f3ec",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.138
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.138
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.188,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.234,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/dvd-white.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms.",
+      "source": "https://sketchfab.com/3d-models/xbox-360-game-box-fd9100a5ae304dc58a3fb6820d036f87"
+    },
+    "dvd-blue": {
+      "name": "Blue disc case",
+      "size": [
+        2.62,
+        3.3,
+        0.28
+      ],
+      "color": "#117dc5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.14800000000000002
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.4628,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.14800000000000002
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.4628,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.318,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.25200000000000006,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/dvd-blue.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms.",
+      "source": "https://sketchfab.com/3d-models/xbox-360-game-box-fd9100a5ae304dc58a3fb6820d036f87"
+    },
+    "xbox360-case": {
+      "name": "Supplied Xbox 360 case",
+      "size": [
+        2.36,
+        3.3,
+        0.26
+      ],
+      "color": "#72b92b",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.138
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.138
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.188,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.234,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/xbox360-case.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms.",
+      "source": "https://sketchfab.com/3d-models/xbox-360-game-box-fd9100a5ae304dc58a3fb6820d036f87"
+    },
+    "ps1-jewel": {
+      "name": "PlayStation jewel case · ¾ inch",
+      "size": [
+        3.3,
+        2.905,
+        0.443
+      ],
+      "color": "#252931",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.2295
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            3.102,
+            2.7887999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.2295
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            3.102,
+            2.7887999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.658,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.3987,
+            2.7887999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/ps1-jewel.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "cd-jewel": {
+      "name": "CD jewel case",
+      "size": [
+        3.3,
+        2.905,
+        0.24
+      ],
+      "color": "#313943",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.128
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            3.102,
+            2.7887999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.128
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            3.102,
+            2.7887999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.658,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.216,
+            2.7887999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/cd-jewel.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "cardboard": {
+      "name": "Cardboard retail box",
+      "size": [
+        2.4,
+        3.3,
+        0.6
+      ],
+      "color": "#393734",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.308
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.256,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.308
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.256,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.208,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.54,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/cardboard.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "nes-cartridge": {
+      "name": "Editable NES cartridge",
+      "size": [
+        2.8,
+        3.3,
+        0.38
+      ],
+      "color": "#939593",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            -0.09899999999999999,
+            0.198
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.016,
+            1.716
+          ]
+        },
+        "back": {
+          "enabled": false,
+          "position": [
+            0,
+            0,
+            -0.198
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.6319999999999997,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": false,
+          "position": [
+            -1.408,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.342,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/nes-cartridge.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "snes-cartridge": {
+      "name": "SNES cartridge",
+      "size": [
+        3.3,
+        2.2,
+        0.55
+      ],
+      "color": "#aaa6ad",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            -0.066,
+            0.28300000000000003
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.376,
+            1.1440000000000001
+          ]
+        },
+        "back": {
+          "enabled": false,
+          "position": [
+            0,
+            0,
+            -0.28300000000000003
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            3.102,
+            2.112
+          ]
+        },
+        "spine": {
+          "enabled": false,
+          "position": [
+            -1.658,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.49500000000000005,
+            2.112
+          ]
+        }
+      },
+      "path": "games/models/templates/snes-cartridge.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "snes-retail-box": {
+      "name": "SNES landscape retail box",
+      "size": [
+        3.3984,
+        2.4,
+        0.576
+      ],
+      "color": "#393734",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.293
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            3.3984,
+            2.4
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.293
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            3.3984,
+            2.4
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            0,
+            -1.2,
+            0
+          ],
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "size": [
+            3.3984,
+            0.576
+          ]
+        }
+      },
+      "path": "",
+      "author": "Horizon Launcher contributors",
+      "license": "Application-authored SNES retail package; dimensions model a regular North American SNES box at 177 × 125 × 30 mm."
+    },
+    "n64-cartridge": {
+      "name": "Nintendo 64 cartridge",
+      "size": [
+        3.3,
+        2.25,
+        0.55
+      ],
+      "color": "#777a7c",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            -0.0675,
+            0.28300000000000003
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.376,
+            1.17
+          ]
+        },
+        "back": {
+          "enabled": false,
+          "position": [
+            0,
+            0,
+            -0.28300000000000003
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            3.102,
+            2.16
+          ]
+        },
+        "spine": {
+          "enabled": false,
+          "position": [
+            -1.658,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.49500000000000005,
+            2.16
+          ]
+        }
+      },
+      "path": "games/models/templates/n64-cartridge.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "megadrive-cartridge": {
+      "name": "Mega Drive cartridge",
+      "size": [
+        3.3,
+        2.5,
+        0.55
+      ],
+      "color": "#17191b",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            -0.075,
+            0.28300000000000003
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.376,
+            1.3
+          ]
+        },
+        "back": {
+          "enabled": false,
+          "position": [
+            0,
+            0,
+            -0.28300000000000003
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            3.102,
+            2.4
+          ]
+        },
+        "spine": {
+          "enabled": false,
+          "position": [
+            -1.658,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.49500000000000005,
+            2.4
+          ]
+        }
+      },
+      "path": "games/models/templates/megadrive-cartridge.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "gb-cartridge": {
+      "name": "Game Boy cartridge",
+      "size": [
+        2.9,
+        3.3,
+        0.32
+      ],
+      "color": "#999b96",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            -0.09899999999999999,
+            0.168
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.088,
+            1.716
+          ]
+        },
+        "back": {
+          "enabled": false,
+          "position": [
+            0,
+            0,
+            -0.168
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.726,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": false,
+          "position": [
+            -1.458,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.28800000000000003,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/gb-cartridge.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "gba-cartridge": {
+      "name": "Game Boy Advance cartridge",
+      "size": [
+        3.3,
+        1.9,
+        0.3
+      ],
+      "color": "#3f3c52",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            -0.056999999999999995,
+            0.158
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.376,
+            0.988
+          ]
+        },
+        "back": {
+          "enabled": false,
+          "position": [
+            0,
+            0,
+            -0.158
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            3.102,
+            1.8239999999999998
+          ]
+        },
+        "spine": {
+          "enabled": false,
+          "position": [
+            -1.658,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.27,
+            1.8239999999999998
+          ]
+        }
+      },
+      "path": "games/models/templates/gba-cartridge.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "ds-cartridge": {
+      "name": "DS / 3DS cartridge",
+      "size": [
+        2.9,
+        3.3,
+        0.3
+      ],
+      "color": "#25282a",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            -0.09899999999999999,
+            0.158
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.088,
+            1.716
+          ]
+        },
+        "back": {
+          "enabled": false,
+          "position": [
+            0,
+            0,
+            -0.158
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.726,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": false,
+          "position": [
+            -1.458,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.27,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/ds-cartridge.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "switch-case": {
+      "name": "Nintendo Switch case",
+      "size": [
+        1.95,
+        3.3,
+        0.23
+      ],
+      "color": "#c83232",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.123
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1.833,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.123
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            1.833,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -0.983,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.20700000000000002,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/switch-case.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "psp-case": {
+      "name": "PSP case",
+      "size": [
+        1.95,
+        3.3,
+        0.25
+      ],
+      "color": "#dce0de",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.133
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1.833,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.133
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            1.833,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -0.983,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.225,
+            3.1679999999999997
+          ]
+        }
+      },
+      "path": "games/models/templates/psp-case.glb",
+      "author": "Totem contributors",
+      "license": "Application-authored packaging shell; Totem project terms."
+    },
+    "custom": {
+      "name": "Imported GLB",
+      "size": [
+        2.36,
+        3.3,
+        0.26
+      ],
+      "color": "#24262b",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "panels": {
+        "front": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            0.138
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "back": {
+          "enabled": true,
+          "position": [
+            0,
+            0,
+            -0.138
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "size": [
+            2.2184,
+            3.1679999999999997
+          ]
+        },
+        "spine": {
+          "enabled": true,
+          "position": [
+            -1.188,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -90,
+            0
+          ],
+          "size": [
+            0.234,
+            3.1679999999999997
+          ]
+        }
+      }
+    }
+  },
+  "platforms": {
+    "playstation": "ps1-jewel",
+    "dreamcast": "cd-jewel",
+    "saturn": "cd-jewel",
+    "segacd": "cd-jewel",
+    "pcenginecd": "cd-jewel",
+    "neogeocd": "cd-jewel",
+    "3do": "cd-jewel",
+    "cdi": "cd-jewel",
+    "jaguarcd": "cd-jewel",
+    "amiga500": "cardboard",
+    "cpc464": "cardboard",
+    "c64": "cardboard",
+    "vic20": "cardboard",
+    "spectrum": "cardboard",
+    "atari2600": "cardboard",
+    "atari5200": "cardboard",
+    "atari7800": "cardboard",
+    "jaguar": "cardboard",
+    "mastersystem": "cardboard",
+    "gamegear": "cardboard",
+    "lynx": "cardboard",
+    "nes": "nes-cartridge",
+    "famicom": "nes-cartridge",
+    "snes": "snes-retail-box",
+    "n64": "n64-cartridge",
+    "n64dd": "n64-cartridge",
+    "megadrive": "megadrive-cartridge",
+    "32x": "megadrive-cartridge",
+    "gameboy": "gb-cartridge",
+    "gbcolor": "gb-cartridge",
+    "gba": "gba-cartridge",
+    "nds": "ds-cartridge",
+    "3ds": "ds-cartridge",
+    "switch": "switch-case",
+    "switch2": "switch-case",
+    "psp": "psp-case",
+    "wii": "dvd-white",
+    "wiiu": "dvd-blue",
+    "ps2": "dvd-blue",
+    "ps3": "dvd-blue",
+    "ps4": "dvd-blue",
+    "ps5": "dvd-blue",
+    "xbox360": "xbox360-case",
+    "ndslite": "ds-cartridge"
+  }
+}

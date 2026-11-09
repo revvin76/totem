@@ -1,0 +1,11 @@
+.centered-title-rail {
+  overflow-anchor: none;
+}
+.centered-title-rail::before,
+.centered-title-rail::after {
+  content: var(--title-rail-spacers, none);
+  display: block;
+  flex: none;
+}
+.centered-title-rail::before { height: var(--title-rail-start, 0px); }
+.centered-title-rail::after { height: var(--title-rail-end, 0px); }

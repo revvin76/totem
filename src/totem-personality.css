@@ -1,0 +1,33 @@
+#totem-debug { position:relative; }
+#totem-debug summary { color:#eef4ff; background:#211335; border:1px solid #9577af; border-radius:6px; padding:6px 8px; font-size:12px; cursor:pointer; }
+.totem-debug-actions { position:absolute; z-index:1; top:calc(100% + 6px); right:0; width:220px; max-height:65vh; overflow:auto; padding:4px; border:1px solid #9577af; border-radius:6px; background:#211335; }
+.totem-debug-actions button { display:block; width:100%; padding:5px 8px; text-align:left; }
+#totem-debug [role=status]:not(:empty) { position:absolute; z-index:1; top:calc(100% + 6px); right:0; width:220px; padding:8px; border-radius:6px; background:#211335; color:#eef4ff; font-size:12px; }
+.totem-personality fieldset { border:1px solid #73518d; background:#130c24; border-radius:10px; padding:14px; margin:14px 0; min-width:0; }
+.totem-personality legend { color:#bbfaff; padding:0 6px; font-weight:600; }
+.totem-personality label { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:36px; margin:6px 0; font-size:13px; }
+.totem-personality input[type=checkbox] { width:18px; height:18px; min-height:18px; accent-color:#51f4ff; }
+.totem-personality input[type=range] { min-width:70px; max-width:160px; accent-color:#51f4ff; }
+.totem-personality input[type=color] { width:60px; padding:2px; }
+.totem-personality select, .totem-personality input[type=text] { background:#211335; color:#eef4ff; border:1px solid #9577af; border-radius:6px; padding:6px; max-width:60%; }
+.totem-personality output { width:36px; font-variant-numeric:tabular-nums; }
+.totem-personality p { color:#cdd6e9; font-size:12px; line-height:1.5; }
+.totem-personality canvas { display:block; width:100%; height:230px; border-radius:8px; background:#100923; }
+.totem-personality details canvas { height:auto; image-rendering:pixelated; }
+.totem-preview-actions { display:flex; gap:7px; flex-wrap:wrap; margin:12px 0; }
+.totem-personality button { min-height:36px; }
+.totem-personality :focus-visible { outline:2px solid #51f4ff; outline-offset:3px; }
+.totem-personality .tiko-voice-lab { margin:14px 0; padding:14px; border:1px solid #73518d; border-radius:10px; background:#130c24; }
+.tiko-voice-lab > summary { cursor:pointer; color:#bbfaff; font-weight:600; min-height:28px; }
+.tiko-voice-grid { display:grid; grid-template-columns:minmax(145px, .85fr) minmax(245px, 1.5fr) minmax(155px, 1fr); align-items:start; gap:10px; }
+.tiko-voice-grid > * { min-width:0; }
+.tiko-voice-grid fieldset { margin:4px 0 10px; padding:10px; }
+.tiko-voice-grid .tiko-expression-list { display:grid; justify-content:stretch; gap:5px; }
+.tiko-voice-grid .tiko-expression-list select { width:100%; max-width:none; }
+.tiko-voice-grid label:has(input[type=range]) { display:grid; grid-template-columns:minmax(0, 1fr) minmax(70px, .85fr) 34px; gap:6px; }
+.tiko-voice-grid label input[type=range] { width:100%; }
+.tiko-voice-grid output { text-align:right; }
+.totem-personality .tiko-voice-grid canvas { height:170px; image-rendering:auto; }
+.totem-personality .tiko-voice-wave { height:64px; image-rendering:auto; }
+@media(max-width:850px) { .tiko-voice-grid { grid-template-columns:minmax(0, 1fr); } }
+@media(max-width:700px) { .totem-personality label { flex-wrap:wrap; } .totem-personality canvas { height:190px; } }

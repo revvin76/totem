@@ -1,0 +1,84 @@
+{
+  "createdAt": "2026-11-02T13:40:54.566Z",
+  "layout": {
+    "consoles": {
+      "panX": 0,
+      "panY": 0.8,
+      "panZ": 0,
+      "pitch": 22,
+      "roll": 0,
+      "yaw": 12,
+      "zoom": 1.05
+    },
+    "orbit": {
+      "panX": 0,
+      "panY": 0.5,
+      "panZ": 0,
+      "pitch": -12,
+      "roll": 12,
+      "rotation": 2,
+      "yaw": 7,
+      "zoom": 1.7
+    }
+  },
+  "schemaVersion": 3,
+  "selectedPlatform": "wii",
+  "view": {
+    "camera": {
+      "fov": 36,
+      "position": [0, 2.2, 12.3],
+      "quaternion": [-0.18496267260577165, 0, 0, 0.982745546793538],
+      "view": {
+        "enabled": true,
+        "fullHeight": 743,
+        "fullWidth": 1920,
+        "height": 743,
+        "offsetX": 384,
+        "offsetY": 148.6,
+        "width": 1920
+      }
+    },
+    "viewport": {
+      "height": 743,
+      "width": 1920
+    }
+  },
+  "enabledPlatformIds": [
+    "gameboy",
+    "nes",
+    "megadrive",
+    "playstation",
+    "gamecube",
+    "xbox",
+    "wii"
+  ],
+  "deviceOverrides": {
+    "wii": {
+      "zoom": 0.9,
+      "panX": 0,
+      "panY": -0.5,
+      "panZ": 0,
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    },
+    "gameboy": {
+      "zoom": 1,
+      "panX": 0,
+      "panY": -0.5,
+      "panZ": 0,
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    },
+    "ps2": {
+      "zoom": 1,
+      "panX": 0,
+      "panY": 0,
+      "panZ": 1.2,
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    }
+  }
+}
