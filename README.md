@@ -1,8 +1,12 @@
-<p align="center"><strong>T O T E M</strong></p>
+<p align="center"><img src="docs/readme/totem-logo.png" width="440" alt="Totem"></p>
 <h1 align="center">Your game shelf, in 3D.</h1>
 <p align="center">A Windows frontend for browsing the systems you grew up with and launching the games you already own.</p>
 
 ## What it looks like
+
+![Tiko perched beside a PlayStation 3 in Totem’s Platform Chooser](docs/readme/tiko-platform-chooser.jpg)
+
+*The current desktop development build with Tiko on his perch.*
 
 Totem puts the hardware on a rotating shelf. The selected console moves into the foreground, its name and details appear alongside it, and the other systems recede into the background. Pick a system to move into its game chooser. With your own media configured, that scene can show a controller, a game case or cartridge, and gameplay on a virtual screen.
 
@@ -10,33 +14,30 @@ Totem puts the hardware on a rotating shelf. The selected console moves into the
 - **Game Chooser:** Browse your indexed library and launch a selected title through an emulator you have configured.
 - **Totem Studio:** Adjust the camera, lighting, object placement and interface for the two chooser scenes.
 
-## Try it
+![A Nintendo 3DS in the carousel with Tiko in the foreground](docs/readme/handheld-platform-chooser.jpg)
 
-Install Node.js 22 LTS or newer, then run:
+*The same carousel showing a handheld. The screenshots use a configured development library.*
 
-~~~sh
-npm ci
-npm run dev
-~~~
+## Build and run on Windows
 
-Open [the browser preview](http://127.0.0.1:1427/) and use the arrow keys or the on-screen controls to rotate the shelf. For Studio, run `npm run studio:dev` and open [the Studio preview](http://127.0.0.1:1428/light-study/). A browser preview can show the scenes and editing controls. Library indexing and emulator launch require the Windows app.
-
-To build or run the desktop app from source, install Rust 1.89 or newer, the Microsoft C++ build tools and WebView2. This version uses `D:\Totem` as the default desktop data root.
+Install Node.js 22 LTS or newer, Rust 1.89 or newer, the Microsoft C++ build tools, and WebView2. The desktop app uses `D:\Totem` as its default data root.
 
 ~~~powershell
-npm run desktop          # Build and run a development window
+npm ci
+npm run desktop          # Build and run Totem
 npm run desktop:build    # Build the Windows executable without an installer
+npm run studio:desktop   # Build and run Totem Studio
 ~~~
 
 When moving the built executable, keep its adjacent `assets/models` directory with it. Use **Settings** to add platform folders and configure emulators you installed separately. The public source starts with an empty game library. You can add covers and gameplay previews from your own files. Totem's private startup film and optional Tiko model are also absent from this snapshot.
 
 ## Development checks
 
-Run `npm test` for the public source checks and `npm run build` for the browser build. `npm run test:legacy` also runs development checks that depend on private fixtures or workstation state, so it is not a clean clone check.
+Run `npm test` for the public source checks and `npm run build` to compile the frontend. `npm run test:legacy` also runs development checks that depend on private fixtures or workstation state, so it is not a clean clone check.
 
 ## What ships
 
-The bundled media consists of GLB files: hardware, controllers, a television, and blank case and cartridge templates. Hardware textures are embedded in the relevant models. ROMs, BIOS files, game covers, standalone artwork, gameplay clips and emulator binaries are outside the repository. The emulator catalogue is configuration data.
+The application bundles GLB files: hardware, controllers, a television, and blank case and cartridge templates. Hardware textures are embedded in the relevant models. ROMs, BIOS files, game covers, standalone artwork, gameplay clips and emulator binaries are outside the repository. The emulator catalogue is configuration data. The logo and screenshots above illustrate the project documentation.
 
 See [3D model credits](public/models/CREDITS.md) for creators, sources, changes and license terms, including the notices for Open Console CAD. Each third-party asset retains its own license. Totem is an independent project and is not affiliated with the hardware or game publishers it depicts.
 
